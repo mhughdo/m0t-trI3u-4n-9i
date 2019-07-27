@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {Row, Col} from 'antd'
-import WrapperSignUpForm from '../components/sign-up/WrapperSignUpForm';
+import WrapperSignUpForm from '../components/sign-up/WrapperSignUpForm'
+
 
 class SignUp extends Component {
     constructor(props) {
@@ -22,7 +23,7 @@ class SignUp extends Component {
                     </Row>
                     <Row>
                         <Col>
-                            <WrapperSignUpForm />
+                            <WrapperSignUpForm history={this.props.history} />
                         </Col>
                     </Row>
                 </div>

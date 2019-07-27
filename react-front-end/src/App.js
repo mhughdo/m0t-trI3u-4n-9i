@@ -6,6 +6,7 @@ import SignUp from "./pages/sign-up";
 import Chat from "./pages/chat";
 import Home from "./pages/home";
 import PageView from "./components/menu/PageView";
+import history from './utils/history'
 
 
 // function LoginPage() {
@@ -27,7 +28,7 @@ import PageView from "./components/menu/PageView";
 function App() {
     return (
 
-        <Router>
+        <Router history={history}>
             <PageView>
                 <div>
                     <Route exact path="/" component={Home} />
@@ -37,7 +38,7 @@ function App() {
                 </div>
             </PageView>
         </Router>
-    );
+    )
 }
 
-export default App;
+export default App
