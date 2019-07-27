@@ -80,7 +80,7 @@ class SignUpForm extends Component {
                         const {user} = await auth.createUserWithEmailAndPassword(email, password)
                         console.log(user)
                         await createUserProfileDocument(user, allValues)
-                        const api = createAPI('https://hughdo.dev/api/users')
+                        const api = createAPI('https://hughdo.dev/api/v1/users')
                         const {success, message: errMsg} = await api.makeRequest({
                             method: 'POST',
                             data: allValues,
