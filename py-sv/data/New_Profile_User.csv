@@ -1,0 +1,1001 @@
+,index,Age,Height,Job,Location,Sports,Sex,Longtitude,latitude,Name
+0,0,20-24,175.0,other,"south san francisco, california",tennis,Male,21.25670717605291,105.9537212409412,Dennis Copeland
+1,1,>30,170.0,other,"oakland, california",tennis,Male,21.317273761914542,105.74137151305935,Erin Garza
+2,2,>30,168.0,seller,"san francisco, california",basketball,Male,21.3546573699268,105.96825538421977,Rebecca Miller
+3,3,20-24,171.0,student,"berkeley, california",volleyball,Male,21.35149055915454,105.80900733804586,Karen Morales
+4,4,25-30,166.0,other,"san francisco, california",tennis,Male,21.000350829319515,105.79934175845274,Ryan Johnson
+5,5,25-30,167.0,other,"san francisco, california",volleyball,Male,21.113704051969606,105.74057695524687,Jennifer Miller MD
+6,6,>30,165.0,seller,"san francisco, california",tennis,Female,21.24971305078948,105.87340918169308,Christopher Walker
+7,7,>30,165.0,other,"san francisco, california",tennis,Female,21.269489858159194,105.9738112788723,Devin Cole
+8,8,20-24,167.0,seller,"belvedere tiburon, california",tennis,Female,21.160246824894504,105.91255138555401,Anna Williams
+9,9,>30,165.0,student,"san mateo, california",tennis,Male,21.200687104588955,105.94746549543959,Peter Schmidt
+10,10,>30,170.0,seller,"san francisco, california",football,Male,21.331492728820077,105.98941895335703,Brandy Maynard
+11,11,25-30,172.0,other,"daly city, california",volleyball,Male,20.97019010851573,105.99113750135204,Jessica Long
+12,12,20-24,172.0,other,"san francisco, california",football,Male,20.917335142736825,105.97577363784313,Jerry Burns
+13,13,>30,166.0,other,"san francisco, california",swimming,Female,21.173115877225793,105.73993852924082,Katherine Hughes
+14,14,25-30,162.0,other,"san leandro, california",tennis,Female,21.212293168177315,105.85819144407577,Scott Chapman
+15,15,>30,165.0,doctor,"san francisco, california",tennis,Female,21.038429233650675,105.73672535244853,Sara Watson
+16,16,>30,170.0,other,"oakland, california",tennis,Male,21.083375593433058,105.8135114057134,Michael Smith
+17,17,25-30,164.0,other,"san francisco, california",football,Female,20.973893686975817,106.00712481835325,Laura Allen
+18,18,>30,171.0,doctor,"san francisco, california",tennis,Male,21.189618991108816,105.78205164336872,Lori Robinson
+19,19,>30,172.0,engineer,"san francisco, california",tennis,Male,21.353584545490403,105.91701289688883,Michelle Oliver
+20,20,25-30,167.0,other,"san francisco, california",table_tenis,Female,20.88682311685877,105.92247714209638,Daniel Hoover
+21,21,20-24,167.0,student,"san francisco, california",tennis,Female,20.945625407605068,105.7522234713764,Joshua Walter
+22,22,>30,169.0,accounting,"san francisco, california",tennis,Male,21.24999744499371,105.80973963307777,Chad Dominguez
+23,23,>30,171.0,teacher,"san francisco, california",tennis,Male,21.15014603476918,105.73623007158143,Stephanie Lewis
+24,24,>30,173.0,other,"oakland, california",volleyball,Male,20.892849978554512,105.88563499947503,Timothy Martin
+25,25,25-30,170.0,doctor,"atherton, california",tennis,Male,21.286808649064,106.01561200245553,Lauren Davis
+26,26,20-24,172.0,other,"san francisco, california",table_tenis,Male,21.16914984014729,106.01749082896522,Christopher Garcia
+27,27,20-24,167.0,other,"oakland, california",tennis,Male,20.920454001082128,105.87878271120017,Jeffrey Watkins
+28,28,>30,174.0,seller,"san francisco, california",tennis,Male,21.348145768595398,105.9139143834361,Rebecca Anderson
+29,29,>30,168.0,other,"san francisco, california",football,Male,20.959816658048005,105.77041649151451,Andrew Jackson
+30,30,25-30,164.0,other,"san francisco, california",football,Female,20.99201265210108,105.98425895431401,Annette Kim
+31,31,25-30,172.0,engineer,"san francisco, california",badminton,Male,21.029395111263398,105.95175645530978,Molly Ellis
+32,32,>30,167.0,other,"san leandro, california",football,Female,21.248223769523925,105.85088218126434,Yvonne Soto
+33,33,20-24,160.0,other,"san rafael, california",swimming,Female,20.901244374544913,105.83304666821734,David Tate
+34,34,25-30,169.0,other,"san francisco, california",tennis,Male,21.225892855083544,105.76210884649305,Joseph Todd
+35,35,25-30,169.0,other,"san francisco, california",football,Male,21.18329325318958,105.8791081654047,Angel Gordon
+36,36,>30,169.0,engineer,"san francisco, california",table_tenis,Male,21.32055372066793,105.78829860625241,Tammy Wallace
+37,37,25-30,169.0,other,"oakland, california",tennis,Male,21.22952688786544,105.74735392774963,Jeremy King
+38,38,25-30,163.0,other,"walnut creek, california",football,Female,21.12636881259217,105.80098059434307,Nicholas Morrow
+39,39,>30,174.0,other,"san rafael, california",football,Male,21.059459404784217,105.97940689701319,James Martinez
+40,40,>30,176.0,other,"menlo park, california",volleyball,Male,21.198542549886774,105.97646029977022,Christopher Rodriguez
+41,41,>30,172.0,seller,"oakland, california",football,Male,21.27087084695373,106.02513623439759,Suzanne Mcknight
+42,42,>30,175.0,other,"berkeley, california",football,Male,20.943600038521936,105.90333512710912,Yolanda Briggs
+43,43,>30,171.0,other,"san francisco, california",badminton,Male,20.932786912588103,105.90672958976398,Vanessa Henson
+44,44,25-30,166.0,other,"san francisco, california",basketball,Female,20.901386477782957,105.8031335283797,Mark Bass
+45,45,25-30,169.0,teacher,"oakland, california",football,Male,21.047596538674966,105.86360622995605,Shannon Jones
+46,46,25-30,173.0,seller,"san francisco, california",football,Male,21.00248610889723,105.8784474829619,Andrew Luna
+47,47,25-30,170.0,other,"san francisco, california",football,Male,21.352013337182708,105.74148933911547,Ruben Hopkins
+48,48,>30,167.0,other,"san francisco, california",football,Female,21.224100618145343,105.8998362511936,Tommy Rogers
+49,49,25-30,166.0,engineer,"belmont, california",tennis,Female,20.92423594428991,105.83993193749495,Sara Rivera
+50,50,>30,166.0,other,"oakland, california",football,Female,21.27611709415782,105.92274395550439,David Gilmore
+51,51,>30,165.0,seller,"oakland, california",badminton,Female,21.19866000789591,105.92542597277236,Nicholas Moreno
+52,52,>30,169.0,engineer,"san francisco, california",tennis,Male,21.061466020712263,105.90157665802478,Steven Mccarty
+53,53,>30,169.0,other,"oakland, california",tennis,Male,21.18949993524742,105.82911108241319,Mr. Jordan Bentley III
+54,54,>30,169.0,other,"menlo park, california",tennis,Male,21.30403446482657,106.02595183570179,Gerald Garcia
+55,55,>30,170.0,doctor,"san francisco, california",tennis,Male,21.039744645739518,106.0257864787184,Daniel Massey
+56,56,25-30,171.0,student,"berkeley, california",football,Male,21.051296844110105,105.85436834872158,Bradley Gallegos
+57,57,20-24,172.0,other,"san francisco, california",football,Male,21.143261739028965,105.83750201675012,Kathleen Williams
+58,58,20-24,170.0,student,"san francisco, california",tennis,Male,20.918909089682295,105.84763469204796,Joel Huff
+59,59,>30,171.0,seller,"san francisco, california",tennis,Male,21.067830205406995,105.92992143927859,Gina Parker
+60,60,>30,167.0,other,"san francisco, california",table_tenis,Male,21.113681543714048,105.94387830788808,Mr. Jonathan Strickland
+61,61,>30,175.0,other,"san francisco, california",tennis,Male,20.990344277595142,105.96068124405022,Haley Rodriguez
+62,62,>30,170.0,other,"san francisco, california",football,Male,21.00115794522563,105.87706948532148,Joseph Taylor
+63,63,25-30,167.0,teacher,"san francisco, california",badminton,Female,20.912962575059495,105.91103786160322,Russell Dunlap
+64,64,25-30,172.0,other,"san francisco, california",football,Male,21.018580735088598,105.82621904866161,Anthony Trevino
+65,65,25-30,168.0,engineer,"san francisco, california",football,Male,20.991931209521717,105.7579986115815,Mrs. Kelly Hubbard
+66,66,20-24,165.0,teacher,"san jose, california",football,Male,21.27433852661114,105.95200846155826,Susan Soto
+67,67,>30,166.0,student,"san francisco, california",tennis,Female,21.028435893381253,106.01699967405018,Jenna Espinoza
+68,68,>30,169.0,doctor,"palo alto, california",tennis,Female,21.258003924263267,106.02447101435973,John Huerta
+69,69,25-30,176.0,other,"berkeley, california",tennis,Male,21.101353667166755,105.91278824613669,Scott Henry
+70,70,25-30,162.0,engineer,"belmont, california",football,Female,21.179567991991895,105.77388507083151,Christina Mays DDS
+71,71,>30,167.0,other,"san francisco, california",badminton,Female,21.069798393403165,105.91094026129147,John Williams
+72,72,>30,173.0,other,"emeryville, california",tennis,Male,20.955775182917307,105.79750355247276,Susan Harris
+73,73,>30,161.0,other,"oakland, california",football,Female,21.308666696253045,105.99757004655199,Brittany Ross
+74,74,25-30,172.0,teacher,"oakland, california",tennis,Male,21.08580993448621,105.7438278345668,Jose Spencer
+75,75,25-30,167.0,other,"oakland, california",football,Female,21.083708957938903,105.9804475852262,Jessica Ramos
+76,76,25-30,172.0,seller,"berkeley, california",badminton,Male,21.289118018364046,105.88680787251538,Brittany Sanders DVM
+77,77,25-30,165.0,other,"san francisco, california",tennis,Female,21.232882787357244,105.86079919628106,Michael Wilkerson
+78,78,>30,167.0,other,"san francisco, california",football,Female,21.100488741056616,105.78215870558701,Jesse Stanley
+79,79,20-24,171.0,other,"san francisco, california",tennis,Male,21.283142939163785,106.01162966876774,Charles Dunn
+80,80,25-30,167.0,accounting,"san francisco, california",football,Female,20.992390275399554,105.86589011554229,Mr. Micheal Scott
+81,81,>30,169.0,seller,"san francisco, california",tennis,Male,21.171513730857768,105.98525550226026,John Carey
+82,82,>30,169.0,accounting,"san francisco, california",tennis,Male,21.283675520117043,105.7803853849834,Jose Beck
+83,83,>30,164.0,engineer,"san francisco, california",tennis,Female,20.930800964787622,106.02653281328745,Victoria Jennings
+84,84,>30,173.0,engineer,"san francisco, california",badminton,Male,21.091264141561854,105.89313937220564,Jason Hubbard
+85,85,25-30,168.0,seller,"palo alto, california",volleyball,Male,21.305558187448842,105.77132231396347,David Mclean
+86,86,>30,166.0,seller,"san francisco, california",tennis,Female,20.89170114160758,105.75548461600667,Mike Stewart
+87,87,25-30,161.0,other,"san francisco, california",football,Female,21.145658927304275,105.75916025904722,Patricia Hatfield
+88,88,>30,171.0,other,"oakland, california",football,Male,20.998831574753726,105.85102166451148,Jeffrey Haley
+89,89,>30,164.0,seller,"san francisco, california",tennis,Female,21.105619305562502,106.00205944613228,Janet Black
+90,90,20-24,174.0,other,"san francisco, california",football,Male,21.24116436242707,105.95828703096205,Amber King
+91,91,25-30,174.0,engineer,"san rafael, california",football,Male,21.378946854503454,105.94122877582315,Christopher Morris
+92,92,25-30,167.0,doctor,"el granada, california",football,Female,21.032879380256638,105.9656358124802,Laura Kerr
+93,93,25-30,169.0,other,"san francisco, california",badminton,Male,20.923203739395667,105.99866254692064,Emily Pierce
+94,94,25-30,167.0,other,"san francisco, california",tennis,Male,21.312075887192886,105.97834021166088,Jose Smith
+95,95,25-30,178.0,other,"san francisco, california",tennis,Male,21.270469531959908,105.92319529967828,Brandy Rivera
+96,96,>30,175.0,other,"san francisco, california",tennis,Male,20.917959735567806,106.02604932577914,Mark Beck
+97,97,>30,170.0,other,"san francisco, california",football,Male,21.140157012636873,105.99139938754836,Steven Pham
+98,98,>30,166.0,accounting,"san francisco, california",badminton,Female,20.88989038930716,105.80376105494287,Ellen Jones
+99,99,>30,172.0,other,"castro valley, california",football,Male,21.172062869260042,105.85797182983609,Melissa Stein
+100,100,>30,171.0,teacher,"san francisco, california",football,Male,20.963926734293324,105.82248000897975,Luis White
+101,101,>30,168.0,other,"daly city, california",football,Male,21.347965960255213,105.79910080590851,Brianna Colon
+102,102,>30,169.0,teacher,"fairfax, california",football,Male,21.38300769544355,105.79860219043859,Carolyn Mullins
+103,103,>30,170.0,other,"san francisco, california",badminton,Male,21.10720769929189,105.99669526856626,John Daniel MD
+104,104,>30,163.0,other,"san francisco, california",badminton,Female,21.29792426641787,105.92410708969072,Diana Baker
+105,105,>30,165.0,teacher,"mountain view, california",badminton,Female,21.0098773818857,105.82473526820715,Brittany Gonzalez
+106,106,>30,164.0,accounting,"menlo park, california",badminton,Female,21.10732322165516,105.84297766220232,Richard Smith
+107,107,20-24,172.0,doctor,"burlingame, california",tennis,Male,21.267347625941767,105.94609595125108,Jason Harrington
+108,108,25-30,164.0,other,"san francisco, california",badminton,Female,21.332980680912975,105.93141259005871,Sara Knight
+109,109,25-30,166.0,other,"martinez, california",football,Male,21.194623762303017,105.97535722989385,James Schmitt
+110,110,>30,168.0,teacher,"san francisco, california",football,Male,21.086983208635868,105.95923442449735,Matthew Porter
+111,111,25-30,171.0,teacher,"oakland, california",badminton,Male,21.076243386904494,105.79644652733062,Kathryn Edwards
+112,112,20-24,174.0,seller,"oakland, california",football,Male,21.14684194192479,105.76437884267285,Dan Harper
+113,113,20-24,166.0,other,"san francisco, california",tennis,Female,21.272963776479962,105.85268270189526,George Martin
+114,114,>30,170.0,engineer,"emeryville, california",tennis,Male,20.985112681495643,105.73953484146134,Kenneth Perry
+115,115,>30,172.0,seller,"pleasant hill, california",football,Male,21.377375777497022,105.8431533971533,Johnny Martinez
+116,116,<20,168.0,seller,"hayward, california",football,Male,21.13864857770897,105.88766145206763,April Farmer
+117,117,>30,167.0,other,"alameda, california",tennis,Male,21.03585794850852,106.00951977768855,Kimberly Lam
+118,118,20-24,165.0,seller,"san francisco, california",tennis,Female,21.168901458177746,105.98580418496928,Laurie Wheeler
+119,119,25-30,166.0,student,"berkeley, california",tennis,Female,21.116598376630296,105.91526514286193,Connor Graves
+120,120,20-24,171.0,other,"san francisco, california",basketball,Male,20.987456890088666,106.00271012528613,Tamara Faulkner
+121,121,>30,175.0,other,"vallejo, california",tennis,Male,21.128759791677957,105.78550268817538,Denise Martin
+122,122,20-24,166.0,other,"san francisco, california",tennis,Male,21.381470405793305,105.9143328109432,Timothy Welch
+123,123,20-24,170.0,doctor,"san francisco, california",badminton,Male,21.181744989663763,105.90004859012927,Ricky Smith
+124,124,25-30,162.0,doctor,"san francisco, california",football,Female,21.208386457094598,105.9774644690887,Melissa Stevens
+125,125,25-30,168.0,engineer,"san francisco, california",tennis,Male,20.95613192545645,105.77974162819528,Martin Chen
+126,126,>30,173.0,engineer,"emeryville, california",football,Male,21.030051937510976,106.0272994109188,Rebecca Miller
+127,127,25-30,168.0,other,"san francisco, california",tennis,Male,21.149946576319525,105.88961723536457,Heather Gonzalez
+128,128,25-30,171.0,other,"san francisco, california",tennis,Male,21.035356400983897,106.00687822754065,Leonard Lewis
+129,129,25-30,166.0,other,"menlo park, california",football,Male,21.015266382248836,105.86379562586572,Rebecca Jensen
+130,130,>30,169.0,seller,"san francisco, california",volleyball,Male,20.897766219046,105.8908346492482,Stephen Smith
+131,131,>30,168.0,seller,"berkeley, california",tennis,Female,20.936020833293707,105.7891338292782,Nancy Wagner
+132,132,>30,168.0,other,"san francisco, california",tennis,Female,21.148871082893933,105.86176545522875,Jonathan Friedman
+133,133,>30,168.0,teacher,"san francisco, california",tennis,Female,21.288858279874198,105.99479281309519,Kenneth Davis
+134,134,20-24,168.0,student,"berkeley, california",tennis,Male,21.171214922947414,106.02063310585899,Laurie Casey
+135,135,>30,167.0,other,"san francisco, california",football,Female,21.256855573928718,105.94789437900585,Paul Rivera
+136,136,20-24,175.0,seller,"berkeley, california",volleyball,Male,21.27634979787835,106.00192612231227,Brenda Campos
+137,137,>30,173.0,other,"benicia, california",basketball,Male,21.03187374193705,105.90640753584132,Bethany Rogers
+138,138,>30,167.0,engineer,"oakland, california",badminton,Male,21.256616147091275,105.84627548072761,Ryan Sellers
+139,139,20-24,173.0,developer,"castro valley, california",football,Male,21.338496242008304,105.98022961381739,Aaron Morris
+140,140,>30,162.0,other,"san francisco, california",football,Female,21.160076440821094,105.96308642861133,Howard Williams
+141,141,>30,173.0,other,"daly city, california",tennis,Male,20.92582943194682,105.92712152109515,William Evans
+142,142,>30,173.0,other,"oakland, california",tennis,Male,21.021565891705436,105.75110376946914,Jeffrey White
+143,143,25-30,174.0,seller,"oakland, california",football,Male,21.366907838678245,105.87905260873774,Miranda Sanchez
+144,144,>30,163.0,seller,"berkeley, california",football,Female,21.22187749405851,105.89762954406697,Sean Hamilton
+145,145,20-24,167.0,other,"san francisco, california",tennis,Male,21.220493543735497,105.76910287205367,Katie Kaiser
+146,146,25-30,170.0,seller,"el cerrito, california",football,Male,20.900062981353503,105.86596452764267,Katherine Acosta
+147,147,>30,166.0,other,"vallejo, california",table_tenis,Male,20.929609620246083,105.90957558709297,Margaret Rodriguez
+148,148,>30,164.0,student,"menlo park, california",badminton,Female,20.910325911519994,105.81752829982577,Scott Williams
+149,149,>30,167.0,other,"mill valley, california",tennis,Female,21.022832430488933,105.74302407119684,Dawn Warren
+150,150,>30,163.0,teacher,"san francisco, california",badminton,Female,20.97912466051329,106.00933692282476,Christopher Thompson
+151,151,>30,168.0,other,"san francisco, california",swimming,Male,20.999835777129988,105.96091246608155,Anthony Martin
+152,152,>30,168.0,other,"oakland, california",tennis,Male,21.10918345529375,105.75234696602662,Nicole Johnson
+153,153,20-24,175.0,seller,"oakland, california",football,Male,21.33408073127462,105.77767601186132,Jennifer Maldonado
+154,154,25-30,173.0,other,"oakland, california",tennis,Male,21.160945120039877,105.75077059392618,Jordan Salas MD
+155,155,25-30,161.0,other,"san mateo, california",football,Female,21.349051208355966,105.80537286205403,Dean Robertson
+156,156,>30,162.0,accounting,"richmond, california",football,Female,21.068511495173865,105.73516972278465,Jasmin Brown
+157,157,25-30,168.0,other,"san francisco, california",badminton,Female,20.938937859827934,105.82060322932472,Dawn Holmes
+158,158,>30,169.0,teacher,"redwood city, california",tennis,Female,21.269470314545067,105.75677611829101,David Romero
+159,159,20-24,163.0,seller,"san rafael, california",badminton,Female,21.301938562734716,105.7995532396363,Amy Bell
+160,160,>30,162.0,seller,"oakland, california",tennis,Female,21.252649625797407,105.76508212669943,Richard Middleton
+161,161,>30,166.0,doctor,"el cerrito, california",tennis,Female,20.911313622105236,105.78740790971506,Colin Clay
+162,162,25-30,166.0,other,"san francisco, california",football,Male,21.29673666979868,105.87392321535572,Paul Alexander
+163,163,>30,166.0,doctor,"san francisco, california",football,Female,21.31870166357116,105.84405895897213,Dawn Collins
+164,164,20-24,172.0,student,"berkeley, california",football,Male,21.21072177657485,105.90458506565895,Candace Wong
+165,165,>30,174.0,other,"san francisco, california",football,Male,21.30354617083628,105.81331634277441,Jennifer Scott
+166,166,>30,172.0,seller,"san francisco, california",football,Male,21.087157648513667,105.8562529824343,Kenneth Garner
+167,167,25-30,163.0,other,"berkeley, california",tennis,Female,21.241987112344543,106.01292812420563,April Taylor
+168,168,25-30,168.0,engineer,"san francisco, california",badminton,Female,21.154654905407345,105.96933490277124,Matthew Fuller
+169,169,>30,166.0,seller,"oakland, california",swimming,Female,21.32702839392056,105.89910708513241,Stephanie Robertson
+170,170,20-24,166.0,student,"san francisco, california",football,Female,21.250000406220806,105.74923415182245,Vanessa Brown
+171,171,>30,170.0,other,"san rafael, california",tennis,Male,21.28144211163322,105.92131888720851,David Sanchez
+172,172,>30,173.0,accounting,"menlo park, california",badminton,Male,20.995002157554275,105.91194271217715,Ryan Hill
+173,173,>30,163.0,other,"san francisco, california",tennis,Female,21.15588910328307,105.89316917945757,Desiree Grant
+174,174,20-24,169.0,other,"el sobrante, california",tennis,Male,21.18117835665204,105.88205058729208,Elizabeth Russell
+175,175,>30,166.0,doctor,"san francisco, california",football,Male,21.050992730473283,105.79589315400803,Michelle Tanner MD
+176,176,25-30,168.0,other,"walnut creek, california",tennis,Male,21.21761831010958,105.84456872425702,Jennifer Patterson
+177,177,25-30,172.0,other,"san francisco, california",tennis,Male,21.272200995938007,105.7603045756947,Cheryl Lewis
+178,178,>30,168.0,seller,"walnut creek, california",basketball,Female,21.144130261880626,105.83584566936227,James Greene
+179,179,25-30,171.0,other,"el cerrito, california",table_tenis,Male,21.32571144035644,105.8133929267426,Michelle Smith
+180,180,>30,169.0,other,"oakland, california",swimming,Male,21.141822884190166,105.96749491290555,Rebecca Hart
+181,181,20-24,166.0,other,"mill valley, california",tennis,Female,20.934027125437133,105.78497813282442,Jordan Wilson
+182,182,25-30,168.0,other,"san francisco, california",tennis,Female,21.08256018749167,105.73754254502863,Joanna Lowe
+183,183,>30,170.0,other,"san mateo, california",football,Male,21.21057187306589,105.97370151947733,Roberto Knapp
+184,184,25-30,174.0,teacher,"hayward, california",football,Male,21.080588662555378,105.80659144100031,Mrs. Cassidy Morris
+185,185,>30,163.0,teacher,"alameda, california",football,Female,21.267002985487505,105.90538554249693,Jeremy Walls
+186,186,>30,166.0,other,"san francisco, california",football,Female,21.204248325412227,106.0140419117757,Pamela Olson
+187,187,>30,160.0,teacher,"san francisco, california",football,Female,20.897802294974014,106.03086576813045,Kenneth Hoffman
+188,188,25-30,167.0,other,"san francisco, california",tennis,Female,21.291490496547908,105.8335795940667,Matthew Bailey
+189,189,>30,179.0,other,"san francisco, california",tennis,Male,21.299986405975808,106.00228568578673,Edward Herrera
+190,190,25-30,161.0,engineer,"berkeley, california",badminton,Female,21.125657389840338,105.92780850133512,Amanda Lang
+191,191,>30,169.0,other,"belmont, california",badminton,Male,20.959130573479086,105.93367560575548,Michael Nunez
+192,192,25-30,169.0,other,"oakland, california",tennis,Female,21.2246135797953,105.87599109905862,Mr. Kevin Barajas
+193,193,>30,167.0,other,"oakland, california",tennis,Male,21.32548050423593,105.76531908876801,James Moore
+194,194,>30,171.0,teacher,"stanford, california",tennis,Male,21.18258267104955,105.83811093119951,Rhonda Rivera
+195,195,>30,163.0,teacher,"san francisco, california",table_tenis,Female,21.192754175964335,105.74199940407246,Dr. Taylor Martinez
+196,196,25-30,167.0,other,"san francisco, california",tennis,Male,21.170219416987685,105.86306793768357,Nathaniel Newman
+197,197,>30,163.0,other,"san francisco, california",football,Female,20.93763806335717,105.97317610856973,Jennifer Henry MD
+198,198,25-30,164.0,doctor,"san francisco, california",badminton,Female,21.374039824475922,105.94948747652133,Heather Lewis
+199,199,<20,162.0,seller,"daly city, california",tennis,Female,21.28841927073437,106.01585479727655,Lacey Howell
+200,200,25-30,165.0,doctor,"san pablo, california",football,Female,21.228464326535303,105.92875433132407,Kimberly Conrad
+201,201,25-30,167.0,other,"san francisco, california",badminton,Male,21.0041550429656,106.02423507305427,Kevin Keller
+202,202,25-30,166.0,teacher,"menlo park, california",tennis,Female,21.29664849949799,105.88054743142008,Cindy Dunn
+203,203,>30,163.0,student,"oakland, california",tennis,Female,21.305518061856947,105.84565258571993,Elizabeth Hamilton
+204,204,25-30,163.0,seller,"san francisco, california",table_tenis,Female,21.351287223352212,106.02505009578775,Margaret Rogers
+205,205,>30,169.0,other,"oakland, california",tennis,Female,21.161790637044078,105.99293036517928,Frederick Arroyo
+206,206,>30,171.0,seller,"san francisco, california",basketball,Male,20.97173647624991,105.85932619160525,Andrew Burke
+207,207,20-24,169.0,other,"san mateo, california",badminton,Female,20.902685963604764,105.80378605227949,Anthony Hawkins
+208,208,>30,167.0,student,"san francisco, california",volleyball,Female,20.919963126447495,105.7932637182499,Wayne Robinson
+209,209,>30,166.0,other,"menlo park, california",tennis,Female,21.01682403577342,105.83712000155643,Mary Perez
+210,210,>30,162.0,doctor,"menlo park, california",tennis,Female,21.124370619503285,105.7645748826813,Victoria Cisneros
+211,211,>30,172.0,engineer,"san francisco, california",tennis,Male,21.35021163578051,106.01243200032089,Rachel Robbins
+212,212,>30,169.0,other,"san francisco, california",football,Male,21.193736799991186,106.0033628676045,Ronald Lucero
+213,213,>30,169.0,other,"oakland, california",football,Male,21.354771109694386,105.80291861708632,Richard Townsend
+214,214,20-24,159.0,other,"novato, california",tennis,Female,21.10257033482749,105.86053799826581,Laurie Dominguez
+215,215,>30,174.0,engineer,"pacifica, california",volleyball,Male,21.00463698973286,105.8147644042592,Melissa Dickerson
+216,216,>30,170.0,other,"oakland, california",tennis,Male,21.156956476153816,105.99107877464823,Adrienne Berger
+217,217,>30,165.0,other,"san francisco, california",tennis,Female,21.114944604283686,105.79841697052956,Seth Jackson
+218,218,25-30,170.0,other,"berkeley, california",table_tenis,Male,21.24694455998064,105.76140021643758,Kimberly Bush
+219,219,25-30,166.0,other,"san francisco, california",tennis,Female,21.000336341496094,105.96141929020347,Danielle Nichols
+220,220,20-24,170.0,seller,"vallejo, california",football,Male,21.20942798053966,105.8840722122802,Bobby Bentley
+221,221,>30,164.0,doctor,"redwood city, california",tennis,Female,21.09478530718323,105.73625792589625,Lisa Fox
+222,222,>30,169.0,other,"san francisco, california",tennis,Male,21.323069849506172,105.89835595004931,Courtney Smith
+223,223,>30,163.0,doctor,"lafayette, california",tennis,Female,20.929289042038274,105.92541910486774,Lisa Kramer
+224,224,20-24,162.0,other,"oakland, california",tennis,Female,21.006265559342253,105.92086587734414,Jacqueline Frye
+225,225,>30,168.0,other,"half moon bay, california",swimming,Female,21.372860106224167,105.94375536966525,Tonya Paul
+226,226,25-30,171.0,seller,"san francisco, california",football,Male,21.24766129823439,105.87592787633615,Anna Rosario
+227,227,>30,171.0,teacher,"san francisco, california",tennis,Female,21.221461683650023,105.74780138605466,Mark Fields
+228,228,>30,169.0,other,"san francisco, california",tennis,Male,21.153507962229554,106.01175931360926,Christopher Shaw
+229,229,>30,170.0,teacher,"berkeley, california",football,Female,21.265673677506527,105.80619871649542,Kelly Oneill
+230,230,25-30,172.0,seller,"san francisco, california",badminton,Male,21.22465736657214,105.75610791347422,Angela Romero
+231,231,>30,166.0,other,"fremont, california",badminton,Female,21.13154240102683,105.92502057656883,Michael Marsh
+232,232,>30,165.0,engineer,"orinda, california",football,Female,21.15390676438131,106.0291960314414,Cynthia Howard
+233,233,>30,165.0,other,"oakland, california",tennis,Female,20.898971098135497,105.82571422374637,Jessica Rogers
+234,234,>30,168.0,other,"alameda, california",tennis,Male,21.099278639616855,105.86665179353754,Catherine Mcknight
+235,235,>30,168.0,other,"san mateo, california",football,Male,21.321195418270296,105.79703045059918,Kelly Williams
+236,236,>30,162.0,teacher,"orinda, california",tennis,Female,21.166925494055295,105.97839437480675,Kelly Adams
+237,237,25-30,172.0,seller,"hayward, california",football,Male,20.92741857538148,105.76006349408485,Michele Owens
+238,238,20-24,163.0,other,"san francisco, california",tennis,Female,21.134815895992173,105.77534017909075,Megan Boyd
+239,239,<20,173.0,student,"san mateo, california",swimming,Male,21.152248825286954,105.95034207104499,Melissa Humphrey
+240,240,>30,167.0,other,"san francisco, california",badminton,Male,21.211788784566593,106.0026976970672,Chloe George
+241,241,>30,165.0,seller,"san mateo, california",football,Female,21.378836163728238,105.8995563630561,Connie Thompson
+242,242,>30,169.0,doctor,"san mateo, california",tennis,Male,20.916134276659953,105.78417116247658,Timothy Krueger
+243,243,25-30,180.0,other,"berkeley, california",table_tenis,Male,21.33429084763667,105.89186569484404,Gary Herrera
+244,244,>30,161.0,other,"san francisco, california",tennis,Female,21.25595144654528,105.76761114645379,Matthew Brown DVM
+245,245,>30,163.0,other,"oakland, california",table_tenis,Female,21.247614644314368,105.88445138779542,Tracy Jimenez
+246,246,25-30,173.0,student,"oakland, california",tennis,Male,20.9480640540325,105.81399285504301,Zachary Williams
+247,247,>30,163.0,doctor,"san francisco, california",basketball,Female,21.280761172466004,105.85022328478638,Ashley Trujillo
+248,248,>30,171.0,accounting,"novato, california",football,Male,21.253766347147415,105.98686838651523,Catherine Hunt
+249,249,>30,162.0,other,"el cerrito, california",tennis,Female,21.20454458379595,105.86161310030015,Karen Cooper
+250,250,20-24,168.0,seller,"san anselmo, california",tennis,Female,20.99800769704128,105.96805736230175,Christopher Benjamin
+251,251,>30,172.0,other,"san francisco, california",football,Male,21.104314678187237,105.77232580392823,Jacqueline Bruce
+252,252,>30,165.0,doctor,"berkeley, california",tennis,Female,21.195132376787846,105.85299060107721,Megan Cummings
+253,253,25-30,167.0,seller,"san francisco, california",badminton,Female,21.19769463225758,105.91156063681714,Stephanie Harvey
+254,254,>30,167.0,other,"castro valley, california",tennis,Male,21.084791806871422,105.99050773584005,Robin Jones
+255,255,>30,168.0,other,"oakland, california",tennis,Male,21.352985593277783,105.74551539685358,Thomas Lopez
+256,256,20-24,167.0,seller,"oakland, california",football,Male,20.88350875203856,105.85210668817048,Drew Patrick
+257,257,>30,167.0,other,"san francisco, california",football,Female,21.04763016285417,105.82281823000704,Jessica Thomas
+258,258,>30,162.0,other,"san pablo, california",tennis,Female,21.058721285824497,105.77989428851083,Kerri Herrera
+259,259,>30,163.0,doctor,"vallejo, california",football,Female,21.050325368485957,106.02155394323657,Michelle Miller
+260,260,>30,164.0,teacher,"berkeley, california",tennis,Female,21.08843921888317,105.87395090380821,Kaitlin Barrett
+261,261,>30,172.0,other,"mountain view, california",football,Male,21.306672867976747,105.95325585391062,Patricia Lee
+262,262,>30,162.0,teacher,"san mateo, california",basketball,Female,21.23474556752169,105.94395581140284,Heidi Reese
+263,263,>30,166.0,other,"san francisco, california",tennis,Female,21.18854170290577,105.90589790877556,Jonathan Camacho
+264,264,>30,167.0,other,"burlingame, california",swimming,Male,21.281475286883087,106.00539502238563,Jonathan Newman
+265,265,25-30,162.0,other,"oakland, california",tennis,Female,21.20361907564823,105.74526984502559,Mark Jackson
+266,266,>30,169.0,other,"san mateo, california",tennis,Female,21.297571569984967,105.88765272414932,Daniel Hernandez
+267,267,>30,169.0,engineer,"berkeley, california",tennis,Male,21.187213303008093,105.83968799498615,Christian Bryant
+268,268,>30,164.0,seller,"san francisco, california",football,Female,20.92313724365169,105.78547705748674,Ryan Young
+269,269,20-24,162.0,seller,"san francisco, california",badminton,Female,21.31404219249305,106.01909795990773,Sean Collins
+270,270,25-30,170.0,engineer,"san francisco, california",badminton,Male,21.326650836361708,105.98524285217411,Matthew Morrison
+271,271,25-30,164.0,other,"oakland, california",badminton,Female,20.93843367860449,105.75504928760948,Kimberly Gilbert
+272,272,>30,163.0,other,"corte madera, california",tennis,Female,20.93071813770896,106.01439321876737,Michelle Gardner
+273,273,25-30,167.0,other,"san francisco, california",football,Female,21.239326347196716,105.91195234103118,Angela Perry
+274,274,25-30,168.0,doctor,"san francisco, california",football,Male,21.35172567139843,105.8273573729255,Paul Vega
+275,275,>30,167.0,engineer,"berkeley, california",tennis,Male,20.9844671131338,105.91892737530999,Carol Mendoza
+276,276,25-30,165.0,seller,"south san francisco, california",football,Female,21.041796525573176,105.74620612560159,Laurie Lopez
+277,277,>30,167.0,doctor,"san francisco, california",tennis,Female,21.042196458827775,105.87032308504133,Anthony Frost
+278,278,>30,164.0,other,"san rafael, california",basketball,Female,21.208487224399963,105.83514810263097,James Lozano
+279,279,25-30,171.0,seller,"mill valley, california",football,Female,21.12653626378715,105.98051238790771,Abigail Young
+280,280,25-30,180.0,other,"hayward, california",tennis,Male,21.116097459575464,106.03297649138698,Sean Davis
+281,281,>30,160.0,other,"menlo park, california",tennis,Female,21.145809691163194,105.82414435614072,David Bell
+282,282,>30,171.0,other,"oakland, california",tennis,Male,21.375930360243586,106.00087449552463,Denise Wright
+283,283,>30,169.0,other,"san francisco, california",swimming,Male,21.327558173320643,105.89197553189312,Christine Jones
+284,284,20-24,167.0,seller,"oakland, california",badminton,Female,21.378581567898994,105.78825771881422,Nicholas Miller
+285,285,>30,164.0,seller,"albany, california",basketball,Female,21.155126853419432,105.80869065174188,Kenneth Lewis
+286,286,25-30,162.0,seller,"san francisco, california",tennis,Female,21.003717865568145,105.93214276840916,Jordan Rodriguez
+287,287,>30,163.0,other,"san rafael, california",tennis,Female,21.16151761133328,105.81957105074501,Joseph Gomez
+288,288,20-24,161.0,seller,"san francisco, california",tennis,Female,21.175079866946124,105.7968736276518,Jonathan Patterson
+289,289,<20,169.0,seller,"pleasant hill, california",football,Male,20.894124160025537,105.84159646955408,Amy Foster
+290,290,25-30,176.0,other,"berkeley, california",tennis,Male,20.91995454962663,105.98169635765112,Denise Kemp
+291,291,>30,170.0,other,"san francisco, california",football,Male,21.199646608010433,105.73963965394817,Katrina Brady
+292,292,25-30,172.0,engineer,"san francisco, california",football,Male,21.233895392800093,105.90739874981664,Daniel Jimenez
+293,293,>30,163.0,other,"berkeley, california",tennis,Female,21.262229401913608,105.84708649169546,Tracy Sullivan
+294,294,20-24,169.0,doctor,"oakland, california",swimming,Male,20.98696644257888,105.85278830116202,Joseph Perry
+295,295,>30,172.0,seller,"walnut creek, california",football,Male,21.375508204802482,105.8082739724326,Brian Reyes
+296,296,>30,170.0,accounting,"san leandro, california",football,Male,21.342931539663702,105.89116330978442,Megan Moore
+297,297,25-30,173.0,doctor,"san francisco, california",football,Male,20.884177671600774,105.81853641704411,William Wright
+298,298,>30,162.0,other,"san francisco, california",tennis,Female,21.24092929620502,105.78128954242175,Logan Thompson
+299,299,>30,162.0,other,"oakland, california",tennis,Female,21.26845109987109,105.80945425860277,Jason Turner
+300,300,>30,172.0,other,"oakland, california",tennis,Male,20.91193382778551,105.81471046449134,Sarah Taylor
+301,301,>30,166.0,teacher,"castro valley, california",badminton,Female,20.968153688626455,105.99890041447846,Laura Hale
+302,302,>30,165.0,other,"san francisco, california",tennis,Female,21.284266003418637,106.01631908076425,Lindsey Cruz
+303,303,25-30,170.0,other,"san francisco, california",tennis,Male,21.054122649441585,105.88273126589245,Jeanne Valencia
+304,304,>30,171.0,other,"san francisco, california",badminton,Male,21.27393902147133,105.9825928413446,Justin Palmer
+305,305,>30,171.0,other,"berkeley, california",table_tenis,Female,21.120294276391352,105.81160577201766,Brian Lee
+306,306,>30,164.0,teacher,"vallejo, california",football,Female,20.894015498006507,105.86133186700847,Jorge Espinoza
+307,307,>30,163.0,other,"san francisco, california",tennis,Female,21.19398345966034,105.8361472770411,Alyssa Hall
+308,308,>30,175.0,other,"san francisco, california",tennis,Male,21.312753014658515,105.86611792502077,Stephen Moore
+309,309,25-30,170.0,teacher,"el cerrito, california",tennis,Male,21.048900248768188,105.99674025340073,Frances Williams
+310,310,>30,173.0,other,"redwood city, california",swimming,Male,20.903301085152542,105.91500367719183,Chelsea Campbell
+311,311,>30,168.0,other,"san francisco, california",football,Male,21.288374129254024,105.94118987958679,Becky Weiss
+312,312,25-30,169.0,other,"berkeley, california",basketball,Male,20.91949734235596,105.73784245628688,Joanna Roberson
+313,313,>30,164.0,other,"burlingame, california",tennis,Female,21.16953736773359,105.8123086543193,Sarah Mcintyre
+314,314,>30,168.0,other,"san francisco, california",football,Male,21.042758516421667,105.84404371229967,Ricardo King
+315,315,>30,168.0,engineer,"mountain view, california",tennis,Female,21.204670005259747,105.89049456165706,Phyllis Munoz
+316,316,>30,174.0,other,"berkeley, california",swimming,Male,21.146008195248097,105.87248969922335,Brandon Olson
+317,317,25-30,161.0,seller,"redwood city, california",tennis,Female,21.331592176749574,105.95497707484128,Cory Ross
+318,318,>30,166.0,other,"novato, california",basketball,Female,20.90127949895324,105.90711242642543,Kelly Deleon
+319,319,>30,162.0,doctor,"san francisco, california",tennis,Female,21.35176759674083,105.97898152340386,Vicki Bentley
+320,320,>30,167.0,teacher,"berkeley, california",basketball,Female,20.933817740873824,105.85151657883026,Jonathan Gomez
+321,321,>30,172.0,other,"oakland, california",tennis,Male,21.096889201185938,105.98023750413566,Scott Smith
+322,322,<20,167.0,student,"san francisco, california",tennis,Female,21.218149175526783,105.8091968821025,Michelle James
+323,323,>30,164.0,other,"san carlos, california",tennis,Female,21.144252409019938,105.88065891234083,Joseph Roy
+324,324,>30,168.0,doctor,"san francisco, california",badminton,Female,21.35032124771526,105.89583073870973,Michelle Patrick
+325,325,>30,163.0,doctor,"san francisco, california",football,Female,21.131261907991874,105.79838086857673,Laura Rivers
+326,326,20-24,169.0,engineer,"san francisco, california",badminton,Male,21.168027996023717,105.84762897980718,Shane Smith
+327,327,>30,168.0,seller,"san francisco, california",tennis,Female,20.910848145806657,105.77156961144696,Samuel Maldonado
+328,328,>30,165.0,other,"mill valley, california",tennis,Female,21.17657146052996,105.94650375258027,Jonathan Walker
+329,329,>30,166.0,other,"san francisco, california",football,Male,21.378908019904777,105.92982530318248,Michael Hawkins
+330,330,>30,162.0,other,"vallejo, california",football,Female,20.908432409536545,105.88787283435823,Jeffrey Rubio
+331,331,>30,172.0,other,"san francisco, california",tennis,Male,21.06972638990216,105.79257295723089,Richard Rasmussen
+332,332,20-24,170.0,seller,"san francisco, california",football,Male,20.988360414033362,105.92555700082637,Jeffrey Wiggins
+333,333,<20,169.0,student,"san mateo, california",tennis,Male,21.133156598518745,105.97401771047076,Patrick Webster
+334,334,>30,164.0,seller,"san francisco, california",tennis,Female,20.967891304108285,105.9209400264872,Patricia Hart
+335,335,>30,163.0,other,"walnut creek, california",tennis,Female,21.209480265131216,105.91562365194402,Jennifer Conner
+336,336,20-24,160.0,doctor,"san lorenzo, california",volleyball,Female,21.190485267168935,105.78364035490512,Susan Rogers
+337,337,>30,165.0,other,"san francisco, california",tennis,Female,21.12032464404242,105.83155296487418,Danielle Jordan
+338,338,>30,167.0,accounting,"san francisco, california",badminton,Female,21.1877113537348,105.8364533019144,Michael Miller
+339,339,>30,172.0,doctor,"san francisco, california",tennis,Male,21.296143660200276,105.9011383862025,Donna Wilson
+340,340,25-30,171.0,other,"san francisco, california",tennis,Male,20.986999374080742,105.85147790479371,Michael Hughes
+341,341,>30,173.0,engineer,"san carlos, california",badminton,Male,21.011428733011957,105.94476412466693,Carl Johnson
+342,342,>30,168.0,other,"oakland, california",football,Male,20.992092992028077,105.89805047665206,Aaron Sanders
+343,343,25-30,162.0,other,"san francisco, california",tennis,Female,21.115072096555583,105.88892920280388,Emily Bean
+344,344,20-24,169.0,other,"novato, california",tennis,Male,21.2934267015371,105.7488013893085,Ashley Dixon
+345,345,>30,171.0,other,"san francisco, california",tennis,Male,21.284395475194664,105.88524305014604,Timothy Brown
+346,346,>30,166.0,seller,"menlo park, california",football,Female,21.05202546915962,105.91152328721914,Edward Sanchez
+347,347,<20,172.0,student,"belmont, california",tennis,Male,20.943422625020993,106.01289189558652,Alexander Perez
+348,348,>30,168.0,other,"richmond, california",football,Male,20.91762871662638,105.9812802536414,Stephen Baker
+349,349,>30,173.0,doctor,"pacifica, california",badminton,Male,21.259311934679026,105.96263240078781,Courtney Green
+350,350,>30,167.0,other,"san francisco, california",tennis,Male,21.189385162158285,105.77520009802927,Julian Wilson
+351,351,25-30,175.0,other,"emeryville, california",badminton,Male,20.967084819659572,106.0205691657874,Zachary Lewis
+352,352,>30,174.0,teacher,"berkeley, california",tennis,Male,20.977983978646865,105.80061919861974,Nathan Santos
+353,353,>30,174.0,student,"redwood city, california",tennis,Male,20.96429419172321,105.79140389486639,Christopher Lucas
+354,354,>30,168.0,other,"hayward, california",tennis,Female,21.321151589331308,105.76635425068818,Terri Anderson
+355,355,25-30,164.0,seller,"san francisco, california",football,Female,21.339127619183316,105.87830331866748,Cassandra Turner
+356,356,25-30,175.0,engineer,"san francisco, california",badminton,Male,21.097575696540513,105.84621996380615,Laurie Wright
+357,357,>30,163.0,other,"foster city, california",swimming,Female,21.137560459795477,105.82485906564955,Jeffery Nguyen
+358,358,>30,165.0,other,"san francisco, california",tennis,Female,21.373265527428444,105.84291935874928,Michael Contreras
+359,359,>30,172.0,other,"redwood city, california",football,Male,21.362616367684733,105.92482553037273,Linda Phillips
+360,360,>30,168.0,seller,"oakland, california",tennis,Female,20.979260543509724,105.87283674157298,Annette Mccarthy
+361,361,>30,169.0,other,"san rafael, california",tennis,Female,20.922655123477593,105.97158249932126,Barbara Wilson
+362,362,25-30,173.0,other,"san francisco, california",tennis,Male,21.126955903483843,105.79872974770193,Jeremy Welch
+363,363,20-24,170.0,other,"san francisco, california",football,Male,21.149845464406294,105.97911975063147,Eric Phillips
+364,364,>30,169.0,seller,"alameda, california",tennis,Male,20.902713674080225,105.85114968996594,Brenda Mccoy
+365,365,>30,173.0,other,"san francisco, california",football,Male,21.34382855962722,105.97181612037356,Terry Ford
+366,366,>30,169.0,teacher,"san mateo, california",football,Male,21.134867373576714,105.78762471025475,Keith Wells
+367,367,>30,171.0,engineer,"menlo park, california",tennis,Male,20.962035940784585,105.99682881440822,Matthew Skinner
+368,368,25-30,173.0,other,"san francisco, california",football,Male,21.103426038597824,105.78788120881583,Colleen Rodgers
+369,369,25-30,163.0,engineer,"hercules, california",badminton,Female,21.274154533483575,106.0157351459126,Seth Bernard
+370,370,25-30,167.0,other,"san francisco, california",football,Male,20.995364578463956,106.02827310900045,Jorge Blanchard
+371,371,20-24,164.0,teacher,"san francisco, california",tennis,Female,21.227109290258063,105.83074006091547,Paul Yates
+372,372,>30,171.0,other,"oakland, california",tennis,Male,21.179450820936815,105.80125079306175,Diana Patterson
+373,373,25-30,172.0,seller,"san francisco, california",football,Male,21.05889847412969,105.86004588353913,Richard Hicks
+374,374,>30,174.0,other,"mountain view, california",football,Male,21.001185601566938,105.91250156245808,Jeffrey Mendez
+375,375,>30,172.0,other,"alameda, california",football,Male,20.954664331180073,105.77641331440942,Nathan Cooper
+376,376,20-24,171.0,other,"san francisco, california",tennis,Male,21.160915361110927,105.91915548500283,Jessica Taylor
+377,377,>30,164.0,other,"san francisco, california",tennis,Female,20.89742096028718,105.9562522002456,Jared Rodriguez
+378,378,>30,166.0,accounting,"san francisco, california",tennis,Female,20.98554777590714,105.73562391167188,Katie Kim
+379,379,>30,174.0,teacher,"berkeley, california",volleyball,Male,21.08884633297702,105.9573016891906,Mallory Myers
+380,380,>30,168.0,seller,"mountain view, california",football,Male,21.14692244460747,106.02556156882956,Pamela Jackson
+381,381,25-30,170.0,student,"san francisco, california",football,Female,21.141898808823022,105.7768441441974,Deborah Beasley
+382,382,>30,168.0,other,"oakland, california",basketball,Male,21.075228594053765,105.78127302210028,Mallory Williams
+383,383,>30,176.0,other,"san francisco, california",tennis,Male,20.89895037380595,106.00171255846293,Charles Jackson
+384,384,>30,172.0,student,"san francisco, california",tennis,Male,20.926291983710417,105.86559770872574,Samantha Landry
+385,385,>30,170.0,accounting,"san francisco, california",football,Male,21.02597534071125,105.99658135368117,Sarah James
+386,386,>30,167.0,other,"oakland, california",tennis,Male,21.1386149817655,105.98858347206584,Joel Lawrence
+387,387,>30,164.0,other,"san francisco, california",tennis,Male,20.91332785438684,105.84094197904001,James Burns
+388,388,>30,168.0,seller,"daly city, california",football,Male,21.03200976507435,105.8210965446413,Brandy Nelson
+389,389,20-24,166.0,student,"san francisco, california",football,Female,21.217979668975758,105.96598602474121,Jeffrey Henry
+390,390,>30,169.0,other,"palo alto, california",badminton,Male,21.220202593960533,105.81907337775039,Yvette Morales
+391,391,>30,172.0,engineer,"novato, california",football,Male,20.925226754716228,105.94822314071146,Colton Salinas
+392,392,>30,161.0,accounting,"pacifica, california",swimming,Female,21.36801110143871,105.92408109850149,Jacqueline Terry
+393,393,>30,174.0,engineer,"san francisco, california",tennis,Male,21.273649958888956,105.81562953610941,Bradley Davis
+394,394,>30,164.0,other,"oakland, california",badminton,Female,21.01916819584111,105.74380587946473,John Thompson
+395,395,>30,166.0,doctor,"berkeley, california",basketball,Female,20.890742829636807,105.86264066668942,James Mitchell
+396,396,>30,173.0,other,"san francisco, california",tennis,Male,21.121763266888163,105.99715725312619,Lawrence Mcclain
+397,397,>30,176.0,doctor,"berkeley, california",tennis,Male,21.339331770457587,105.76585916663089,Amy Hamilton
+398,398,>30,171.0,other,"san francisco, california",table_tenis,Male,21.174194237045782,105.95776623167886,John Ramirez
+399,399,>30,169.0,seller,"san francisco, california",football,Male,21.235597107534506,106.01892072001878,Tina Watson
+400,400,25-30,171.0,other,"orinda, california",football,Male,21.353644751658592,105.87789662668423,Dawn Wiley
+401,401,25-30,171.0,teacher,"san francisco, california",badminton,Male,21.270221412977826,105.89530585567014,Donald Simmons
+402,402,20-24,191.0,other,"san francisco, california",tennis,Female,21.296702309626195,105.83284919974085,Amy Hogan
+403,403,>30,174.0,teacher,"menlo park, california",tennis,Male,20.97249781314346,105.9019637763234,Glenn Estrada
+404,404,>30,162.0,other,"walnut creek, california",tennis,Female,21.175847497343604,105.84765491292585,Nichole Peterson
+405,405,>30,167.0,other,"berkeley, california",basketball,Female,21.169775373855217,105.91503239884328,Hunter Shaw
+406,406,20-24,162.0,other,"oakland, california",badminton,Female,21.02353170938127,105.90151929013673,Michael Rangel
+407,407,25-30,171.0,other,"san francisco, california",football,Male,21.29291557016821,105.7781123821791,Jill Sanchez
+408,408,>30,170.0,other,"oakland, california",football,Male,21.22625698719259,105.92039529575453,James Rose
+409,409,25-30,172.0,engineer,"santa cruz, california",badminton,Male,21.105015680149094,106.03086079731328,Brian Brown
+410,410,>30,172.0,engineer,"palo alto, california",table_tenis,Male,21.086501600612483,105.91525457521132,Jacqueline Sanchez
+411,411,>30,164.0,other,"vallejo, california",table_tenis,Female,21.057491450742667,105.82667659941035,William Logan
+412,412,>30,172.0,other,"redwood city, california",tennis,Male,21.283319943110893,105.99675343549936,Hannah Clark
+413,413,20-24,168.0,other,"palo alto, california",football,Male,21.204201160914362,106.00707611831865,Kari Yoder
+414,414,>30,168.0,other,"san rafael, california",tennis,Female,21.134275262722653,106.01984380323428,Carl Davis
+415,415,>30,171.0,engineer,"hayward, california",tennis,Male,21.247134448656883,105.99092862901361,Walter Gill
+416,416,>30,166.0,seller,"oakland, california",football,Male,21.157798091085386,105.82694060821862,Dawn Smith
+417,417,>30,167.0,other,"alameda, california",tennis,Male,21.33501471889025,105.83145692938771,Tina Smith
+418,418,>30,168.0,seller,"menlo park, california",table_tenis,Female,21.182944820451752,105.88188851141209,Craig Leblanc
+419,419,25-30,161.0,teacher,"san francisco, california",tennis,Female,21.193313593325385,105.78384037704905,Alexa Gibson
+420,420,>30,173.0,other,"san francisco, california",tennis,Female,21.361699391228235,105.84120192454795,Nicholas Salinas
+421,421,>30,171.0,other,"san francisco, california",tennis,Male,20.982168363180218,105.87250411258108,Eric Pugh
+422,422,>30,171.0,other,"san francisco, california",tennis,Male,21.053930545221107,105.88927026155335,Jose Tucker
+423,423,>30,164.0,doctor,"oakland, california",swimming,Female,21.043942428548323,105.8298267829778,Phillip Kim
+424,424,25-30,172.0,other,"san francisco, california",football,Male,21.204757069223195,105.9883082954982,Caleb Mendez
+425,425,>30,167.0,engineer,"oakland, california",basketball,Female,21.08356972051723,105.74136277027442,Kyle Chambers
+426,426,>30,165.0,seller,"san francisco, california",football,Female,21.110957287781645,105.99855071359109,Mary Cabrera
+427,427,>30,174.0,seller,"oakland, california",football,Male,21.05834546149017,105.99596840931862,Heather Obrien
+428,428,25-30,168.0,engineer,"san francisco, california",football,Male,20.97454911006539,105.7543776147128,Kristin Watson
+429,429,20-24,161.0,seller,"berkeley, california",football,Female,21.08062802882238,105.94319490668347,Ronald Juarez
+430,430,>30,171.0,other,"san francisco, california",tennis,Male,21.257971943272732,105.73522201765466,Charlene Obrien
+431,431,25-30,167.0,engineer,"san francisco, california",table_tenis,Male,20.946839114773898,105.89112955925953,Mrs. Sarah Smith
+432,432,>30,165.0,other,"san francisco, california",tennis,Male,20.999838276169196,106.01108411222341,Samuel Pruitt
+433,433,25-30,179.0,student,"oakland, california",football,Male,20.96950340961535,105.99233105990257,James James
+434,434,>30,161.0,other,"palo alto, california",football,Female,21.272026038263146,105.76603107353984,Isaac Moore
+435,435,25-30,166.0,other,"san francisco, california",badminton,Female,21.215484274389098,105.88546736959907,Amy Kelly
+436,436,>30,176.0,other,"san mateo, california",tennis,Male,21.197117936877735,105.99042512297179,Jacob Alexander
+437,437,20-24,169.0,engineer,"alameda, california",volleyball,Male,21.053557632000757,105.82084684166348,Daniel Thompson
+438,438,25-30,170.0,other,"san francisco, california",table_tenis,Male,21.219392253344264,105.75351754916372,Laura Taylor
+439,439,>30,165.0,doctor,"oakland, california",tennis,Female,20.913815139167305,105.81793458143123,Stacey Hodges
+440,440,20-24,172.0,other,"san francisco, california",football,Male,21.10700588103746,105.8642170583826,Justin Smith
+441,441,20-24,171.0,other,"oakland, california",football,Male,21.326983436973894,105.95191813200375,Tyler Jones
+442,442,>30,171.0,other,"san francisco, california",tennis,Male,21.238945113628116,105.99859425151679,James Williams
+443,443,>30,162.0,other,"san francisco, california",tennis,Female,21.002308556805573,105.90591176045446,Benjamin Smith
+444,444,>30,170.0,other,"san francisco, california",football,Male,20.987695381722133,105.90682866667929,Zachary Goodwin
+445,445,>30,172.0,seller,"oakland, california",tennis,Male,21.044130177367933,105.92406610953927,Amy Dunlap
+446,446,25-30,170.0,teacher,"san francisco, california",football,Female,21.013446013946062,105.89884554203346,Candice Kelly
+447,447,>30,169.0,other,"san francisco, california",table_tenis,Male,21.36779298029739,106.00566732821623,Frederick Dawson
+448,448,25-30,171.0,other,"berkeley, california",tennis,Male,21.022995717895114,105.94360371518454,Victor Winters
+449,449,>30,170.0,other,"walnut creek, california",tennis,Male,20.906192346458713,105.82290984691103,Carl Bennett
+450,450,>30,165.0,teacher,"san francisco, california",tennis,Female,21.11680865809113,105.85198286175905,David Wiggins
+451,451,>30,164.0,other,"san lorenzo, california",football,Female,21.06559589360903,105.85650576137417,Robert Velez
+452,452,>30,168.0,other,"berkeley, california",tennis,Female,20.97869875499517,105.82746022717292,Donna Simmons
+453,453,>30,168.0,other,"bolinas, california",football,Male,21.221728154367067,105.74216359215357,Kimberly Taylor
+454,454,25-30,167.0,other,"san francisco, california",badminton,Male,20.987088864936567,105.77158573407422,Peter Bryant
+455,455,>30,164.0,other,"san francisco, california",football,Female,21.377271874000673,105.888597915298,Donald Brown
+456,456,>30,172.0,seller,"san mateo, california",football,Male,21.359769088960714,105.97696069745047,Paula Ponce
+457,457,>30,161.0,other,"san francisco, california",football,Female,21.17539754053981,105.91033017418174,Hailey Santiago
+458,458,>30,164.0,other,"berkeley, california",tennis,Female,21.251010379245503,105.96044232986075,Steven Thompson
+459,459,>30,172.0,other,"san francisco, california",tennis,Male,21.338813308963847,105.94154533728398,Martha Wilkins
+460,460,20-24,164.0,other,"san francisco, california",badminton,Female,21.106514024958393,105.85338078305666,Catherine Schmitt
+461,461,>30,170.0,doctor,"san francisco, california",badminton,Male,21.29810096617303,105.90487614833408,Alexandria Hoffman
+462,462,>30,163.0,other,"oakland, california",football,Female,20.969542722755918,105.89478336177534,Daniel Berry
+463,463,>30,172.0,other,"san francisco, california",tennis,Male,21.333184661942827,105.87063494721144,Samantha Greene
+464,464,<20,166.0,seller,"hayward, california",tennis,Male,20.96884222875492,105.74783938076622,Andrea Gonzalez
+465,465,>30,165.0,seller,"san francisco, california",football,Male,21.277711476213337,105.83056165762015,Teresa Jones
+466,466,20-24,164.0,student,"san francisco, california",swimming,Female,21.00795902439655,105.97499748218512,Erin Massey
+467,467,>30,165.0,engineer,"san francisco, california",tennis,Female,21.252891635209288,105.88462911434824,Justin Ochoa
+468,468,20-24,164.0,other,"oakland, california",badminton,Female,21.10646661692266,105.8772532315704,Anthony Perry
+469,469,>30,164.0,other,"san francisco, california",tennis,Female,21.179981603682325,105.8144635446267,Laura Fuller
+470,470,25-30,163.0,other,"hayward, california",football,Female,21.100781274987042,105.7600092435025,Benjamin Grant
+471,471,>30,163.0,other,"oakland, california",badminton,Female,21.231002679539294,105.89988349468355,David Cole
+472,472,>30,166.0,other,"mill valley, california",tennis,Female,21.264328993711445,105.95817943306888,Leon Dominguez
+473,473,>30,170.0,engineer,"oakland, california",tennis,Male,20.888882812941308,105.95882255917677,Veronica Johnson
+474,474,>30,170.0,other,"san francisco, california",tennis,Male,21.07802488379333,105.84953109749623,Nathan Jenkins
+475,475,>30,167.0,other,"san francisco, california",tennis,Female,21.072714055867532,105.80095737300564,Justin Brooks
+476,476,>30,170.0,other,"san francisco, california",tennis,Male,20.97577591973414,105.74877500112888,Adam Sherman
+477,477,20-24,168.0,seller,"berkeley, california",football,Female,20.99267122611175,105.84964198848756,Bruce Huynh
+478,478,>30,173.0,other,"berkeley, california",tennis,Male,20.97778636043433,105.94779920460921,Jonathan Harvey
+479,479,>30,164.0,engineer,"san francisco, california",football,Female,21.14342165905359,105.76410086686958,David Reyes
+480,480,>30,164.0,other,"san francisco, california",swimming,Female,21.37173017017568,106.01337710773277,Mark White
+481,481,25-30,171.0,other,"oakland, california",football,Male,21.153890559019324,106.01117241738258,April Long
+482,482,25-30,171.0,other,"san francisco, california",football,Male,21.119106649655816,105.82068704217507,Laura Martin
+483,483,25-30,162.0,other,"san francisco, california",tennis,Female,20.95070047443567,105.99169872090408,Margaret Johnson
+484,484,20-24,167.0,other,"san francisco, california",badminton,Male,20.98289241277298,105.87259982296175,Roger Mcconnell
+485,485,>30,167.0,other,"alameda, california",tennis,Male,21.198339191053435,105.9557564857342,Anna Ellison
+486,486,25-30,170.0,other,"san francisco, california",football,Male,21.02189114454781,105.97739480563106,David Jones
+487,487,>30,166.0,other,"san francisco, california",tennis,Female,21.13276085467313,105.95382326547781,Kimberly Sims
+488,488,20-24,172.0,other,"san francisco, california",tennis,Female,21.036930107413976,105.84793647288635,Julie Valenzuela
+489,489,>30,170.0,seller,"oakland, california",tennis,Male,21.358211282696978,105.84269784426353,Christopher Moss
+490,490,20-24,172.0,student,"san francisco, california",table_tenis,Male,21.27525549240862,105.86022565489876,Rachel Lewis
+491,491,20-24,166.0,other,"san mateo, california",tennis,Female,21.198826167472706,106.02568274633025,Molly Brown
+492,492,20-24,163.0,seller,"san francisco, california",tennis,Female,21.2619862111819,106.01887974534023,Matthew Taylor
+493,493,>30,170.0,other,"san francisco, california",tennis,Male,21.269315646226055,105.90524665437218,Ashley Sparks
+494,494,25-30,171.0,student,"berkeley, california",football,Male,21.02439287784723,105.89235716154978,Carrie Holland
+495,495,>30,168.0,engineer,"san francisco, california",tennis,Male,20.968102467466213,105.84114173627923,Carrie Baker
+496,496,>30,164.0,teacher,"san rafael, california",tennis,Male,21.327422424669113,105.86424415029836,Travis Price
+497,497,25-30,170.0,other,"san francisco, california",football,Male,21.178385359191633,105.9435949401444,Bruce Cruz
+498,498,20-24,168.0,other,"san francisco, california",tennis,Male,21.345808574594212,105.75277427818206,Justin Clay
+499,499,>30,169.0,seller,"san francisco, california",football,Female,20.884243208847685,105.98919847125897,Victoria Thomas
+500,500,20-24,174.0,seller,"san francisco, california",football,Male,20.940196994902987,105.78250341548657,Kayla Smith
+501,501,>30,172.0,other,"san francisco, california",football,Male,20.891077311747463,105.8785993744753,Olivia Howard
+502,502,>30,175.0,developer,"san francisco, california",tennis,Male,20.98015071730236,105.87765314647044,Matthew Jimenez
+503,503,>30,165.0,accounting,"mill valley, california",tennis,Female,21.128192047481857,105.78500030267573,Gregory Miller
+504,504,<20,173.0,student,"sausalito, california",tennis,Male,21.146030113091705,105.86925469485611,Karen Chavez
+505,505,25-30,169.0,seller,"millbrae, california",badminton,Male,21.017570967628217,105.86670635686028,Sonya Collins
+506,506,>30,162.0,other,"menlo park, california",tennis,Female,20.95297078745821,105.87302510946924,Kendra Powers
+507,507,25-30,164.0,other,"palo alto, california",tennis,Female,21.249089525779056,105.80554928390391,Nicholas Thornton
+508,508,>30,168.0,doctor,"san francisco, california",football,Female,21.31555853324611,105.93129737863082,Andrew Nelson
+509,509,>30,170.0,seller,"oakland, california",football,Male,21.326642724577404,105.81525165062028,Mary Cunningham
+510,510,20-24,167.0,other,"oakland, california",football,Male,21.010476821683277,106.02315261861206,Kathleen Miller
+511,511,>30,172.0,other,"san francisco, california",football,Male,21.01368999647116,105.9898421967866,Pamela Winters
+512,512,>30,169.0,other,"san francisco, california",tennis,Male,21.178333079428302,105.83318420098364,Troy Ramirez DVM
+513,513,25-30,168.0,seller,"san francisco, california",badminton,Male,20.98724863113874,105.92676075346718,Robert Powell
+514,514,>30,171.0,doctor,"san francisco, california",table_tenis,Male,21.165461792889403,105.97649779865523,Kayla Price
+515,515,>30,172.0,other,"novato, california",tennis,Male,21.357728768258507,105.98953298841975,Jodi Johnson
+516,516,>30,168.0,doctor,"san francisco, california",badminton,Male,21.14948428964489,106.02826548905287,Sue Cordova
+517,517,>30,172.0,other,"berkeley, california",badminton,Male,20.911950575687612,105.96274699736176,Anthony Johnston
+518,518,>30,175.0,developer,"san francisco, california",tennis,Male,20.940610907385334,105.78596362634948,Jennifer Brown
+519,519,25-30,167.0,student,"san francisco, california",tennis,Female,21.19046643857171,105.92048100288024,Scott Smith
+520,520,>30,168.0,accounting,"san francisco, california",tennis,Male,21.117724108701093,105.77600661787284,Christopher Jordan
+521,521,>30,167.0,other,"san francisco, california",football,Female,21.284353303401883,105.92411264412236,Barbara Owens
+522,522,25-30,173.0,seller,"san rafael, california",football,Male,21.02951739109596,105.8441079884156,Michael Benitez
+523,523,25-30,172.0,other,"san francisco, california",tennis,Male,21.235225810785796,105.8006833923257,Tammy Bridges
+524,524,>30,176.0,other,"san francisco, california",tennis,Male,21.077025664115816,105.99277475888319,Brittany Perkins
+525,525,>30,168.0,other,"san francisco, california",table_tenis,Female,20.899244872759727,105.90263409276803,April Cook
+526,526,>30,172.0,other,"san francisco, california",football,Male,21.228589515695305,105.78116107863906,Kevin Grant
+527,527,25-30,167.0,other,"san rafael, california",badminton,Male,20.996004713430988,105.97602959193996,Rebecca Figueroa
+528,528,>30,166.0,accounting,"san francisco, california",tennis,Female,21.25788621697728,106.0049872983145,Linda Flores
+529,529,>30,171.0,other,"san francisco, california",badminton,Male,21.306107900826287,105.7374241664415,Kimberly Carson
+530,530,>30,169.0,accounting,"san francisco, california",tennis,Male,21.194928815005667,105.99970581895175,Amanda Vasquez
+531,531,25-30,164.0,student,"san francisco, california",tennis,Female,21.107594390051958,106.02390258249021,Ryan Bennett
+532,532,>30,175.0,other,"san francisco, california",tennis,Male,21.151751739652646,105.7921707500524,Chelsea Mullins
+533,533,25-30,169.0,other,"san francisco, california",football,Female,21.30131220023868,105.92526688098293,Robert White
+534,534,20-24,167.0,seller,"san francisco, california",football,Male,20.95450704752972,105.76783479608476,Tommy Pearson
+535,535,>30,170.0,other,"san francisco, california",tennis,Male,20.97303624847924,106.00017181677408,Taylor Kelley
+536,536,20-24,171.0,seller,"mill valley, california",tennis,Female,20.90156154254268,105.88018324115396,Jason Wolf
+537,537,20-24,174.0,other,"san francisco, california",badminton,Male,21.17041859446748,105.75432110916796,Lawrence Shepherd
+538,538,>30,169.0,other,"san francisco, california",badminton,Male,21.119526325828204,105.79903615928693,Maria Burnett
+539,539,>30,168.0,engineer,"san francisco, california",football,Male,21.025511298892177,106.03112321131933,Daniel Thompson
+540,540,>30,160.0,seller,"san francisco, california",football,Female,21.062358382685275,105.85276505767848,Jason Kline
+541,541,>30,168.0,seller,"san francisco, california",football,Male,21.091035590366985,106.00630794020327,Rebecca Armstrong
+542,542,>30,170.0,other,"san francisco, california",tennis,Male,21.249596411426037,105.8815382940647,Savannah James
+543,543,>30,170.0,other,"san francisco, california",tennis,Male,21.30210893020752,105.80761454923238,Dustin Holmes
+544,544,20-24,160.0,seller,"san francisco, california",tennis,Female,20.992139677562957,105.8113766443137,Joseph Wilson
+545,545,20-24,167.0,seller,"san francisco, california",tennis,Male,21.28650943542691,105.77114896480492,Catherine Nelson
+546,546,>30,183.0,other,"hayward, california",tennis,Male,21.187111534763716,105.95931829877973,Sandra Cooke
+547,547,25-30,170.0,other,"vallejo, california",football,Male,21.189776831221472,105.84669159692166,Jonathan Bennett
+548,548,25-30,159.0,other,"san francisco, california",football,Female,21.158723009300576,105.95705922520261,Patrick Schmidt
+549,549,20-24,171.0,other,"san francisco, california",swimming,Male,20.945270656711635,105.86175978325787,Deborah Kim
+550,550,>30,177.0,other,"san francisco, california",badminton,Male,21.043767362409675,105.75799326185108,Cynthia Moore
+551,551,25-30,169.0,doctor,"san francisco, california",football,Male,21.11984314901486,105.86894661623735,Stephanie Herrera
+552,552,>30,176.0,other,"san leandro, california",tennis,Male,21.336229821162544,105.84307202786388,Robert Campos MD
+553,553,20-24,171.0,student,"stanford, california",football,Male,20.893206100544262,105.98433031672307,Mary Schultz
+554,554,>30,168.0,seller,"san francisco, california",football,Female,21.019028155958182,105.88132595520517,Jennifer Anderson
+555,555,>30,170.0,teacher,"san francisco, california",badminton,Male,21.349690648001047,105.73586427835082,Jay Yang
+556,556,>30,170.0,doctor,"larkspur, california",tennis,Female,21.288024802161857,105.7890182905111,Paul White
+557,557,>30,162.0,other,"san francisco, california",badminton,Female,20.981761143312767,105.96558202663677,Cynthia Davis
+558,558,>30,170.0,other,"oakland, california",tennis,Female,21.169023202062473,106.02805189059659,Tristan Hodges
+559,559,>30,166.0,other,"san francisco, california",basketball,Female,20.9775255069625,105.79882868792603,Ms. Mary Salazar
+560,560,25-30,172.0,seller,"san francisco, california",tennis,Male,21.345915826611837,105.75825939431424,Joanna Daniels
+561,561,20-24,173.0,other,"san francisco, california",football,Male,20.945643453635782,105.88698284021304,Cody Taylor
+562,562,25-30,168.0,teacher,"oakland, california",swimming,Male,21.328796245064485,105.89165126619655,Tammy Vega
+563,563,>30,172.0,other,"orinda, california",football,Male,21.155262362221865,105.98331853781434,Ronnie Johnson
+564,564,>30,166.0,other,"san francisco, california",tennis,Female,20.963614469365712,105.75657914549161,Justin Lane
+565,565,>30,170.0,other,"larkspur, california",tennis,Male,21.136328016037112,105.87001649721009,Dustin Lara
+566,566,>30,168.0,seller,"hayward, california",football,Male,21.10078287423153,105.9949878140398,Mark Gordon
+567,567,25-30,176.0,other,"oakland, california",badminton,Male,21.363508928740973,105.94343016041998,David Lewis
+568,568,20-24,167.0,other,"san francisco, california",tennis,Male,21.169183096999028,105.75953411427143,Melissa Odom
+569,569,25-30,168.0,seller,"san leandro, california",football,Female,21.25552754006654,106.00042897126077,Colton Flynn
+570,570,25-30,174.0,other,"san mateo, california",tennis,Male,21.16021482174848,105.9378845763662,Samuel Mckay
+571,571,>30,167.0,teacher,"san francisco, california",tennis,Female,21.16008825609884,105.76211431661311,Zachary Riley
+572,572,>30,160.0,other,"emeryville, california",badminton,Female,20.986816770895896,105.99944237872789,Krista Mora
+573,573,>30,170.0,other,"castro valley, california",football,Male,21.332374254259307,105.78893195431482,Gina Brady
+574,574,25-30,163.0,other,"redwood city, california",badminton,Male,21.19833857679233,106.0088531367905,Pamela Tucker
+575,575,>30,168.0,doctor,"moraga, california",table_tenis,Male,21.2698395168057,105.75355504662176,James Zimmerman
+576,576,25-30,171.0,other,"san francisco, california",football,Male,20.89203224055529,105.83238269645143,Michael Ramirez
+577,577,>30,173.0,student,"san francisco, california",football,Male,20.991328691944407,105.83851284958719,John Lewis
+578,578,>30,172.0,other,"oakland, california",football,Male,20.959047913097173,105.89127230783575,Daniel Schmidt
+579,579,>30,168.0,seller,"redwood city, california",football,Female,21.29193047149171,105.8291767710326,Ryan Duran
+580,580,>30,177.0,other,"vallejo, california",tennis,Male,20.98272530483834,105.81059093430707,Melissa Willis
+581,581,<20,173.0,other,"martinez, california",tennis,Male,20.93533503898988,105.86936738304199,Susan Mcneil
+582,582,25-30,168.0,teacher,"menlo park, california",tennis,Female,21.064348682288234,105.95237904271252,Connie Medina
+583,583,>30,166.0,other,"berkeley, california",tennis,Female,21.347834160910033,106.02970454435335,Brian Smith MD
+584,584,>30,165.0,engineer,"daly city, california",football,Male,20.89528260068267,105.7534455058305,Kyle Hensley
+585,585,>30,169.0,seller,"benicia, california",swimming,Female,21.119032130746692,105.92224688504363,Jimmy Bauer
+586,586,20-24,171.0,other,"menlo park, california",tennis,Male,21.306422343273784,105.86963404134909,Terri Wilson
+587,587,25-30,161.0,other,"san francisco, california",badminton,Female,21.05156524632186,105.74723190928009,Kim Chaney
+588,588,20-24,168.0,seller,"san francisco, california",football,Female,21.261626828845166,105.97717171789479,Erik Yang
+589,589,25-30,163.0,accounting,"berkeley, california",football,Female,21.33991073591949,105.75653718629441,Susan Young
+590,590,>30,163.0,other,"san francisco, california",tennis,Female,21.166945329300766,105.782770317355,Robert Martinez
+591,591,>30,172.0,other,"san rafael, california",tennis,Male,20.97966527082381,105.79593522273278,William Gonzales
+592,592,>30,166.0,other,"san francisco, california",tennis,Female,21.159409510743814,106.03213348563048,Amber Ho
+593,593,>30,164.0,accounting,"albany, california",basketball,Female,20.896831906818857,105.7420422691842,Patrick Glass
+594,594,>30,163.0,other,"san francisco, california",tennis,Female,21.085806710510692,105.97039658153938,Ryan Russo
+595,595,>30,168.0,accounting,"san francisco, california",football,Female,21.381218630873295,105.78262752965509,Andre Anderson
+596,596,>30,169.0,doctor,"san francisco, california",football,Female,21.081550961986437,105.84067889855882,Andrew Young
+597,597,>30,167.0,engineer,"san francisco, california",tennis,Female,21.229785017348682,105.88950412908726,Jeffrey Short
+598,598,>30,163.0,accounting,"martinez, california",tennis,Female,21.18179128130681,105.82454771824686,Regina Mills
+599,599,25-30,174.0,engineer,"san francisco, california",football,Male,21.32237956865035,105.87125793954482,Susan Alexander
+600,600,25-30,168.0,engineer,"san francisco, california",table_tenis,Male,21.09000299309031,105.99346004997838,Brandi Walter
+601,601,>30,167.0,other,"san francisco, california",badminton,Female,21.323812037972356,105.85048363060788,Frederick Glover
+602,602,>30,167.0,other,"berkeley, california",tennis,Female,20.919967165986165,105.95401994334344,Sean Ellis
+603,603,>30,163.0,accounting,"berkeley, california",tennis,Female,21.045435605975864,105.84544498653486,Kristina Miller
+604,604,>30,164.0,other,"san francisco, california",tennis,Male,21.13818722066251,105.76132800145223,Sherry Morris
+605,605,>30,167.0,other,"san francisco, california",tennis,Female,21.096753649005713,105.8381266967992,Joanne Dickson
+606,606,>30,172.0,seller,"palo alto, california",tennis,Male,21.32790479604569,105.79026948233013,Craig Smith
+607,607,>30,172.0,other,"san francisco, california",tennis,Male,21.072414519392776,105.95245181290755,Justin Osborne
+608,608,25-30,165.0,other,"berkeley, california",football,Male,21.358139415021157,105.91769771091784,Mario Brown
+609,609,>30,168.0,other,"berkeley, california",tennis,Female,21.25958559423899,105.81955067029256,Cristian Smith
+610,610,>30,169.0,other,"sausalito, california",football,Female,21.175949476403783,105.7788206731055,Andrew Christensen
+611,611,>30,169.0,other,"san francisco, california",tennis,Male,21.274861619019276,105.98061402542439,Gary Delgado
+612,612,>30,174.0,accounting,"san mateo, california",tennis,Male,21.305278568535744,105.8659378709247,Christopher Swanson
+613,613,25-30,173.0,doctor,"san francisco, california",badminton,Male,21.156893542026257,105.85754045907616,Erin Maynard
+614,614,>30,172.0,seller,"hayward, california",tennis,Male,21.000388522207743,105.96044998265386,Jesus Melendez
+615,615,>30,163.0,doctor,"san francisco, california",swimming,Female,21.093450659767136,105.83160317514894,Chelsey Shaffer
+616,616,20-24,168.0,accounting,"san francisco, california",tennis,Female,20.915489252787797,105.7992009991445,Stephanie Martinez
+617,617,25-30,168.0,doctor,"redwood city, california",tennis,Male,20.98262337719427,105.94050817007981,Jonathon Hull
+618,618,25-30,175.0,other,"belmont, california",table_tenis,Male,21.23260220870294,105.97252633140333,Bradley Ellis
+619,619,>30,173.0,seller,"san mateo, california",football,Male,21.218693161958647,105.83999168040391,Ricky Miller
+620,620,25-30,168.0,other,"san francisco, california",tennis,Female,21.13572019942363,105.82643448162801,James Miller
+621,621,>30,167.0,engineer,"san francisco, california",football,Male,21.034277683188282,105.85131525165626,Veronica Thomas
+622,622,>30,173.0,other,"san francisco, california",tennis,Male,21.11991044657338,105.74536286352743,Jason Sparks
+623,623,25-30,164.0,other,"emeryville, california",table_tenis,Female,21.37705019758849,106.01969157130218,Elizabeth Thomas
+624,624,25-30,171.0,other,"san francisco, california",tennis,Male,20.947329276474505,105.80544442792683,Trevor Chambers
+625,625,25-30,164.0,other,"san mateo, california",football,Female,21.130660251081764,106.0199839845757,Theresa Hoover
+626,626,>30,163.0,other,"san francisco, california",tennis,Female,21.35852919096448,105.94787319633126,Brandon Arias
+627,627,>30,171.0,other,"berkeley, california",badminton,Male,21.303405890957507,105.88325190539749,Marvin Clark II
+628,628,>30,164.0,teacher,"oakland, california",badminton,Female,21.109272455735592,105.81084923476958,Monica Dawson
+629,629,20-24,174.0,other,"hayward, california",football,Male,20.980911569325777,105.84335418005114,Francis White
+630,630,>30,169.0,student,"oakland, california",football,Female,21.38290167170472,105.7519595552195,Terry Mathews
+631,631,25-30,173.0,other,"castro valley, california",badminton,Male,20.923720174490157,105.96083847219568,Patricia Ayers
+632,632,25-30,171.0,other,"oakland, california",table_tenis,Male,21.22917170310184,106.0296318572848,Katherine Young
+633,633,20-24,173.0,seller,"hayward, california",football,Male,21.047787697725276,106.00343158533899,Christina Braun
+634,634,>30,174.0,other,"berkeley, california",tennis,Male,21.086280990265426,105.75848560142951,Yvonne Bailey
+635,635,>30,168.0,doctor,"oakland, california",tennis,Female,21.144840602021432,105.76052825010908,Lindsey Newton
+636,636,>30,164.0,teacher,"oakland, california",basketball,Female,21.21456005628385,105.89594335774011,Zachary Ramirez
+637,637,>30,165.0,other,"oakland, california",tennis,Female,21.29556293990308,105.93569875398283,Michael Reese
+638,638,20-24,174.0,other,"san lorenzo, california",tennis,Male,21.03797229984733,105.84529913330175,Kristin Carrillo
+639,639,>30,164.0,other,"alameda, california",volleyball,Female,20.92777297360892,105.81126494898056,Jake Bowman DDS
+640,640,<20,170.0,developer,"berkeley, california",tennis,Male,21.097748385070442,105.93142289043948,Kyle Bennett
+641,641,<20,175.0,student,"san leandro, california",swimming,Male,21.37071751460731,105.98859017215834,Jeremy Wilson
+642,642,20-24,161.0,other,"berkeley, california",tennis,Female,21.34781485213756,105.77625583413878,Lisa Cole
+643,643,20-24,170.0,other,"oakland, california",football,Male,21.37088503315365,105.91464209409281,Kimberly Aguilar
+644,644,>30,170.0,seller,"oakland, california",football,Female,21.36039251376467,105.9241632152252,Tyler Edwards
+645,645,<20,163.0,student,"oakland, california",tennis,Female,21.076753537217435,105.96505884724635,James Rodriguez
+646,646,>30,171.0,other,"hayward, california",football,Male,21.05856009448387,105.73837483606327,Richard Shannon
+647,647,>30,162.0,other,"emeryville, california",badminton,Female,20.928753266178422,105.8042780447608,Stephanie Scott
+648,648,<20,170.0,seller,"san francisco, california",football,Male,21.287457807248142,105.84015573685355,Christian Delacruz
+649,649,>30,169.0,other,"oakland, california",tennis,Male,21.326157155062123,105.76832990265754,Jennifer Terry
+650,650,>30,168.0,accounting,"el sobrante, california",football,Male,20.97874270242624,105.89022567537795,Erin Cantu
+651,651,>30,171.0,other,"san mateo, california",football,Male,21.142706280459898,105.83444009381729,Robert Morrison
+652,652,>30,161.0,engineer,"oakland, california",basketball,Female,21.010478942269348,105.89265329324832,Joshua Hodge
+653,653,25-30,169.0,teacher,"san francisco, california",tennis,Female,21.305959227547525,106.02930178751186,Hannah George
+654,654,>30,168.0,other,"san francisco, california",tennis,Female,21.19361201506584,105.91797817830476,Kara Johnson
+655,655,25-30,171.0,other,"san francisco, california",football,Male,21.28701922705543,105.83787170062871,John Long
+656,656,>30,171.0,other,"san francisco, california",table_tenis,Male,21.293041296154865,106.02793931485108,Trevor Bruce
+657,657,20-24,172.0,other,"hayward, california",football,Male,21.111280605510686,105.89526166460227,Kathryn Lee
+658,658,>30,169.0,other,"mountain view, california",football,Male,21.275628504890733,105.95822983217155,Jeffrey Bridges
+659,659,>30,166.0,doctor,"san francisco, california",football,Female,21.076447039561682,106.0187244312194,Morgan Hutchinson
+660,660,>30,170.0,other,"san francisco, california",tennis,Male,21.210368321505243,105.90643563769193,Colleen Schroeder
+661,661,>30,170.0,other,"oakland, california",tennis,Male,21.239416089638734,105.8328241237619,Jeremy Wade
+662,662,>30,173.0,other,"san francisco, california",tennis,Male,21.26853304376769,105.76630382111345,Cynthia Reyes
+663,663,25-30,173.0,other,"oakland, california",tennis,Male,21.091655965103218,105.75260464962221,Christopher Riley
+664,664,>30,169.0,other,"san francisco, california",football,Male,21.274349218378298,105.91044076322022,Donna Blair
+665,665,>30,167.0,accounting,"san mateo, california",swimming,Male,20.992445124688082,105.96153571410686,Randy Hicks
+666,666,>30,169.0,other,"san francisco, california",badminton,Female,21.016700727367347,105.88335611845012,Lawrence Aguirre
+667,667,>30,168.0,other,"vallejo, california",swimming,Female,21.169783938039167,106.02695922863019,Stephen Christian
+668,668,>30,167.0,student,"sausalito, california",badminton,Male,21.00116027463835,106.00321227508861,Helen Keller
+669,669,>30,170.0,student,"oakland, california",football,Male,20.912327333695508,105.88983571505936,Laura Griffith
+670,670,25-30,170.0,engineer,"san francisco, california",tennis,Male,21.076510359512522,105.91203500446201,Donald Burns
+671,671,>30,162.0,other,"san francisco, california",football,Female,20.91549003318473,105.9204816548453,Tina Wilson
+672,672,>30,164.0,accounting,"san francisco, california",table_tenis,Female,20.900258872038314,105.91857112501529,Tracey Sandoval
+673,673,>30,169.0,accounting,"san bruno, california",tennis,Male,21.356953953876424,105.90397837193832,Mark Hobbs
+674,674,>30,168.0,other,"san francisco, california",football,Male,21.25363370886379,105.86135663480299,Martha Smith
+675,675,>30,168.0,seller,"san francisco, california",tennis,Male,20.999040763965606,105.82179117465381,Haley Johnston
+676,676,20-24,170.0,other,"san mateo, california",football,Male,20.963133456403256,105.7786241442137,Mrs. Marissa Smith
+677,677,>30,168.0,other,"san francisco, california",tennis,Female,21.067406079987883,105.93557599454724,Holly Fletcher
+678,678,20-24,167.0,other,"san francisco, california",tennis,Male,21.241007670843345,105.96339673380402,Barbara Garrett
+679,679,>30,163.0,teacher,"berkeley, california",tennis,Female,21.25950406380893,105.99288816902035,Kristin Navarro
+680,680,>30,166.0,other,"oakland, california",swimming,Female,21.098920672275682,105.9413613929511,Lisa Price
+681,681,>30,170.0,other,"berkeley, california",tennis,Female,21.050742193150004,105.80613701629626,Rachel Mcgrath
+682,682,25-30,172.0,seller,"san francisco, california",football,Male,21.235132045486754,105.94737277036302,Renee Atkinson
+683,683,>30,170.0,doctor,"vallejo, california",swimming,Male,20.926443470154258,105.98251905490453,Shawn Mcgrath
+684,684,>30,175.0,other,"san francisco, california",tennis,Male,21.288386437499746,105.93911025977623,Nicholas Vasquez
+685,685,>30,171.0,other,"san francisco, california",tennis,Male,21.11626540288005,105.84544560388844,Leah Morris
+686,686,25-30,163.0,teacher,"san francisco, california",tennis,Female,21.246829926151236,105.98862741472527,Rebecca Lee
+687,687,>30,171.0,engineer,"oakland, california",swimming,Male,21.0772708008535,105.92722085446344,Elizabeth Hall
+688,688,25-30,172.0,other,"san lorenzo, california",tennis,Male,21.209085034034473,105.90682043534493,Jennifer Henry
+689,689,25-30,176.0,other,"san francisco, california",badminton,Male,21.366623777017608,105.89260663660585,Jonathan Barnett
+690,690,>30,168.0,teacher,"san francisco, california",tennis,Male,21.043396898883138,105.82197392580369,Carrie Garrett
+691,691,>30,170.0,other,"san francisco, california",tennis,Male,20.901387212400568,105.95695179978458,Ashley Reed
+692,692,20-24,173.0,other,"millbrae, california",tennis,Male,21.332831797763948,105.98026086964724,Edward Best
+693,693,25-30,170.0,engineer,"pacifica, california",tennis,Male,21.061408549298353,105.96953003406051,Douglas Chambers
+694,694,>30,168.0,other,"daly city, california",badminton,Male,21.325298711170948,105.95135241991562,Alexis Shaffer
+695,695,>30,167.0,seller,"san francisco, california",football,Male,21.04381364672536,105.92908258262017,Kenneth Peterson
+696,696,>30,169.0,other,"berkeley, california",tennis,Male,20.911111460469563,105.80288763071945,Rebecca Snyder
+697,697,20-24,172.0,student,"stanford, california",football,Male,21.35880260622384,105.84273477834826,James Martin
+698,698,20-24,174.0,seller,"burlingame, california",football,Male,21.18681247312057,105.76374868203496,Gregory Johnson
+699,699,>30,164.0,other,"hayward, california",swimming,Female,21.089708800078135,105.84068461831109,Lori Reynolds
+700,700,20-24,163.0,seller,"oakland, california",football,Female,21.226019381990362,105.89872273804805,Mark Proctor
+701,701,25-30,167.0,other,"san francisco, california",football,Male,20.99276301456596,105.7560015900029,Lisa Cain
+702,702,>30,167.0,other,"san francisco, california",basketball,Female,21.031329858660584,105.90776635221758,Meghan Hernandez
+703,703,25-30,172.0,other,"alameda, california",tennis,Female,21.024737906808387,105.7560860199826,Earl Figueroa
+704,704,>30,174.0,other,"san francisco, california",football,Male,20.938608932734297,105.73455442483495,Terri Sandoval
+705,705,25-30,172.0,other,"san francisco, california",football,Male,21.311176063396022,105.78613516955338,Steven Sparks
+706,706,20-24,165.0,seller,"oakland, california",football,Female,21.095140650270213,105.94371187859785,Sally Boyd
+707,707,>30,162.0,seller,"san francisco, california",tennis,Female,20.898482788162173,105.74098777058455,Kelly Bryant
+708,708,25-30,169.0,other,"san francisco, california",tennis,Male,20.920149440115612,106.00328363892773,Jimmy Bailey
+709,709,25-30,173.0,other,"vallejo, california",table_tenis,Male,20.91635225231471,105.9981111476807,Kevin Paul
+710,710,>30,170.0,other,"vallejo, california",football,Male,20.98951767605959,106.0210422556445,Douglas Hernandez
+711,711,>30,167.0,other,"vallejo, california",tennis,Male,20.967535060394166,106.00303681684238,Jennifer Ortiz
+712,712,>30,169.0,seller,"vallejo, california",football,Male,21.314848692086812,105.8836964807138,Jason Miller
+713,713,>30,172.0,other,"oakland, california",tennis,Male,21.06959884043011,105.84294924281438,Jennifer Walker
+714,714,>30,174.0,seller,"hayward, california",tennis,Male,21.002739579249848,105.89900084805102,Kelly Michael
+715,715,20-24,167.0,other,"san francisco, california",tennis,Male,21.14767423586667,105.96641101696135,Jeffrey Smith
+716,716,>30,172.0,engineer,"san francisco, california",tennis,Male,21.193040695165745,105.84931109428055,Sarah Nguyen
+717,717,>30,170.0,accounting,"walnut creek, california",football,Male,21.147492000382726,106.00876182595276,Stephen Malone
+718,718,>30,164.0,teacher,"san francisco, california",football,Female,21.258363372778597,105.83641869140335,Stephanie Sanchez
+719,719,25-30,174.0,other,"oakland, california",volleyball,Male,21.125873670470938,105.83258735517464,Albert White
+720,720,>30,173.0,other,"san francisco, california",badminton,Male,21.33129343634786,105.98082345419395,William Hubbard
+721,721,>30,165.0,accounting,"san francisco, california",badminton,Female,21.071145806773078,106.03153299706845,Jason Campbell
+722,722,>30,170.0,other,"san francisco, california",tennis,Male,21.105485489020857,105.8131591817528,Chelsea Lawrence
+723,723,25-30,164.0,student,"san francisco, california",football,Female,21.368141538625885,105.8972093982887,Penny White
+724,724,>30,162.0,other,"walnut creek, california",tennis,Male,21.301065738628527,105.994402429753,James Martinez
+725,725,20-24,164.0,student,"alameda, california",badminton,Female,21.014991507948455,105.75766712152904,Rachel Munoz
+726,726,>30,167.0,other,"san francisco, california",tennis,Male,21.03438721726036,105.74761120841511,Jerry Moore
+727,727,25-30,174.0,other,"san mateo, california",tennis,Male,21.279044704634522,105.87026027603504,Mrs. Christine Young DVM
+728,728,>30,167.0,seller,"san francisco, california",football,Female,21.308646539381037,105.93585152141834,Lisa Mason
+729,729,>30,168.0,seller,"berkeley, california",football,Male,21.034652315452234,105.8304130570319,Kevin Mason
+730,730,>30,164.0,teacher,"san francisco, california",tennis,Female,21.149380806504368,105.81724940850917,Cheryl Moreno
+731,731,>30,173.0,doctor,"berkeley, california",football,Male,21.044675850989567,105.77553653627288,Alexander Stein
+732,732,>30,166.0,student,"oakland, california",tennis,Male,20.973226291459987,105.91344706819544,Michaela Goodman
+733,733,>30,172.0,engineer,"san francisco, california",football,Male,21.34194756531132,105.88842421629475,Marc Ferguson
+734,734,20-24,169.0,accounting,"san francisco, california",football,Male,21.032251530582254,105.84570449977909,Sean Miller
+735,735,25-30,162.0,seller,"berkeley, california",tennis,Female,21.329299852623144,105.87549054231285,Ariel Johnson
+736,736,>30,169.0,other,"oakland, california",tennis,Male,21.312386168041158,105.92521078016313,Vanessa Bridges
+737,737,>30,175.0,other,"san francisco, california",tennis,Male,21.163032572346285,105.81330665871137,Todd Richards
+738,738,20-24,168.0,other,"san francisco, california",tennis,Male,21.20736930993676,105.99266275835997,Isaac Hernandez
+739,739,20-24,164.0,student,"san francisco, california",tennis,Female,21.106039091349928,105.78214299038649,Luis Pena
+740,740,20-24,170.0,other,"san francisco, california",table_tenis,Female,21.04361550642976,105.94263632776672,Amy Stephens
+741,741,>30,169.0,seller,"hayward, california",volleyball,Male,21.1127760878242,106.005553156592,Jim Wise
+742,742,25-30,176.0,seller,"oakland, california",football,Male,21.37333006573348,105.90371884844673,Angel Chaney
+743,743,>30,173.0,other,"san francisco, california",table_tenis,Male,21.300436581869874,105.99599494436124,Jared Lewis
+744,744,>30,160.0,other,"san pablo, california",badminton,Female,21.09512925865016,105.92430625835829,Daniel Johnson
+745,745,25-30,170.0,student,"san francisco, california",tennis,Female,20.899728067017932,105.79960617450382,Cody Vaughn
+746,746,>30,164.0,engineer,"menlo park, california",volleyball,Female,21.161724220559393,105.99374408154023,Bridget Gonzales
+747,747,20-24,164.0,other,"san francisco, california",football,Female,21.33016880865789,106.01426185245478,Ronnie Spears
+748,748,>30,171.0,seller,"san francisco, california",table_tenis,Male,21.38216523513859,105.74946283776815,Alicia Price
+749,749,>30,168.0,other,"san francisco, california",swimming,Male,21.112140611903637,105.9091712275901,Miranda Holland
+750,750,>30,170.0,other,"san francisco, california",tennis,Male,21.2514772938692,105.9770621122512,Wayne Davis
+751,751,25-30,171.0,seller,"san francisco, california",football,Male,20.991248099779725,105.929804403626,Danielle Saunders
+752,752,>30,169.0,seller,"san francisco, california",football,Male,20.991164598109272,105.73880093535006,Amanda Mills
+753,753,>30,168.0,other,"san leandro, california",tennis,Female,21.217687876286863,106.03107835054766,John Scott
+754,754,25-30,164.0,accounting,"alameda, california",football,Female,20.960347463425972,105.74788184383117,Kim Schneider
+755,755,20-24,172.0,other,"san francisco, california",tennis,Male,21.155105550015914,105.82025763841067,Lauren Henson
+756,756,25-30,173.0,student,"san rafael, california",football,Male,21.202727142088367,106.01748241151863,Elizabeth Montgomery
+757,757,>30,169.0,other,"el sobrante, california",football,Male,20.947231971405998,106.02663541974553,Aaron Allen
+758,758,>30,169.0,other,"oakland, california",football,Male,20.953765601716235,105.8327144628504,Heather Schroeder
+759,759,>30,167.0,teacher,"oakland, california",swimming,Female,21.231444321076292,105.74259640647469,Anthony Hess
+760,760,>30,165.0,other,"oakland, california",badminton,Female,21.071640226423295,105.78365868137386,Monica Barker MD
+761,761,25-30,169.0,teacher,"walnut creek, california",football,Male,21.20107002735169,105.94790104705397,Alexander Baker
+762,762,25-30,169.0,seller,"berkeley, california",tennis,Female,21.149909495157903,105.87777760618152,Jacob Beck
+763,763,25-30,172.0,other,"san francisco, california",football,Male,21.37499190515575,105.78479127864175,William Potter
+764,764,20-24,168.0,engineer,"san francisco, california",tennis,Male,20.89552171226448,105.94468688160063,Emily Valencia
+765,765,25-30,174.0,other,"oakland, california",table_tenis,Male,20.908813558903216,105.8622280841164,Allison Moore
+766,766,>30,175.0,seller,"oakland, california",football,Male,21.352114736918455,105.7340589753523,Donald Daniels
+767,767,25-30,168.0,teacher,"oakland, california",football,Male,21.321372381206448,105.98792270354605,Joe Estes
+768,768,>30,173.0,accounting,"san francisco, california",badminton,Male,21.34775545696433,105.84999839861092,Michael Fitzpatrick Jr.
+769,769,>30,160.0,doctor,"san francisco, california",tennis,Female,21.29875356774502,105.99783424441173,Daniel Arroyo
+770,770,>30,173.0,seller,"san francisco, california",football,Male,21.175415794357743,105.74254377920757,Paul Stewart
+771,771,25-30,169.0,seller,"san francisco, california",tennis,Female,21.36847466738577,105.81344873329415,Kenneth Butler
+772,772,20-24,170.0,other,"castro valley, california",football,Male,21.219070188904382,105.94412505998484,Emily Alvarez
+773,773,>30,168.0,seller,"berkeley, california",football,Male,20.914658036310787,105.9794280598659,Vanessa Green
+774,774,20-24,171.0,other,"san leandro, california",badminton,Male,21.370549529678556,105.88376758730305,Ashley Wu
+775,775,>30,172.0,seller,"san francisco, california",badminton,Male,20.948756485920615,105.82315631301881,Alexis Fowler
+776,776,20-24,171.0,other,"san francisco, california",tennis,Male,21.30818255776355,105.76142819687244,Patrick Howard
+777,777,25-30,174.0,other,"san francisco, california",tennis,Male,21.074988718584503,106.0271724649353,Brenda Griffin
+778,778,25-30,168.0,doctor,"oakland, california",swimming,Male,21.07665975503742,105.86711303899473,Matthew Terry
+779,779,25-30,168.0,other,"san francisco, california",tennis,Male,21.16406571981539,105.87547809166794,Valerie Romero PhD
+780,780,25-30,170.0,engineer,"san francisco, california",badminton,Male,20.919002604236,105.9707210720645,Rachel Martin
+781,781,>30,160.0,other,"oakland, california",tennis,Female,21.305286916863142,105.9702266445551,Brian Shaffer
+782,782,>30,170.0,other,"oakland, california",tennis,Male,20.90588002503258,105.88015688919953,Natalie Matthews
+783,783,20-24,174.0,doctor,"richmond, california",badminton,Male,21.17360522447099,106.01402680759337,Melissa Smith
+784,784,>30,168.0,accounting,"redwood city, california",badminton,Female,21.011048192415366,105.8024967311711,Kyle Montes
+785,785,25-30,172.0,other,"emeryville, california",tennis,Female,21.20564521962215,105.97275529500733,Dawn Cabrera
+786,786,>30,171.0,other,"el cerrito, california",tennis,Male,21.17961520261432,105.8224713535598,Damon Jones
+787,787,25-30,169.0,engineer,"mountain view, california",swimming,Male,21.31874451476601,106.02062927746115,James Steele
+788,788,25-30,169.0,seller,"san francisco, california",basketball,Male,21.28186019749525,105.89379937396846,Heather Cunningham
+789,789,>30,164.0,student,"san francisco, california",badminton,Female,20.955711223010475,105.87600118174676,Joel Stewart
+790,790,>30,165.0,other,"san francisco, california",football,Female,21.351956273267433,105.98638337024268,Michael Barry
+791,791,20-24,176.0,other,"novato, california",tennis,Male,20.90424160190936,106.00192632078482,Timothy Bennett
+792,792,25-30,174.0,teacher,"oakland, california",football,Male,20.931247321463363,106.0088560409405,Karina Jennings
+793,793,>30,170.0,other,"novato, california",football,Male,21.127513453469206,105.83711650563846,William Guzman
+794,794,<20,170.0,student,"san francisco, california",football,Male,20.92432805872016,105.95661609354167,Ricky Williams
+795,795,>30,173.0,doctor,"petaluma, california",table_tenis,Male,20.952741303035186,105.74221752703514,Kathryn Harris
+796,796,>30,163.0,accounting,"san francisco, california",tennis,Female,21.16238406154315,106.00734183291122,Angela Atkinson
+797,797,25-30,171.0,doctor,"pinole, california",football,Male,21.141084229343136,105.80144541927127,Levi Dawson
+798,798,20-24,166.0,other,"san francisco, california",tennis,Male,21.128882609714356,105.77903656290727,Sheri Wallace
+799,799,>30,174.0,other,"pleasant hill, california",tennis,Male,20.985933374449782,105.89389494321452,Jessica Smith
+800,800,>30,169.0,engineer,"martinez, california",tennis,Male,21.089087809469962,105.75271478625599,Ashley Morris
+801,801,20-24,167.0,teacher,"oakland, california",tennis,Female,20.95175229021845,105.75284243028624,Cheryl Juarez
+802,802,>30,164.0,engineer,"oakland, california",swimming,Female,21.34332947938856,105.96586188160745,Lori Wang
+803,803,<20,173.0,seller,"san francisco, california",football,Male,20.8869840811221,105.79662094713323,Kara Rivas
+804,804,20-24,169.0,other,"san francisco, california",football,Male,21.09760887426058,106.01503877346492,Cindy Walker
+805,805,>30,168.0,other,"san carlos, california",football,Male,21.366158700134687,105.88442538548674,Rodney Smith
+806,806,>30,172.0,other,"san francisco, california",tennis,Male,20.971362407092244,105.98487210110197,Samantha Lee
+807,807,>30,168.0,accounting,"san francisco, california",volleyball,Male,20.98342048597002,105.80677959041594,Ms. Sheila Mclaughlin DDS
+808,808,>30,168.0,other,"san francisco, california",volleyball,Female,21.10302594497283,105.7647069331933,Nicole Davis
+809,809,>30,168.0,seller,"berkeley, california",tennis,Female,21.270657723911956,105.92528461441701,Scott Ross
+810,810,>30,164.0,seller,"berkeley, california",football,Female,20.893690621089483,105.93976857142675,Dr. Bryan Burgess
+811,811,>30,166.0,teacher,"san francisco, california",tennis,Male,21.079275383459297,105.81629101038178,Charles Estes
+812,812,20-24,164.0,seller,"san francisco, california",football,Female,21.128548713495782,105.86901108621876,Ruth Lang
+813,813,25-30,172.0,doctor,"hayward, california",tennis,Male,21.10521399366827,105.87955803686519,Christopher Burke
+814,814,25-30,170.0,student,"berkeley, california",tennis,Male,21.30848865631745,105.8247620334434,Veronica Wolf
+815,815,25-30,165.0,engineer,"san francisco, california",football,Female,20.89203873784013,105.74794025360781,Zachary Johnson
+816,816,20-24,167.0,seller,"san francisco, california",football,Male,21.288831973998015,106.0069461294798,Jason Gibson
+817,817,>30,173.0,engineer,"martinez, california",badminton,Male,21.12724172518859,105.76822807398808,Hannah Lawrence
+818,818,>30,176.0,accounting,"san rafael, california",football,Male,20.88671377979301,106.02791126134022,Ivan Johnson
+819,819,>30,168.0,doctor,"san francisco, california",tennis,Male,20.892869692079223,105.9092204038316,Kayla Flores
+820,820,25-30,170.0,other,"san francisco, california",football,Male,20.895856168164528,105.8720638040943,Travis Morris
+821,821,>30,171.0,other,"san francisco, california",tennis,Male,21.28574918896942,105.76871584863726,Paul Valenzuela
+822,822,>30,168.0,teacher,"palo alto, california",swimming,Female,21.131465485092026,105.96359178073801,Alison Wilson
+823,823,>30,170.0,other,"san geronimo, california",tennis,Male,21.270844506224112,105.80601383612834,Ralph Fletcher
+824,824,25-30,172.0,engineer,"redwood city, california",tennis,Male,21.204581507108898,105.77330640172814,Joseph Moore
+825,825,>30,174.0,seller,"san francisco, california",volleyball,Male,21.005177507438557,105.75954545033993,Tricia Nielsen
+826,826,20-24,167.0,other,"san francisco, california",tennis,Male,20.937768445874962,105.98690722782945,Anthony Gray
+827,827,25-30,170.0,seller,"san francisco, california",football,Male,21.10618806713114,105.87099316886587,Kathleen Evans
+828,828,20-24,171.0,seller,"san francisco, california",badminton,Male,21.069790661502385,105.8674694344023,Terry James
+829,829,25-30,172.0,other,"stanford, california",football,Male,20.955758563309473,105.87364933935987,Randy Wood
+830,830,>30,168.0,engineer,"san francisco, california",tennis,Male,21.00523911199902,105.83593189989661,Daniel Hernandez
+831,831,20-24,171.0,other,"san francisco, california",tennis,Male,21.13989645797194,105.74018498558802,James Bradley
+832,832,25-30,172.0,other,"oakland, california",football,Male,21.341853168464446,105.9342043194419,Megan Lopez
+833,833,25-30,170.0,other,"san francisco, california",badminton,Male,21.26347427698605,105.9095136165138,Daniel Leonard
+834,834,25-30,165.0,accounting,"oakland, california",tennis,Female,20.891112415000382,105.98483811904245,Peter Anderson
+835,835,>30,172.0,teacher,"san francisco, california",football,Male,20.956257704354798,105.97362084565914,Jeffery Perry
+836,836,20-24,168.0,doctor,"san francisco, california",tennis,Male,21.283761419994367,105.88291218116568,Jamie Pratt
+837,837,25-30,172.0,other,"san francisco, california",tennis,Male,20.94594408448351,105.79873582018922,Lori Mckee
+838,838,25-30,163.0,other,"emeryville, california",tennis,Female,21.30394043269376,105.87266640182936,Nicole Shah
+839,839,>30,169.0,accounting,"san francisco, california",swimming,Male,21.27599655947707,105.89724151292037,Christina Murphy
+840,840,20-24,175.0,doctor,"san mateo, california",tennis,Male,21.234079956998368,105.86851950296995,Joseph Matthews
+841,841,>30,166.0,other,"oakland, california",volleyball,Female,21.238807654887452,105.74733882843748,Heidi Rasmussen
+842,842,25-30,172.0,seller,"san francisco, california",tennis,Male,21.04563991916729,105.79958167383309,Denise Hill
+843,843,>30,170.0,other,"san francisco, california",football,Male,21.222686661475258,105.97758940597724,Joshua Waller
+844,844,>30,174.0,other,"redwood city, california",tennis,Male,21.162346187556455,105.92215801211661,Samantha Smith
+845,845,25-30,172.0,other,"san mateo, california",tennis,Male,20.973822033674853,105.93351304219073,Victor Schwartz
+846,846,>30,168.0,other,"berkeley, california",tennis,Male,21.143899410480543,105.97785993580779,Kayla Farley
+847,847,>30,169.0,engineer,"san francisco, california",basketball,Male,21.033396176840462,105.90151945968337,Rachel Frey
+848,848,>30,165.0,doctor,"san francisco, california",badminton,Female,21.3478727654518,105.8192175143546,Jennifer Harvey
+849,849,>30,171.0,engineer,"san mateo, california",football,Female,21.249992178498943,106.00827631555013,Cody Roach
+850,850,25-30,164.0,other,"oakland, california",tennis,Female,20.995812645729202,105.79145754189342,Anthony Flores
+851,851,>30,172.0,other,"san francisco, california",football,Female,20.98836968794064,105.88284720804722,Christopher Garrison
+852,852,25-30,170.0,engineer,"san francisco, california",football,Male,21.310190095828986,105.74487103348133,Brian Nolan
+853,853,>30,170.0,student,"berkeley, california",football,Male,20.961965676322336,105.80429610871411,Carla Brown
+854,854,25-30,169.0,doctor,"san mateo, california",tennis,Female,21.077439632215427,105.81245133703489,Pamela Valencia
+855,855,>30,167.0,engineer,"san francisco, california",badminton,Male,21.031218949629277,105.7696931614339,Justin Vega
+856,856,25-30,164.0,other,"san bruno, california",badminton,Male,21.06917284900786,105.96721099648593,Jeffrey Gomez
+857,857,>30,168.0,other,"san francisco, california",table_tenis,Male,21.144860158719286,105.90254129935828,Heather Hill
+858,858,>30,173.0,other,"san francisco, california",tennis,Male,21.043163983344805,105.8322045676074,Jessica Mayer
+859,859,>30,166.0,doctor,"berkeley, california",football,Female,20.898358948065525,105.73877924621392,Marie Garcia
+860,860,>30,161.0,seller,"berkeley, california",tennis,Female,21.198898551239676,105.91517575500494,Elizabeth Ruiz
+861,861,25-30,176.0,other,"san francisco, california",football,Male,21.120548076044056,105.9608872019142,Sherri Marshall
+862,862,25-30,175.0,other,"san francisco, california",football,Male,21.028543212653002,105.78325199292112,Andrea Anderson
+863,863,25-30,172.0,other,"palo alto, california",football,Male,20.96953860407562,105.9380834283906,Lawrence George
+864,864,>30,170.0,other,"oakland, california",volleyball,Male,21.286984272583435,105.88564116114081,Ashley Garcia
+865,865,>30,166.0,other,"san francisco, california",tennis,Female,21.088702240521105,105.76862680121714,Danielle Thompson
+866,866,25-30,169.0,other,"berkeley, california",tennis,Male,21.125069631551046,105.74513803688292,Sheila Brown
+867,867,20-24,163.0,engineer,"alameda, california",badminton,Female,21.09694198604409,105.77195839162353,Carlos Wilson
+868,868,>30,166.0,student,"berkeley, california",tennis,Male,20.964067355126062,105.7505914823329,Andrew Harris
+869,869,20-24,168.0,other,"san francisco, california",tennis,Male,21.00370761696283,106.00187135433393,Linda Hodge
+870,870,25-30,173.0,engineer,"san francisco, california",football,Male,21.361007793491275,105.9003828434284,Jonathan Lara
+871,871,20-24,173.0,seller,"san francisco, california",football,Male,21.02689964051498,105.97158232035125,Parker Roberts
+872,872,25-30,164.0,other,"berkeley, california",tennis,Female,21.0672928096604,105.93880734649653,David Jackson
+873,873,20-24,168.0,other,"san francisco, california",football,Female,21.085202394964984,105.88023248886667,Cody Gray
+874,874,20-24,168.0,seller,"san francisco, california",football,Male,20.990683534603363,105.83920800920649,Tommy Weaver
+875,875,20-24,167.0,other,"oakland, california",tennis,Female,21.35842809421845,105.78131328938804,Joshua Fuentes
+876,876,25-30,167.0,other,"mountain view, california",tennis,Male,21.279493488112923,105.73919690280644,Kirsten Nguyen
+877,877,>30,170.0,engineer,"berkeley, california",tennis,Male,21.07729473207272,105.99298019542319,Carrie Hernandez
+878,878,>30,163.0,doctor,"belmont, california",football,Female,21.234354579178948,105.73808876846095,Maureen Myers
+879,879,25-30,172.0,engineer,"san francisco, california",tennis,Male,20.972557339070367,105.7948794437275,Eric Jackson
+880,880,>30,172.0,other,"san francisco, california",tennis,Male,21.051969153862444,105.96242580507148,Joshua Garrett
+881,881,25-30,167.0,other,"san mateo, california",football,Male,21.218277850611003,105.99221941451779,Anita Shaw
+882,882,20-24,166.0,student,"san francisco, california",tennis,Female,21.18445295044368,105.82097152751538,Jacob Hall
+883,883,20-24,163.0,seller,"san francisco, california",football,Female,21.345565506626773,105.79067726840715,Kimberly Pope
+884,884,>30,173.0,engineer,"oakland, california",tennis,Male,21.151189125914623,105.98804026483064,Steven Allen
+885,885,25-30,165.0,seller,"oakland, california",tennis,Female,20.94745098695699,105.8758319267841,Stephanie Obrien
+886,886,25-30,176.0,engineer,"menlo park, california",badminton,Male,21.167020350785194,105.77481799396458,Emily Wilson
+887,887,25-30,166.0,other,"oakland, california",tennis,Female,20.93150913490052,105.89870427141861,William Miller
+888,888,>30,174.0,teacher,"san mateo, california",basketball,Male,20.970897798620815,105.7783083895239,Paul Gordon
+889,889,>30,165.0,doctor,"berkeley, california",volleyball,Female,21.13145300140051,105.83366675775402,Marcus Palmer
+890,890,20-24,171.0,student,"san francisco, california",football,Male,21.07323073739046,105.77898395533236,Phillip Price
+891,891,>30,168.0,accounting,"san francisco, california",football,Male,20.958847934798513,105.75596549473073,Jason Santiago
+892,892,>30,170.0,engineer,"menlo park, california",badminton,Male,20.976456807447164,105.84477802052584,Margaret Baker
+893,893,25-30,162.0,other,"san francisco, california",tennis,Female,21.01218002874128,105.96712870182263,Corey Jones
+894,894,25-30,165.0,other,"oakland, california",tennis,Female,21.06267196206293,105.77563604261529,Megan Murphy
+895,895,25-30,167.0,teacher,"san francisco, california",tennis,Female,21.222349183908204,105.79999745806803,Benjamin Wilkins
+896,896,>30,164.0,other,"san francisco, california",football,Female,21.04050527146408,105.76291524881923,Nathan Clark
+897,897,20-24,162.0,student,"san francisco, california",football,Female,21.133104099542194,105.77133924011036,Matthew Pugh
+898,898,25-30,166.0,other,"san francisco, california",basketball,Female,21.070814282533576,106.02512556003155,Amy Brooks
+899,899,25-30,170.0,seller,"san francisco, california",football,Female,21.079572848315124,105.77064666662979,Allen Torres
+900,900,20-24,166.0,other,"oakland, california",tennis,Female,21.03378637539164,105.85477134488002,Robert Kelley
+901,901,20-24,167.0,student,"emeryville, california",football,Female,21.209212308854614,105.95451739640974,Ashley Diaz
+902,902,>30,172.0,other,"oakland, california",badminton,Male,20.917749766594458,105.99503007086501,Candace Booth
+903,903,20-24,167.0,other,"san francisco, california",tennis,Male,21.337000355461285,105.80750944936919,Valerie Wilson
+904,904,25-30,173.0,teacher,"stanford, california",badminton,Male,21.225348548716944,105.79476293402608,April Hawkins
+905,905,>30,165.0,accounting,"san francisco, california",tennis,Female,21.084903204703686,105.91132960679154,Mary Edwards
+906,906,25-30,172.0,seller,"oakland, california",basketball,Male,20.915668753783248,105.937820645898,John Wallace
+907,907,>30,166.0,seller,"san francisco, california",football,Male,20.902824830596575,105.85931190229348,William Wells
+908,908,20-24,167.0,doctor,"martinez, california",basketball,Female,21.15588107032748,105.93520325799699,David Stein
+909,909,20-24,158.0,other,"san francisco, california",tennis,Female,21.377380975546508,105.96284812531711,Jamie Rush
+910,910,>30,162.0,other,"larkspur, california",tennis,Female,21.27617722944106,105.75844846721887,Tamara Turner
+911,911,>30,169.0,other,"san francisco, california",football,Male,21.33174509666607,105.92431137225209,James Lyons
+912,912,>30,172.0,other,"san francisco, california",tennis,Male,21.37911862343484,106.00092598088624,Tiffany Hayes
+913,913,>30,167.0,teacher,"berkeley, california",football,Male,21.133042764608412,105.94623341452127,Tammy Carter
+914,914,>30,170.0,other,"san rafael, california",tennis,Male,21.237743938263044,105.97211203436311,Susan Johnson
+915,915,>30,164.0,other,"san francisco, california",tennis,Female,20.94621377551265,105.94459775993873,Alicia Mccann
+916,916,25-30,170.0,seller,"berkeley, california",tennis,Male,20.973944543511173,106.02273569378937,Nathan Alexander
+917,917,25-30,166.0,engineer,"san francisco, california",football,Male,20.941420910284094,105.76107561405328,Joseph Crawford
+918,918,25-30,170.0,engineer,"walnut creek, california",football,Male,21.162498451901783,105.88473653595355,Karen Zimmerman
+919,919,20-24,164.0,other,"san francisco, california",tennis,Female,21.12093373780344,105.96295573229597,Tammy Thornton
+920,920,>30,170.0,other,"san francisco, california",tennis,Male,21.020187373612863,105.94914744135576,Patrick Pugh
+921,921,25-30,166.0,seller,"san francisco, california",tennis,Male,20.900487971746745,105.83603996916997,Matthew Ellis
+922,922,25-30,169.0,other,"san francisco, california",tennis,Male,20.890199717092557,105.76117488480304,Andrea Carter
+923,923,>30,173.0,other,"san francisco, california",football,Male,21.063661545753217,105.7939887476874,Kim Clark
+924,924,20-24,165.0,seller,"san francisco, california",football,Female,21.178334324592864,105.91953795174916,Ashley Bell
+925,925,20-24,166.0,seller,"san mateo, california",football,Female,21.010750003075202,105.8423755122749,Dr. Michael Pacheco
+926,926,25-30,172.0,seller,"berkeley, california",football,Male,20.9498741401779,106.00820867287439,Amanda Garcia
+927,927,>30,166.0,other,"san mateo, california",table_tenis,Female,21.140423782892384,106.02986827606756,Anna Mullen
+928,928,25-30,161.0,seller,"san francisco, california",football,Female,21.30301752773268,105.82866521295585,Jason Jones
+929,929,20-24,167.0,engineer,"alameda, california",football,Male,20.954581728850755,105.99344421559225,Karen Allen
+930,930,20-24,174.0,other,"san francisco, california",football,Male,21.193020731285344,105.74115480926606,Kaitlyn Collier
+931,931,25-30,164.0,other,"san francisco, california",tennis,Male,21.20625396865888,105.99542553357564,Angela Ellis
+932,932,25-30,174.0,engineer,"san francisco, california",tennis,Male,20.918390568965016,105.92542841404827,Stephanie Edwards
+933,933,>30,167.0,seller,"oakland, california",tennis,Female,21.11984048014537,105.95244313557538,Kathy Meyer
+934,934,>30,168.0,other,"san francisco, california",basketball,Male,21.080846691025993,105.94159160009268,Ashley Frazier
+935,935,>30,170.0,engineer,"palo alto, california",tennis,Male,21.28261097796298,106.00080250134009,Jonathan Young
+936,936,20-24,165.0,engineer,"san francisco, california",tennis,Female,21.133401983724433,106.02885588722391,Amanda Guzman
+937,937,20-24,171.0,other,"oakland, california",tennis,Male,21.207041979552347,105.86754881715365,Michele Fowler
+938,938,>30,164.0,other,"berkeley, california",tennis,Male,21.161993825820083,105.98975689515913,Andre Scott
+939,939,25-30,167.0,seller,"san francisco, california",football,Male,21.06503219463457,106.02749954441497,Patrick Miller
+940,940,25-30,164.0,doctor,"san francisco, california",football,Female,21.27346400714661,105.91727057035948,William Johnson
+941,941,25-30,166.0,seller,"oakland, california",football,Female,21.03065090406046,105.96068968145539,Sophia Velez
+942,942,>30,171.0,other,"san francisco, california",tennis,Male,21.201555293005164,105.87818962867459,Christopher Miller
+943,943,>30,167.0,engineer,"pinole, california",tennis,Female,20.98548841873561,105.96881514584169,Gregory Rodriguez
+944,944,25-30,173.0,other,"san francisco, california",football,Male,20.972411348813573,105.78184096786818,Brittany Caldwell
+945,945,>30,166.0,other,"san francisco, california",tennis,Male,21.20872048796396,106.02607490941497,Diane Davila
+946,946,25-30,174.0,engineer,"san francisco, california",football,Male,20.971470308977427,105.73629130649529,Michaela Smith
+947,947,>30,167.0,other,"san francisco, california",tennis,Female,21.091744634421534,105.83642342349638,Marcus Sims
+948,948,25-30,166.0,seller,"berkeley, california",tennis,Female,21.113246506112112,105.90217219395359,Amanda Jones
+949,949,>30,171.0,seller,"san leandro, california",football,Male,21.35305719157336,105.90927548386442,Jonathan Everett
+950,950,25-30,169.0,other,"san francisco, california",tennis,Male,21.09401036429038,105.88592797478469,Joseph Davis
+951,951,>30,171.0,other,"san francisco, california",volleyball,Male,21.36367482657071,105.9876039658979,Samantha Park
+952,952,25-30,168.0,other,"burlingame, california",tennis,Female,21.323231009509072,105.75108060781992,Jeffery Cobb
+953,953,20-24,161.0,other,"oakland, california",tennis,Female,20.916135586039353,105.98172165179497,Darryl Weber
+954,954,>30,175.0,seller,"san francisco, california",football,Male,21.140523898626537,105.86886993061904,Theresa Shaw
+955,955,20-24,166.0,seller,"berkeley, california",football,Female,20.983763170066112,105.97037439717887,Charlene Jones
+956,956,>30,174.0,other,"san francisco, california",tennis,Male,20.977261030568755,105.83390358300096,Christopher Roberts
+957,957,>30,169.0,other,"san francisco, california",tennis,Male,21.312604007758928,105.95080729830701,Victoria Chaney
+958,958,20-24,162.0,seller,"san francisco, california",tennis,Female,20.930075489577803,105.73395008480337,Tonya Hill
+959,959,20-24,165.0,student,"berkeley, california",tennis,Female,21.115008532296716,105.91648371981407,Diane Wright
+960,960,>30,160.0,teacher,"albany, california",football,Female,21.163011260259175,105.94118590967429,Christopher Mcfarland MD
+961,961,25-30,174.0,other,"palo alto, california",tennis,Male,20.902988426313534,105.87301992592472,Ryan Morris
+962,962,20-24,168.0,seller,"san francisco, california",football,Male,21.29585354776325,105.81360254333728,Mitchell Forbes
+963,963,20-24,164.0,teacher,"san francisco, california",football,Female,21.167289322708616,105.7443968903358,Bryce Stephens
+964,964,>30,173.0,student,"berkeley, california",football,Male,21.26932287090142,105.78277679173078,Maria Jackson
+965,965,>30,164.0,engineer,"san francisco, california",football,Female,21.058499666124483,105.78212639726613,Jessica White
+966,966,25-30,167.0,other,"san francisco, california",football,Female,21.04318914560889,105.86259975797621,Brian Farley
+967,967,25-30,173.0,other,"orinda, california",tennis,Male,20.887641297937158,106.01094271626836,Timothy Blevins
+968,968,>30,166.0,doctor,"oakland, california",tennis,Female,21.062082867267684,105.99486206320442,Elizabeth Sanchez
+969,969,20-24,160.0,other,"san francisco, california",tennis,Female,21.10171295712132,105.92850420586535,Sally Thompson
+970,970,20-24,170.0,other,"san francisco, california",football,Female,21.014311644370633,106.01685856596876,Andrew Gross
+971,971,>30,169.0,other,"san francisco, california",table_tenis,Male,20.90767847859733,105.78112553235407,Connor Carter
+972,972,>30,167.0,other,"san rafael, california",football,Male,21.3492660247008,105.87271344620274,Jessica Graham
+973,973,>30,172.0,other,"south san francisco, california",badminton,Male,21.255680919541373,105.8626835684308,Jason Aguirre
+974,974,>30,171.0,other,"san francisco, california",tennis,Male,21.20064530647274,105.99872345429377,Brianna Owens
+975,975,20-24,165.0,other,"san francisco, california",football,Female,21.374224570812597,105.78558431756188,Juan Jacobs
+976,976,25-30,172.0,other,"berkeley, california",football,Male,21.35860319879374,105.96139911137354,Katherine Nelson
+977,977,20-24,165.0,student,"berkeley, california",tennis,Female,21.348961120977755,105.79256523065642,Debra Morgan
+978,978,>30,171.0,engineer,"san francisco, california",football,Male,21.298325522027874,105.77767844146051,Jessica Davila
+979,979,25-30,166.0,other,"san francisco, california",football,Female,20.91017246089065,105.83275470466783,Nathan Ross
+980,980,>30,169.0,engineer,"san francisco, california",tennis,Male,21.002888997011073,105.73556836303871,Amy Heath
+981,981,25-30,166.0,student,"oakland, california",swimming,Female,20.922107015351404,105.91998568606449,Elizabeth Hamilton
+982,982,25-30,174.0,other,"san francisco, california",football,Male,21.163575012240486,105.88686270207475,Jessica Baird
+983,983,20-24,173.0,seller,"berkeley, california",tennis,Male,21.239226453796594,105.92759643137707,Richard Bryant
+984,984,>30,164.0,teacher,"walnut creek, california",tennis,Female,21.294951945655036,106.00932547939782,Anthony Mitchell
+985,985,>30,164.0,other,"san francisco, california",badminton,Female,20.895259110278115,106.02303676942118,Daniel Taylor
+986,986,25-30,170.0,other,"san francisco, california",tennis,Female,21.196496298515275,105.92204422743349,Ashley House
+987,987,20-24,166.0,engineer,"san francisco, california",tennis,Female,21.129072684709445,106.00136605699267,Nicole Vang
+988,988,>30,174.0,other,"san francisco, california",football,Male,21.129457389739056,106.01613648652223,Sean Cohen
+989,989,20-24,166.0,student,"berkeley, california",tennis,Female,21.187491801590433,105.8174172642114,Melissa Jensen
+990,990,25-30,166.0,student,"oakland, california",swimming,Female,21.05202636329584,105.88836151678376,Bradley Ellison
+991,991,>30,168.0,engineer,"san francisco, california",swimming,Female,21.009815395064674,106.00263294219242,Gail Dixon
+992,992,20-24,161.0,other,"hayward, california",tennis,Female,20.89401009112295,105.97432069580681,Bryce Reynolds
+993,993,>30,168.0,seller,"san francisco, california",football,Male,21.178885786505756,105.89898103841342,Angela Burgess
+994,994,>30,172.0,other,"oakland, california",tennis,Male,20.96324966057118,105.82870882798645,Roberto Anderson
+995,995,25-30,172.0,other,"san francisco, california",tennis,Male,21.199904861184987,105.95102020505077,Angela Taylor
+996,996,>30,167.0,other,"san francisco, california",tennis,Male,20.970539684671436,106.00087773206272,Michael Mcpherson
+997,997,>30,159.0,seller,"san francisco, california",tennis,Female,21.100647506788825,105.78611594429607,Sabrina Williams
+998,998,>30,168.0,other,"san francisco, california",tennis,Female,20.999003220312492,105.92962494326048,Jeffrey Mckee
+999,999,>30,165.0,other,"san francisco, california",table_tenis,Female,21.23338785445591,106.0303474718303,Billy Lowe
