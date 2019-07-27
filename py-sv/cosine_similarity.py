@@ -32,12 +32,12 @@ class CosineSilimarity:
             info['profile'] = self.dataset.dataset.iloc[i].values
             list_score.append(info)
         list_score = sorted(list_score,key=itemgetter('score'))
-        list_score = list_score[:2]
+        list_score = list_score[:20]
         for item in list_score:
             item['profile'] = item['profile'].tolist()
             for j in range(len(item['profile'])):
                 item['profile'][j] = str(item['profile'][j])
-                
+
         return json.dumps(list_score)
         
 
