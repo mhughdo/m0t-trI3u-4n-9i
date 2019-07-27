@@ -13,7 +13,7 @@ exports.createProfile = async args => {
         .limit(1)
         .lean()
     const {index: lastIndex} = lastUser
-    const user = new User({index: lastIndex + 1, age, height, job, longtitude, latitude, sports, sex, name})
+    const user = new User({index: parseInt(lastIndex) + 1, age, height, job, longtitude, latitude, sports, sex, name})
     await user.save()
     return user
 }
