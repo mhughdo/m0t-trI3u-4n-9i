@@ -11,8 +11,31 @@ const cors = require('cors')
 
 const indexRouter = require('./routes/index')
 const userRouter = require('./routes/userRoutes')
+const User = require('./models/userProfile')
+const createAPI = require('./utils/createAPI')
 
 const app = express()
+
+async function runn() {
+    const {GEO_KEY} = process.env
+    const data = await User.find({}).limit(20)
+    const api = createAPI()
+    for (const item of data) {
+        const {Longtitude, Latitude} = item
+        const long = parseFloat(Longtitude) / 1000000 + 105
+        const la = parseFloat(Latitude) / 1000000 + 20
+        // console.log(`${long} ${la}`)
+        const geo = await api.makeRequest({
+            method: 'GET',
+            url: `https://api.opencagedata.com/geocode/v1/json?key=${GEO_KEY}&q=${la}+${long}&pretty=1`,
+        })
+        const {results} = geo
+        const {
+            components: {county, city, state},
+        } = results[0]
+        console.log(`${county} ${city || state}`)
+    }
+}
 
 app.use(helmet())
 app.use(cors())

@@ -17,9 +17,13 @@ const userSchema = new mongoose.Schema({
         required: [true, 'Sex is required'],
     },
     Sports: {type: String, required: [true, 'Sports is required']},
-    Location: {
-        type: String,
+    Longtitude: {
+        type: Number,
         required: [true, 'Location is required'],
+    },
+    Latitude: {
+        type: Number,
+        required: [true, 'Latitude is required'],
     },
     Job: {
         type: String,
