@@ -28,14 +28,14 @@ const _fieldDecorator = {
         initialValue: 1,
         rules: [{required: true, message: 'Please choose your location!'}],
     },
-    gender: {
+    sex: {
         initialValue: 'male',
         rules: [{required: true, message: 'Please choose your gender!'}],
     },
     job: {
         rules: [{required: true, message: 'Please choose your job!'}],
     },
-    sport: {
+    sports: {
         rules: [{required: true, message: 'Please choose your favourite sport!'}],
     },
 }
@@ -74,12 +74,21 @@ class SignUpForm extends Component {
                 if (la && lo) {
                     // Todo call API
                     try {
-                        const allValues = {...values, lo, la}
-                        const {email, password} = values
+                        const {email, password, displayName} = values
+                        const allValues = {...values, longtitude: lo, latitude: la, name: displayName}
+
                         const {user} = await auth.createUserWithEmailAndPassword(email, password)
                         console.log(user)
                         await createUserProfileDocument(user, allValues)
-                        const api = createAPI()
+                        const api = createAPI('https://hughdo.dev/api/users')
+                        await api.makeRequest({
+                            method: 'POST',
+                            data: allValues,
+                            url: '/create-profile',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                        })
                         this.props.history.push('/')
                     } catch (error) {
                         alert(error.message)
@@ -161,7 +170,7 @@ class SignUpForm extends Component {
                     )}
                 </Form.Item>
                 <Form.Item label='Giới tính'>
-                    {getFieldDecorator('gender', _fieldDecorator.height)(
+                    {getFieldDecorator('sex', _fieldDecorator.height)(
                         <Select
                             prefix={<Icon type='lock' style={{color: 'rgba(0,0,0,.25)'}} />}
                             placeholder='Giới tính'>
@@ -187,7 +196,7 @@ class SignUpForm extends Component {
                     )}
                 </Form.Item>
                 <Form.Item label='Môn thể thao'>
-                    {getFieldDecorator('sport', _fieldDecorator.height)(
+                    {getFieldDecorator('sports', _fieldDecorator.height)(
                         <Select
                             prefix={<Icon type='lock' style={{color: 'rgba(0,0,0,.25)'}} />}
                             placeholder='Môn thể thao'>

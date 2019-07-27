@@ -7,13 +7,13 @@ exports.createProfile = async args => {
     if (missingFields.length) {
         throw new Error(`${missingFields.join(', ')} are required`)
     }
-    const {Age, Height, Job, Longtitude, Latitude, Sports, Sex, Name} = args
+    const {age, height, job, longtitude, latitude, sports, sex, name} = args
     const lastUser = await User.findOne({})
         .sort({index: -1})
         .limit(1)
         .lean()
     const {index: lastIndex} = lastUser
-    const user = new User({index: lastIndex + 1, Age, Height, Job, Longtitude, Latitude, Sports, Sex, Name})
+    const user = new User({index: lastIndex + 1, age, height, job, longtitude, latitude, sports, sex, name})
     await user.save()
     return user
 }
