@@ -11,12 +11,14 @@ class PageView extends Component {
     }
     render() {
         return (
-        
-                <Layout >
-                    <Header theme="light"> <TopMenu></TopMenu></Header>
-                    <Content>    {this.props.children}</Content>
-                    <Footer>Footer</Footer>
-                </Layout>
+
+            <Layout >
+                <Header theme="light">
+                    <TopMenu></TopMenu>
+                </Header>
+                <Content>    {this.props.children}</Content>
+                <Footer>Footer</Footer>
+            </Layout>
 
         )
     }

@@ -6,33 +6,36 @@ import SignUp from "./pages/sign-up";
 import Chat from "./pages/chat";
 import Home from "./pages/home";
 import PageView from "./components/menu/PageView";
-import LogoView from "./components/menu/LogoView";
 
-function LoginPage() {
-    return <LogoView><Login /></LogoView>
-}
 
-function SignUpPage() {
-    return <LogoView> <SignUp /> </LogoView>
-}
+// function LoginPage() {
+//     return <LogoView><Login /></LogoView>
+// }
 
-function HomePage() {
-    return <PageView><Home></Home> </PageView>;
-}
+// function SignUpPage() {
+//     return <LogoView> <SignUp /> </LogoView>
+// }
 
-function ChatPage() {
-    return <PageView><Chat /></PageView>;
-}
+// function HomePage() {
+//     return <PageView><Home></Home> </PageView>;
+// }
+
+// function ChatPage() {
+//     return <PageView><Chat /></PageView>;
+// }
 
 function App() {
     return (
+
         <Router>
-            <div>
-                <Route exact path="/" component={HomePage} />
-                <Route path="/login" component={LoginPage} />
-                <Route path="/sign-up" component={SignUpPage} />
-                <Route path="/chat" component={ChatPage} />
-            </div>
+            <PageView>
+                <div>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/login" component={Login} />
+                    <Route path="/sign-up" component={SignUp} />
+                    <Route path="/chat" component={Chat} />
+                </div>
+            </PageView>
         </Router>
     );
 }
