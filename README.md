@@ -17,7 +17,7 @@
 ## Install
 
 ```sh
-npm install
+npm run install
 ```
 
 ## Run tests
