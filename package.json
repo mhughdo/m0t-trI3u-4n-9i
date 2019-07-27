@@ -1,0 +1,23 @@
+{
+    "name": "m0t-trI3u-4n-9i",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sb": "cd nodejs-server && npm start && cd ../react-front-end && npm run build && sudo cp -r  ./build/* /usr/share/nginx/html && sudo service nginx restart && cd ~",
+        "install": "cd nodejs-server && npm install && cd ../react-front-end && npm install",
+        "start": "cd nodejs-server && npm start && cd ../react-front-end && npm start"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ILivS/m0t-trI3u-4n-9i.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ILivS/m0t-trI3u-4n-9i/issues"
+    },
+    "homepage": "https://github.com/ILivS/m0t-trI3u-4n-9i#readme"
+}
