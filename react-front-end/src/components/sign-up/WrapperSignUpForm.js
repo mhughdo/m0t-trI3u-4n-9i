@@ -81,7 +81,7 @@ class SignUpForm extends Component {
                         console.log(user)
                         await createUserProfileDocument(user, allValues)
                         const api = createAPI('https://hughdo.dev/api/users')
-                        await api.makeRequest({
+                        const {success, message: errMsg} = await api.makeRequest({
                             method: 'POST',
                             data: allValues,
                             url: '/create-profile',
@@ -89,6 +89,9 @@ class SignUpForm extends Component {
                                 'Content-Type': 'application/json',
                             },
                         })
+                        if (!success) {
+                            alert(errMsg)
+                        }
                         this.props.history.push('/')
                     } catch (error) {
                         alert(error.message)
@@ -201,12 +204,12 @@ class SignUpForm extends Component {
                             prefix={<Icon type='lock' style={{color: 'rgba(0,0,0,.25)'}} />}
                             placeholder='Môn thể thao'>
                             <Option value='football'>Bóng đá</Option>
-                            <Option value='>basketball'>Bóng rổ</Option>
-                            <Option value='>volleyball'>Bóng chuyền</Option>
-                            <Option value='>swimming'>Bơi</Option>
-                            <Option value='>badminton'>Cầu lông</Option>
-                            <Option value='>table_tenis'>Bóng bàn</Option>
-                            <Option value='>tenis'>Tennis</Option>
+                            <Option value='basketball'>Bóng rổ</Option>
+                            <Option value='volleyball'>Bóng chuyền</Option>
+                            <Option value='swimming'>Bơi</Option>
+                            <Option value='badminton'>Cầu lông</Option>
+                            <Option value='table_tenis'>Bóng bàn</Option>
+                            <Option value='tenis'>Tennis</Option>
                         </Select>
                     )}
                 </Form.Item>
