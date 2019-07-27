@@ -17,13 +17,13 @@
 ## Install
 
 ```sh
-npm install
+npm run install
 ```
 
-## Run tests
+## Start
 
 ```sh
-npm run test
+npm start
 ```
 
 ## Author
