@@ -4,6 +4,7 @@ import './App.css';
 import Login from "./pages/login";
 import SignUp from "./pages/sign-up";
 import Chat from "./pages/chat";
+import Home from "./pages/home";
 import PageView from "./components/menu/PageView";
 import LogoView from "./components/menu/LogoView";
 
@@ -12,11 +13,11 @@ function LoginPage() {
 }
 
 function SignUpPage() {
-    return <LogoView> <SignUp />> </LogoView>
+    return <LogoView> <SignUp /> </LogoView>
 }
 
-function Home() {
-    return <PageView><h1>Home</h1></PageView>;
+function HomePage() {
+    return <PageView><Home></Home> </PageView>;
 }
 
 function ChatPage() {
@@ -27,7 +28,7 @@ function App() {
     return (
         <Router>
             <div>
-                <Route exact path="/" component={Home} />
+                <Route exact path="/" component={HomePage} />
                 <Route path="/login" component={LoginPage} />
                 <Route path="/sign-up" component={SignUpPage} />
                 <Route path="/chat" component={ChatPage} />
