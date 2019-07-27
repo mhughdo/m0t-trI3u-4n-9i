@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import WrapperSignUpForm from "../components/sign-up/WrapperSignUpForm";
-import { Row, Col } from 'antd';
+import React, {Component} from 'react'
+import {Row, Col} from 'antd'
+import WrapperSignUpForm from '../components/sign-up/WrapperSignUpForm';
 
 class SignUp extends Component {
     constructor(props) {
@@ -13,27 +13,22 @@ class SignUp extends Component {
 
     render() {
         return (
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '90vh' }}>
+            <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                 <div>
                     <Row>
                         <Col>
-                            <div style={{ fontWeight: 'bold', fontSize: 'x-large' }}>
-                                Đăng ký
-                        </div>
+                            <div style={{fontWeight: 'bold', fontSize: 'x-large'}}>Đăng ký</div>
                         </Col>
                     </Row>
                     <Row>
                         <Col>
-                            <WrapperSignUpForm></WrapperSignUpForm>
+                            <WrapperSignUpForm />
                         </Col>
                     </Row>
                 </div>
-            </ div>
-        );
+            </div>
+        )
     }
 }
 
-
-
 export default SignUp
-

@@ -8,3 +8,10 @@ exports.createProfile = (req, res) => {
         .then(sendSuccess(req, res))
         .catch(sendError(req, res))
 }
+
+exports.getMatches = (req, res) => {
+    userAction
+        .getMatches()
+        .then(sendSuccess(req, res))
+        .catch(sendError(req, res))
+}
