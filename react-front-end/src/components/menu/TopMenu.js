@@ -46,7 +46,6 @@ class TopMenu extends Component {
                             Chat
                         </Link>
                     </Menu.Item>
-
                     {/* <SubMenu
                     title={
                         <span className="submenu-title-wrapper">
