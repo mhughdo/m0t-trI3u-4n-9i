@@ -5,6 +5,7 @@ import json
 import pandas as pd
 import numpy as np
 from config import *
+from operator import itemgetter
 from scipy.spatial.distance import cosine
 
 class CosineSilimarity:
@@ -23,19 +24,23 @@ class CosineSilimarity:
     def calc_cosinesimilarity(self,user_profile):
         user_profile_dataframe = self.convert_json_to_dataframe(user_profile)
         preprocessed_user_profile = self.dataset.preprocess_data(user_profile_dataframe)
-        ##print(preprocessed_user_profile.head())
-        #print(self.dataset.dataset_to_onehot.head())
         list_score = []
         for i in range(len(self.dataset.dataset_to_onehot.index)):
+            info = {}
             cosine_score =cosine(preprocessed_user_profile.values,self.dataset.dataset_to_onehot.iloc[i].values)
-            list_score.append(cosine_score)
-        list_score = np.array([list_score])
-        #print(list_score)
-        idx_min = np.argmin(list_score,axis=1)
-        #print(list_score[0][idx_min])
-        json_file = pd.DataFrame.to_json(self.dataset.dataset.iloc[idx_min],orient='records')
-        return list_score[0][idx_min],json_file
-        #print(idx_min)
+            info['score'] = cosine_score
+            info['profile'] = self.dataset.dataset.iloc[i].values
+            list_score.append(info)
+        list_score = sorted(list_score,key=itemgetter('score'))
+        list_score = list_score[:20]
+        for item in list_score:
+            item['profile'] = item['profile'].tolist()
+            for j in range(len(item['profile'])):
+                item['profile'][j] = str(item['profile'][j])
+
+        return json.dumps(list_score)
+        
+
 
 if __name__ == "__main__":
     

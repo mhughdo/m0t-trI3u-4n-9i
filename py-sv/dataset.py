@@ -3,6 +3,7 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder,OneHotEncoder,MinMaxScaler
 from config import *
 import numpy as np
+import json
 class Dataset:
     
     def __init__(self,data_path):
@@ -18,6 +19,23 @@ class Dataset:
     def get_columns(self):
         self.columns = self.dataset.columns
         return self.columns
+
+    def add_user_profile(self,user_profile_dict):
+        for key,value in user_profile_dict.items():
+            user_profile_dict[key] = [value]
+        user_profile_dataframe = pd.DataFrame.from_dict(user_profile_dict) 
+        user_profile_dataframe = user_profile_dataframe.reset_index(drop=True)
+        print(user_profile_dataframe)
+        print(user_profile_dataframe.columns)
+        self.dataset = self.dataset.append(user_profile_dataframe,ignore_index=True)
+        print(len(self.dataset.index))
+        self.save()
+
+    def save(self):
+        try:
+            self.dataset.to_csv(DATASET_PATH)
+        except Exception as e:
+            print('Lỗi Khi Thêm Người Dùng')
 
     def get_num_examples(self):
         self.num_examples = len(self.dataset.index)

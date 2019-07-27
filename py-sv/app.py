@@ -6,9 +6,10 @@ from config import *
 import json
 import pandas as pd
 
+app = Flask(__name__)
 dataset = Dataset(DATASET_PATH)
 cosine = CosineSilimarity(dataset)
-app = Flask(__name__)
+
 
 @app.route('/')
 def hello_world():
@@ -20,8 +21,14 @@ def get_similiraty_user():
     for key,value in user_requirement.items():
         user_requirement[key] = [value]
     json_file = json.dumps(user_requirement)
-    cosine_score,user_similarity_json = cosine.calc_cosinesimilarity(json_file)
+    user_similarity_json = cosine.calc_cosinesimilarity(json_file)
     return user_similarity_json
-    
+
+@app.route('/add',methods=['POST','GET'])
+def add_user():
+    user_profile = request.get_json()
+    dataset.add_user_profile(user_profile)
+    return 'Done'
+
 if __name__ == '__main__':
    app.run()
