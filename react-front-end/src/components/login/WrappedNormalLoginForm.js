@@ -1,59 +1,54 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import { Form, Icon, Input, Button, Checkbox, Row, Col, Select } from 'antd';
+import React, {Component} from 'react'
+import {Link} from 'react-router-dom'
+import {Form, Icon, Input, Button, Checkbox, Row, Col, Select} from 'antd'
 
 const _fieldDecorator = {
     username: {
-        rules: [{ required: true, message: 'Please input your username!' }],
+        rules: [{required: true, message: 'Please input your username!'}],
     },
     password: {
-        rules: [{ required: true, message: 'Please input your Password!' }],
+        rules: [{required: true, message: 'Please input your Password!'}],
     },
     remember: {
         valuePropName: 'checked',
         initialValue: true,
-    }
-
+    },
 }
-
 
 class NormalLoginForm extends Component {
     handleSubmit = e => {
-        e.preventDefault();
+        e.preventDefault()
         this.props.form.validateFields((err, values) => {
             if (!err) {
-                console.log('Received values of form: ', values);
+                console.log('Received values of form: ', values)
             }
-        });
-    };
-
-
-
+        })
+    }
 
     render() {
-        const { getFieldDecorator } = this.props.form;
+        const {getFieldDecorator} = this.props.form
         return (
-            <Form onSubmit={this.handleSubmit} style={{ minWidth: '400px' }}>
+            <Form onSubmit={this.handleSubmit} style={{minWidth: '400px'}}>
                 <Form.Item>
                     {getFieldDecorator('username', _fieldDecorator.username)(
                         <Input
-                            prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
-                            placeholder="Username"
-                        />,
+                            prefix={<Icon type='user' style={{color: 'rgba(0,0,0,.25)'}} />}
+                            placeholder='Username'
+                        />
                     )}
                 </Form.Item>
                 <Form.Item>
                     {getFieldDecorator('password', _fieldDecorator.password)(
                         <Input
-                            prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
-                            type="password"
-                            placeholder="Password"
-                        />,
+                            prefix={<Icon type='lock' style={{color: 'rgba(0,0,0,.25)'}} />}
+                            type='password'
+                            placeholder='Password'
+                        />
                     )}
                 </Form.Item>
 
                 <Form.Item>
-                    {/* 
+                    {/*
                     <Row>
                         <Col >
                             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -66,29 +61,27 @@ class NormalLoginForm extends Component {
                     </Row> */}
 
                     <Row>
-                        <Col >
-                            <Button type="primary" htmlType="submit" style={{ width: '100%' }}>
+                        <Col>
+                            <Button type='primary' htmlType='submit' style={{width: '100%'}}>
                                 Đăng nhập
-                                </Button>
-
+                            </Button>
                         </Col>
                     </Row>
 
                     <Row>
-                        <Col >
+                        <Col>
                             <Link to='/sign-up'>
-                                <Button type="dashed" style={{ width: '100%' }} >
+                                <Button type='dashed' style={{width: '100%'}}>
                                     Đăng ký
                                 </Button>
                             </Link>
                         </Col>
                     </Row>
-
                 </Form.Item>
             </Form>
-        );
+        )
     }
 }
 
-const WrappedNormalLoginForm = Form.create({ name: 'normal_login' })(NormalLoginForm);
+const WrappedNormalLoginForm = Form.create({name: 'normal_login'})(NormalLoginForm)
 export default WrappedNormalLoginForm

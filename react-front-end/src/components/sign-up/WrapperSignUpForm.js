@@ -1,14 +1,15 @@
 import React, {Component} from 'react'
 import {Form, Icon, Input, Button, Checkbox, Row, Col, Select, message} from 'antd'
 import {auth, createUserProfileDocument} from '../../firebase/firebaseUtils'
+import createAPI from '../../utils/createAPI'
 
 const {Option} = Select
 const _fieldDecorator = {
-    name: {
+    displayName: {
         rules: [{required: true, message: 'Please input your name!'}],
     },
-    username: {
-        rules: [{required: true, message: 'Please input your username!'}],
+    email: {
+        rules: [{required: true, message: 'Please input your email!'}],
     },
     password: {
         rules: [{required: true, message: 'Please input your Password!'}],
@@ -27,14 +28,14 @@ const _fieldDecorator = {
         initialValue: 1,
         rules: [{required: true, message: 'Please choose your location!'}],
     },
-    gender: {
+    sex: {
         initialValue: 'male',
         rules: [{required: true, message: 'Please choose your gender!'}],
     },
     job: {
         rules: [{required: true, message: 'Please choose your job!'}],
     },
-    sport: {
+    sports: {
         rules: [{required: true, message: 'Please choose your favourite sport!'}],
     },
 }
@@ -68,17 +69,39 @@ class SignUpForm extends Component {
                     signUpLoading: true,
                 })
                 console.log('Received values of form: ', values)
-                const {username, password} = values
-                const {user} = await auth.createUserWithEmailAndPassword(username, password)
-                console.log(user)
+
                 // console.log(la, lo)
                 if (la && lo) {
                     // Todo call API
+                    try {
+                        const {email, password, displayName} = values
+                        const allValues = {...values, longtitude: lo, latitude: la, name: displayName}
 
-                    const allValues = {...values, lo, la}
+                        const {user} = await auth.createUserWithEmailAndPassword(email, password)
+                        console.log(user)
+                        await createUserProfileDocument(user, allValues)
+                        const api = createAPI('https://hughdo.dev/api/users')
+                        const {success, message: errMsg} = await api.makeRequest({
+                            method: 'POST',
+                            data: allValues,
+                            url: '/create-profile',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                        })
+                        if (!success) {
+                            alert(errMsg)
+                        }
+                        this.props.history.push('/')
+                    } catch (error) {
+                        alert(error.message)
+                    }
                 } else {
                     message.error('Ban chưa cấp phép cho thông tin vị trí, Hãy thử lại')
                 }
+                this.setState({
+                    signUpLoading: false,
+                })
             }
         })
     }
@@ -100,19 +123,19 @@ class SignUpForm extends Component {
 
     render() {
         const {getFieldDecorator} = this.props.form
+        const {
+            location: {lo, la},
+        } = this.state
         return (
             <Form {...formItemLayout} onSubmit={this.handleSubmit} style={{minWidth: '500px'}}>
                 <Form.Item label='Tên'>
-                    {getFieldDecorator('name', _fieldDecorator.name)(
+                    {getFieldDecorator('displayName', _fieldDecorator.displayName)(
                         <Input prefix={<Icon type='user' style={{color: 'rgba(0,0,0,.25)'}} />} placeholder='Name' />
                     )}
                 </Form.Item>
-                <Form.Item label='Tên đăng nhập'>
-                    {getFieldDecorator('username', _fieldDecorator.username)(
-                        <Input
-                            prefix={<Icon type='user' style={{color: 'rgba(0,0,0,.25)'}} />}
-                            placeholder='Username'
-                        />
+                <Form.Item label='Email'>
+                    {getFieldDecorator('email', _fieldDecorator.email)(
+                        <Input prefix={<Icon type='user' style={{color: 'rgba(0,0,0,.25)'}} />} placeholder='Email' />
                     )}
                 </Form.Item>
                 <Form.Item label='Mật khẩu'>
@@ -141,12 +164,16 @@ class SignUpForm extends Component {
                     {getFieldDecorator('height', _fieldDecorator.height)(<Input placeholder='Chiều cao' />)}
                 </Form.Item>
                 <Form.Item label='Địa chỉ'>
-                    <Button type='primary' onClick={this.handleGetLocation}>
-                        Lấy địa chỉ
-                    </Button>
+                    {lo ? (
+                        <span>Đã lấy địa chỉ</span>
+                    ) : (
+                        <Button type='primary' onClick={this.handleGetLocation}>
+                            Lấy địa chỉ
+                        </Button>
+                    )}
                 </Form.Item>
                 <Form.Item label='Giới tính'>
-                    {getFieldDecorator('gender', _fieldDecorator.height)(
+                    {getFieldDecorator('sex', _fieldDecorator.height)(
                         <Select
                             prefix={<Icon type='lock' style={{color: 'rgba(0,0,0,.25)'}} />}
                             placeholder='Giới tính'>
@@ -172,17 +199,17 @@ class SignUpForm extends Component {
                     )}
                 </Form.Item>
                 <Form.Item label='Môn thể thao'>
-                    {getFieldDecorator('sport', _fieldDecorator.height)(
+                    {getFieldDecorator('sports', _fieldDecorator.height)(
                         <Select
                             prefix={<Icon type='lock' style={{color: 'rgba(0,0,0,.25)'}} />}
                             placeholder='Môn thể thao'>
                             <Option value='football'>Bóng đá</Option>
-                            <Option value='>basketball'>Bóng rổ</Option>
-                            <Option value='>volleyball'>Bóng chuyền</Option>
-                            <Option value='>swimming'>Bơi</Option>
-                            <Option value='>badminton'>Cầu lông</Option>
-                            <Option value='>table_tenis'>Bóng bàn</Option>
-                            <Option value='>tenis'>Tennis</Option>
+                            <Option value='basketball'>Bóng rổ</Option>
+                            <Option value='volleyball'>Bóng chuyền</Option>
+                            <Option value='swimming'>Bơi</Option>
+                            <Option value='badminton'>Cầu lông</Option>
+                            <Option value='table_tenis'>Bóng bàn</Option>
+                            <Option value='tenis'>Tennis</Option>
                         </Select>
                     )}
                 </Form.Item>

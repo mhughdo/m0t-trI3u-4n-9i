@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import WrappedNormalLoginForm from "../components/login/WrappedNormalLoginForm";
+import React, {Component} from 'react'
 import { Row, Col } from 'antd';
+import WrappedNormalLoginForm from "../components/login/WrappedNormalLoginForm";
 
 class Login extends Component {
     constructor(props) {
@@ -13,27 +13,22 @@ class Login extends Component {
 
     render() {
         return (
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '90vh' }}>
+            <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '90vh'}}>
                 <div>
                     <Row>
-                        <Col span='24' >
-                            <div style={{ fontWeight: 'bold', fontSize: 'x-large' }}>
-                                Đăng nhập
-                            </div>
+                        <Col span='24'>
+                            <div style={{fontWeight: 'bold', fontSize: 'x-large'}}>Đăng nhập</div>
                         </Col>
                     </Row>
                     <Row>
                         <Col span='24'>
-                            <WrappedNormalLoginForm></WrappedNormalLoginForm>
+                            <WrappedNormalLoginForm />
                         </Col>
                     </Row>
                 </div>
-            </ div>
-        );
+            </div>
+        )
     }
 }
 
-
-
 export default Login
-

@@ -8,32 +8,32 @@ const userSchema = new mongoose.Schema({
         required: [true, 'Index is required'],
         unique: true,
     },
-    Name: {
+    name: {
         type: String,
         required: [true, 'Name is required'],
     },
-    Sex: {
+    sex: {
         type: String,
         required: [true, 'Sex is required'],
     },
-    Sports: {type: String, required: [true, 'Sports is required']},
-    Longtitude: {
+    sports: {type: String, required: [true, 'Sports is required']},
+    longtitude: {
         type: Number,
         required: [true, 'Location is required'],
     },
-    Latitude: {
+    latitude: {
         type: Number,
         required: [true, 'Latitude is required'],
     },
-    Job: {
+    job: {
         type: String,
         required: [true, 'Job is required'],
     },
-    Height: {
+    height: {
         type: String,
         required: [true, 'Height is required'],
     },
-    Age: {
+    age: {
         type: String,
         required: [true, 'Age is required'],
     },

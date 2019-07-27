@@ -53,7 +53,7 @@ const limiter = rateLimit({
 })
 app.use('/api', limiter)
 app.use(express.json({limit: '1000kb'}))
-app.use(mongoSanitize())
+// app.use(mongoSanitize())
 app.use(xss())
 
 app.use('/', indexRouter)

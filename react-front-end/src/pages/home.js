@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { Card, Button } from 'antd'
 import Swipeable from "react-swipy"
-const wrapperStyles = { position: "relative", width: "250px", height: "250px", marginBottom: 120 };
+
+import UserCard from '../components/user-card/UserCard'
+const wrapperStyles = { position: "relative", width: 375, height: 567 };
 const actionsStyles = {
     display: "flex",
     justifyContent: "space-between",
@@ -37,7 +39,7 @@ class Home extends Component {
                                 )}
                                 onAfterSwipe={this.remove}
                             >
-                                <Card>{matchData[0]}</Card>
+                                <UserCard>{matchData[0]}</UserCard>
                             </Swipeable>
                         </div>
                     ) : (
