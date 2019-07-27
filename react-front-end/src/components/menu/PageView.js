@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
-import { Layout } from 'antd';
+import React, {Component} from 'react'
+import {Layout} from 'antd'
 import TopMenu from './TopMenu'
-const { Header, Footer, Sider, Content } = Layout;
+
+const {Header, Footer, Sider, Content} = Layout
 
 class PageView extends Component {
     componentDidMount() {
@@ -9,17 +10,16 @@ class PageView extends Component {
             console.log(this.props)
         }
     }
+
     render() {
         return (
-
-            <Layout >
-                <Header theme="light">
-                    <TopMenu></TopMenu>
+            <Layout>
+                <Header theme='light'>
+                    <TopMenu />
                 </Header>
-                <Content>    {this.props.children}</Content>
+                <Content> {this.props.children}</Content>
                 <Footer>Footer</Footer>
             </Layout>
-
         )
     }
 }

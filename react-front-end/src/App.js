@@ -1,44 +1,71 @@
-import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom"
-import './App.css';
-import Login from "./pages/login";
-import SignUp from "./pages/sign-up";
-import Chat from "./pages/chat";
-import Home from "./pages/home";
-import PageView from "./components/menu/PageView";
+import React, {Suspense} from 'react'
+import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom'
+import './App.css'
+import {connect} from 'react-redux'
+import Login from './pages/login'
+import SignUp from './pages/sign-up'
+import Chat from './pages/chat'
+import Home from './pages/home'
+import PageView from './components/menu/PageView'
 import history from './utils/history'
+import {auth, createUserProfileDocument} from './firebase/firebaseUtils'
+import {setCurrentUser} from './redux/user/userActions'
 
+class App extends React.Component {
+    unsubscribeFromAuth = null
 
-// function LoginPage() {
-//     return <LogoView><Login /></LogoView>
-// }
+    componentDidMount() {
+        const {setCurrentUser} = this.props
+        this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
+            console.log(userAuth)
+            if (userAuth) {
+                const userRef = await createUserProfileDocument(userAuth)
+                userRef.onSnapshot(snapShot => {
+                    setCurrentUser({
+                        currentUser: {
+                            id: snapShot.id,
+                            ...snapShot.data(),
+                        },
+                    })
+                })
+            }
+            setCurrentUser(userAuth)
+        })
+    }
 
-// function SignUpPage() {
-//     return <LogoView> <SignUp /> </LogoView>
-// }
+    componentWillUnmount() {
+        this.unsubscribeFromAuth()
+    }
 
-// function HomePage() {
-//     return <PageView><Home></Home> </PageView>;
-// }
-
-// function ChatPage() {
-//     return <PageView><Chat /></PageView>;
-// }
-
-function App() {
-    return (
-
-        <Router history={history}>
-            <PageView>
-                <div>
-                    <Route exact path="/" component={Home} />
-                    <Route path="/login" component={Login} />
-                    <Route path="/sign-up" component={SignUp} />
-                    <Route path="/chat" component={Chat} />
-                </div>
-            </PageView>
-        </Router>
-    )
+    render() {
+        return (
+            <Router history={history}>
+                <PageView>
+                    <div>
+                        <Route exact path='/' component={Home} />
+                        <Route
+                            exact
+                            path='/login'
+                            render={() => (this.props.currentUser ? <Redirect to='/' /> : <Login />)}
+                        />
+                        <Route path='/sign-up' component={SignUp} />
+                        <Route path='/chat' component={Chat} />
+                    </div>
+                </PageView>
+            </Router>
+        )
+    }
 }
 
-export default App
+const mapStateToProps = state => ({
+    currentUser: state.user.currentUser,
+})
+
+const mapDispatchToProps = dispatch => ({
+    setCurrentUser: user => dispatch(setCurrentUser(user)),
+})
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(App)
