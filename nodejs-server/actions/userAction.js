@@ -1,6 +1,6 @@
 const User = require('../models/userProfile')
 
-const _fields = ['Age', 'Height', 'Job', 'Longtitude', 'Latitude', 'Sports', 'Sex', 'Name']
+const _fields = ['age', 'height', 'job', 'longtitude', 'latitude', 'sports', 'sex', 'name']
 
 exports.createProfile = async args => {
     const missingFields = _fields.filter(field => !Object.keys(args).includes(field))
