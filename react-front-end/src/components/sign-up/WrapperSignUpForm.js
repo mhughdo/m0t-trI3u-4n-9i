@@ -1,14 +1,15 @@
 import React, {Component} from 'react'
 import {Form, Icon, Input, Button, Checkbox, Row, Col, Select, message} from 'antd'
 import {auth, createUserProfileDocument} from '../../firebase/firebaseUtils'
+import createAPI from '../../utils/createAPI'
 
 const {Option} = Select
 const _fieldDecorator = {
-    name: {
+    displayName: {
         rules: [{required: true, message: 'Please input your name!'}],
     },
-    username: {
-        rules: [{required: true, message: 'Please input your username!'}],
+    email: {
+        rules: [{required: true, message: 'Please input your email!'}],
     },
     password: {
         rules: [{required: true, message: 'Please input your Password!'}],
@@ -68,17 +69,27 @@ class SignUpForm extends Component {
                     signUpLoading: true,
                 })
                 console.log('Received values of form: ', values)
-                const {username, password} = values
-                const {user} = await auth.createUserWithEmailAndPassword(username, password)
-                console.log(user)
+
                 // console.log(la, lo)
                 if (la && lo) {
                     // Todo call API
-
-                    const allValues = {...values, lo, la}
+                    try {
+                        const allValues = {...values, lo, la}
+                        const {email, password} = values
+                        const {user} = await auth.createUserWithEmailAndPassword(email, password)
+                        console.log(user)
+                        await createUserProfileDocument(user, allValues)
+                        const api = createAPI()
+                        this.props.history.push('/')
+                    } catch (error) {
+                        alert(error.message)
+                    }
                 } else {
                     message.error('Ban chưa cấp phép cho thông tin vị trí, Hãy thử lại')
                 }
+                this.setState({
+                    signUpLoading: false,
+                })
             }
         })
     }
@@ -100,19 +111,19 @@ class SignUpForm extends Component {
 
     render() {
         const {getFieldDecorator} = this.props.form
+        const {
+            location: {lo, la},
+        } = this.state
         return (
             <Form {...formItemLayout} onSubmit={this.handleSubmit} style={{minWidth: '500px'}}>
                 <Form.Item label='Tên'>
-                    {getFieldDecorator('name', _fieldDecorator.name)(
+                    {getFieldDecorator('displayName', _fieldDecorator.displayName)(
                         <Input prefix={<Icon type='user' style={{color: 'rgba(0,0,0,.25)'}} />} placeholder='Name' />
                     )}
                 </Form.Item>
-                <Form.Item label='Tên đăng nhập'>
-                    {getFieldDecorator('username', _fieldDecorator.username)(
-                        <Input
-                            prefix={<Icon type='user' style={{color: 'rgba(0,0,0,.25)'}} />}
-                            placeholder='Username'
-                        />
+                <Form.Item label='Email'>
+                    {getFieldDecorator('email', _fieldDecorator.email)(
+                        <Input prefix={<Icon type='user' style={{color: 'rgba(0,0,0,.25)'}} />} placeholder='Email' />
                     )}
                 </Form.Item>
                 <Form.Item label='Mật khẩu'>
@@ -141,9 +152,13 @@ class SignUpForm extends Component {
                     {getFieldDecorator('height', _fieldDecorator.height)(<Input placeholder='Chiều cao' />)}
                 </Form.Item>
                 <Form.Item label='Địa chỉ'>
-                    <Button type='primary' onClick={this.handleGetLocation}>
-                        Lấy địa chỉ
-                    </Button>
+                    {lo ? (
+                        <span>Đã lấy địa chỉ</span>
+                    ) : (
+                        <Button type='primary' onClick={this.handleGetLocation}>
+                            Lấy địa chỉ
+                        </Button>
+                    )}
                 </Form.Item>
                 <Form.Item label='Giới tính'>
                     {getFieldDecorator('gender', _fieldDecorator.height)(
