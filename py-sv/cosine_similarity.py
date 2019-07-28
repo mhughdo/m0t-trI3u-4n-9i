@@ -7,12 +7,10 @@ import numpy as np
 from config import *
 from operator import itemgetter
 from scipy.spatial.distance import cosine
-
 class CosineSilimarity:
     
     def __init__(self,dataset):
         self.dataset = dataset
-    
     
     def convert_json_to_dataframe(self,json_file):
         
@@ -41,9 +39,6 @@ class CosineSilimarity:
 
         return json.dumps(list_score)
         
-        
-
-
 if __name__ == "__main__":
     
     profile_test = {
