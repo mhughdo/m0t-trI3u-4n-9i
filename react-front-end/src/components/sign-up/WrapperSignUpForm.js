@@ -80,7 +80,7 @@ class SignUpForm extends Component {
                         const {user} = await auth.createUserWithEmailAndPassword(email, password)
                         console.log(user)
                         await createUserProfileDocument(user, allValues)
-                        const api = createAPI('https://hughdo.dev/api/users')
+                        const api = createAPI('https://hughdo.dev/api/v1/users')
                         const {success, message: errMsg} = await api.makeRequest({
                             method: 'POST',
                             data: allValues,
@@ -90,11 +90,11 @@ class SignUpForm extends Component {
                             },
                         })
                         if (!success) {
-                            alert(errMsg)
+                            message.error(errMsg)
                         }
                         this.props.history.push('/')
                     } catch (error) {
-                        alert(error.message)
+                        message.error(error.message)
                     }
                 } else {
                     message.error('Ban chưa cấp phép cho thông tin vị trí, Hãy thử lại')

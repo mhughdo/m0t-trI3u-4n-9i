@@ -16,6 +16,21 @@ const createAPI = require('./utils/createAPI')
 
 const app = express()
 
+async function runnn() {
+    const user = new User({
+        index: 1,
+        age: '25-30',
+        height: 170.0,
+        job: 'seller',
+        longtitude: 983228.9999999944,
+        latitude: 1293793.000000001,
+        sports: 'tennis',
+        sex: 'Male',
+        name: 'Do Manh Hung',
+    })
+    await user.save()
+}
+
 async function runn() {
     const {GEO_KEY} = process.env
     const data = await User.find({}).limit(20)
@@ -54,7 +69,7 @@ const limiter = rateLimit({
 app.use('/api', limiter)
 app.use(express.json({limit: '1000kb'}))
 // app.use(mongoSanitize())
-app.use(xss())
+// app.use(xss())
 
 app.use('/', indexRouter)
 app.use('/users/', userRouter)

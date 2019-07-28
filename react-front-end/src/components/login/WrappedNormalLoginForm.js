@@ -1,10 +1,11 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
-import {Form, Icon, Input, Button, Checkbox, Row, Col, Select} from 'antd'
+import {Form, Icon, Input, Button, Checkbox, Row, Col, Select, message} from 'antd'
+import {auth} from '../../firebase/firebaseUtils'
 
 const _fieldDecorator = {
-    username: {
-        rules: [{required: true, message: 'Please input your username!'}],
+    email: {
+        rules: [{required: true, message: 'Please input your email!'}],
     },
     password: {
         rules: [{required: true, message: 'Please input your Password!'}],
@@ -18,9 +19,16 @@ const _fieldDecorator = {
 class NormalLoginForm extends Component {
     handleSubmit = e => {
         e.preventDefault()
-        this.props.form.validateFields((err, values) => {
+        this.props.form.validateFields(async (err, values) => {
             if (!err) {
                 console.log('Received values of form: ', values)
+                const {email, password} = values
+                try {
+                    await auth.signInWithEmailAndPassword(email, password)
+                } catch (error) {
+                    console.log(error)
+                    message.error(error.message)
+                }
             }
         })
     }
@@ -30,11 +38,8 @@ class NormalLoginForm extends Component {
         return (
             <Form onSubmit={this.handleSubmit} style={{minWidth: '400px'}}>
                 <Form.Item>
-                    {getFieldDecorator('username', _fieldDecorator.username)(
-                        <Input
-                            prefix={<Icon type='user' style={{color: 'rgba(0,0,0,.25)'}} />}
-                            placeholder='Username'
-                        />
+                    {getFieldDecorator('email', _fieldDecorator.username)(
+                        <Input prefix={<Icon type='user' style={{color: 'rgba(0,0,0,.25)'}} />} placeholder='Email' />
                     )}
                 </Form.Item>
                 <Form.Item>
