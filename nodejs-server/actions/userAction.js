@@ -1,3 +1,4 @@
+const createAPI = require('../utils/createAPI')
 const User = require('../models/userProfile')
 
 const _fields = ['age', 'height', 'job', 'longtitude', 'latitude', 'sports', 'sex', 'name']
@@ -9,7 +10,7 @@ exports.createProfile = async args => {
     }
     const {age, height, job, longtitude, latitude, sports, sex, name} = args
     const userCount = await User.findOne({}).countDocuments()
-    const user = new User({
+    const data = {
         index: `${userCount}`,
         age,
         height,
@@ -19,8 +20,20 @@ exports.createProfile = async args => {
         sports,
         sex,
         name,
+    }
+    const user = new User(data)
+    const api = createAPI('https://hughdo.dev/api/v2')
+    const res = await api.makeRequest({
+        method: 'POST',
+        data,
+        url: '/add',
+        headers: {
+            'Content-Type': 'application/json',
+        },
     })
+    console.log(res)
     await user.save()
+
     return user
 }
 
