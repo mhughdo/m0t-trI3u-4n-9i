@@ -44,3 +44,45 @@ exports.getUser = async id => {
     if (!user) throw new Error(`User with id ${id} not found`)
     return user
 }
+
+exports.getMatches = async id => {
+    if (!id) throw new Error('id not found')
+    const _fields2 = ['Age', 'Height', 'Job', 'Longtitude', 'Latitude', 'Sports', 'Sex', 'Name']
+    const user = await User.findOne({index: id}).lean()
+    if (!user) throw new Error('User not found')
+
+    const {
+        index,
+        age: Age,
+        height: Height,
+        job: Job,
+        longtitude: Longtitude,
+        latitude: Latitude,
+        sports: Sports,
+        sex: Sex,
+        name: Name,
+    } = user
+    const data = {
+        index,
+        Age,
+        Height,
+        Job,
+        Longtitude,
+        Latitude,
+        Sports,
+        Sex,
+        Name,
+    }
+    const api = createAPI('https://hughdo.dev/api/v2')
+    const res = await api.makeRequest({
+        method: 'POST',
+        data,
+        url: '/user',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    })
+    console.log(res)
+    if (res && res.length) return res
+    throw new Error('No matches found')
+}

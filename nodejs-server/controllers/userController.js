@@ -19,8 +19,9 @@ exports.getUser = (req, res) => {
 }
 
 exports.getMatches = (req, res) => {
+    const {id} = req.params
     userAction
-        .getMatches()
+        .getMatches(`${id.trim()}`)
         .then(sendSuccess(req, res))
         .catch(sendError(req, res))
 }
