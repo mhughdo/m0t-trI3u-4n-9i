@@ -113,7 +113,7 @@ class SignUpForm extends Component {
                         // console.log(index)
                         let imageURL = ''
                         if (values.image.length) {
-                            imageURL = await this.uploadFile(values.image[0], index)
+                            imageURL = await this.uploadFile(values.image[0].originFileObj, index)
                             delete allValues.image
                             console.log(imageURL)
                         }
