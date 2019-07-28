@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
 import { Card, Button } from 'antd'
 import Swipeable from "react-swipy"
+import { connect } from 'react-redux'
 
 import UserCard from '../components/user-card/UserCard'
+import { getRandomImg } from '../utils/getRandomImage'
+import { getMatchedUser } from '../utils/getMatchedUser';
+
 const wrapperStyles = { position: "relative", width: 375, height: 567 };
 const actionsStyles = {
     display: "flex",
@@ -14,7 +18,45 @@ class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            matchData: ["First", "Second", "Third"]
+            matchData: [
+                {
+                    name: '',
+                    image: '',
+                    job: ''
+                }
+            ]
+        }
+    }
+
+    componentDidMount() {
+        // console.log('Home', this.props)
+        // getRandomImg().then(res => {
+        //     console.log('More', res)
+        //     const results = res.results[0]
+        //     this.setState({
+        //         matchData: [
+        //             {
+        //                 name: results.name.first + ' ' + results.name.last,
+        //                 image: results.picture.large,
+        //                 job: 'student'
+        //             }
+        //         ]
+        //     })
+        // })
+    }
+
+    componentDidUpdate() {
+        console.log("props", this.props)
+        if (this.props.currentUser) {
+            getMatchedUser(900).then(res => {
+                if (res.success) {
+                    const { data } = res;
+                    this.setState({
+                        matchData: data
+                    })
+                }
+
+            })
         }
     }
 
@@ -39,7 +81,7 @@ class Home extends Component {
                                 )}
                                 onAfterSwipe={this.remove}
                             >
-                                <UserCard>{matchData[0]}</UserCard>
+                                <UserCard {...matchData[0]}></UserCard>
                             </Swipeable>
                         </div>
                     ) : (
@@ -50,4 +92,12 @@ class Home extends Component {
         )
     }
 }
-export default Home
+
+const mapStateToProps = state => ({
+    currentUser: state.user.currentUser,
+})
+
+
+export default connect(
+    mapStateToProps,
+)(Home)

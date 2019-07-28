@@ -215,7 +215,7 @@ class SignUpForm extends Component {
                 </Form.Item>
 
                 <Row>
-                    <Col>
+                    <Col span={24}>
                         <div style={{display: 'flex', justifyContent: 'flex-end'}}>
                             <Button
                                 type='primary'
