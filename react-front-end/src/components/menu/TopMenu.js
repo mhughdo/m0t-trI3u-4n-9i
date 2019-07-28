@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import { Menu, Icon } from 'antd'
-import { connect } from 'react-redux'
-import { auth } from '../../firebase/firebaseUtils'
+import React, {Component} from 'react'
+import {Link} from 'react-router-dom'
+import {Menu, Icon, Avatar} from 'antd'
+import {connect} from 'react-redux'
+import {auth} from '../../firebase/firebaseUtils'
 
-const { SubMenu } = Menu
+const {SubMenu} = Menu
 
 class TopMenu extends Component {
     constructor(props) {
@@ -15,16 +15,18 @@ class TopMenu extends Component {
     }
 
     render() {
-        const { currentUser } = this.props
+        const {currentUser} = this.props
+        const imageURL = currentUser ? currentUser.imageURL : ''
+
         return (
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <Menu theme='dark' mode='horizontal' style={{ lineHeight: '58px' }}>
+            <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                <Menu theme='dark' mode='horizontal' style={{lineHeight: '58px'}}>
                     <Menu.Item key='logo'>
                         <Link to='/'>
                             <svg
                                 xmlns='http://www.w3.org/2000/svg'
                                 viewBox='0 0 20 20'
-                                style={{ width: 32, height: 32, marginBottom: -8, marginRight: 5 }}>
+                                style={{width: 32, height: 32, marginBottom: -8, marginRight: 5}}>
                                 <g>
                                     <circle fill='#FF4500' cx='10' cy='10' r='10' />
                                     <path
@@ -33,7 +35,7 @@ class TopMenu extends Component {
                                     />
                                 </g>
                             </svg>
-                            <span style={{ color: 'white', fontSize: 'x-large' }}>rednit</span>
+                            <span style={{color: 'white', fontSize: 'x-large'}}>rednit</span>
                         </Link>
                     </Menu.Item>
                     <Menu.Item key='home'>
@@ -66,19 +68,22 @@ class TopMenu extends Component {
                     </Menu.ItemGroup>
                 </SubMenu> */}
                 </Menu>
-                <div style={{ display: 'flex', justifyContent: 'flex-end', alignSelf: 'flex-end' }}>
+                <div style={{display: 'flex', justifyContent: 'flex-end', alignSelf: 'flex-end', alignItems: 'center'}}>
                     {currentUser ? (
-                        <div style={{ color: '#1890ff', cursor: 'pointer' }} onClick={() => auth.signOut()}>
-                            Đăng xuất
+                        <div>
+                            <Avatar src={`${imageURL}`} alt='avt' />{' '}
+                            <span style={{color: '#1890ff', cursor: 'pointer'}} onClick={() => auth.signOut()}>
+                                Đăng xuất
+                            </span>
                         </div>
                     ) : (
-                            <div>
-                                <Link style={{ marginRight: 20 }} to='/login'>
-                                    Đăng nhập
+                        <div>
+                            <Link style={{marginRight: 20}} to='/login'>
+                                Đăng nhập
                             </Link>
-                                <Link to='/sign-up'>Đăng ký</Link>
-                            </div>
-                        )}
+                            <Link to='/sign-up'>Đăng ký</Link>
+                        </div>
+                    )}
                 </div>
             </div>
         )

@@ -53,7 +53,7 @@ class Home extends Component {
         console.log('current User', this.props.currentUser)
         if (this.props.currentUser && this.props.currentUser.hasOwnProperty('index')) {
             const index = this.props.currentUser.index || 900
-            if (!index) return
+            if (!index || this.state.matchData.length > 5) return
             console.log('indexxxxxxxxxxxxx111', index)
             this._getMatchedUser(index)
         }

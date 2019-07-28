@@ -1,0 +1,1 @@
+import {Avatar} from 'antd'
