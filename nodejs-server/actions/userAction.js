@@ -83,6 +83,7 @@ exports.getMatches = async id => {
         },
     })
     console.log(res)
+
     if (res && res.length) return res
     throw new Error('No matches found')
 }
