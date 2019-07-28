@@ -1,5 +1,7 @@
 const createAPI = require('../utils/createAPI')
 const User = require('../models/userProfile')
+const UserBio = require('../models/userBio')
+const fakeImageURL = require('../utils/fakeImageURL')
 
 const _fields = ['age', 'height', 'job', 'longtitude', 'latitude', 'sports', 'sex', 'name']
 
@@ -21,7 +23,9 @@ exports.createProfile = async args => {
         sex,
         name,
     }
+    const imageURL = await fakeImageURL()
     const user = new User(data)
+    const userBio = new UserBio({name, sex, imageURL, index: `${userCount}`})
     const api = createAPI('https://hughdo.dev/api/v2')
     const res = await api.makeRequest({
         method: 'POST',
@@ -33,14 +37,68 @@ exports.createProfile = async args => {
     })
     console.log(res)
     await user.save()
-
-    return user
+    await userBio.save()
+    return Object.assign({}, user, userBio)
 }
 
 exports.getUser = async id => {
     if (!id) throw new Error('id is required')
     const user = await User.findOne({index: id})
+    const userBio = await UserBio.findOne({index: id})
     console.log(user)
     if (!user) throw new Error(`User with id ${id} not found`)
-    return user
+    return Object.assign({}, user, userBio)
+}
+
+exports.getMatches = async id => {
+    if (!id) throw new Error('id not found')
+    const _fields2 = ['Age', 'Height', 'Job', 'Longtitude', 'Latitude', 'Sports', 'Sex', 'Name']
+    const user = await User.findOne({index: id}).lean()
+    if (!user) throw new Error('User not found')
+
+    const {
+        index,
+        age: Age,
+        height: Height,
+        job: Job,
+        longtitude: Longtitude,
+        latitude: Latitude,
+        sports: Sports,
+        sex: Sex,
+        name: Name,
+    } = user
+    const data = {
+        index,
+        Age,
+        Height,
+        Job,
+        Longtitude,
+        Latitude,
+        Sports,
+        Sex,
+        Name,
+    }
+    const api = createAPI('https://hughdo.dev/api/v2')
+    const res = await api.makeRequest({
+        method: 'POST',
+        data,
+        url: '/user',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    })
+    console.log(res)
+
+    if (res && res.length) {
+        for (let i = 0; i < res.length; i++) {
+            const {
+                profile: {index},
+            } = res[i]
+            const userBio = await UserBio.findOne({index})
+            const {imageURL} = userBio
+            res[i] = {...res[i], imageURL}
+        }
+        return res
+    }
+    throw new Error('No matches found')
 }

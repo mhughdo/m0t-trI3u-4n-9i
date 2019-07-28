@@ -3,6 +3,6 @@ const userController = require('../controllers/userController')
 
 router.post('/create-profile', userController.createProfile)
 router.get('/get-user/:id', userController.getUser)
-router.post('/matches', userController.getMatches)
+router.get('/matches/:id', userController.getMatches)
 
 module.exports = router

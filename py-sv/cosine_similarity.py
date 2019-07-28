@@ -7,7 +7,6 @@ import numpy as np
 from config import *
 from operator import itemgetter
 from scipy.spatial.distance import cosine
-
 class CosineSilimarity:
     
     def __init__(self,dataset):
@@ -29,19 +28,17 @@ class CosineSilimarity:
             info = {}
             cosine_score =cosine(preprocessed_user_profile.values,self.dataset.dataset_to_onehot.iloc[i].values)
             info['score'] = cosine_score
-            info['profile'] = self.dataset.dataset.iloc[i].values
+            info['profile'] = self.dataset.dataset.iloc[i].to_dict()
             list_score.append(info)
         list_score = sorted(list_score,key=itemgetter('score'))
+
         list_score = list_score[:20]
         for item in list_score:
-            item['profile'] = item['profile'].tolist()
-            for j in range(len(item['profile'])):
-                item['profile'][j] = str(item['profile'][j])
+            for key,value in item['profile'].items():
+                item['profile'][key] = str(value)
 
         return json.dumps(list_score)
         
-
-
 if __name__ == "__main__":
     
     profile_test = {
@@ -49,8 +46,8 @@ if __name__ == "__main__":
         'Age':['25-30'],
         'Height':[170.0],
         'Job':['seller'],
-        'Longtitude':[983228.9999999944],
-        'Latitude':[1293793.000000001],
+        'Longtitude':[1263526.9999999998],
+        'Latitude':[1005673.0000000015],
         'Sports':['tennis'],
         'Sex':['Male'],
         'Name':['Do Manh Hung']

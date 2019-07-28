@@ -76,12 +76,8 @@ class SignUpForm extends Component {
                     try {
                         const {email, password, displayName} = values
                         const allValues = {...values, longtitude: lo, latitude: la, name: displayName}
-
-                        const {user} = await auth.createUserWithEmailAndPassword(email, password)
-                        console.log(user)
-                        await createUserProfileDocument(user, allValues)
                         const api = createAPI('https://hughdo.dev/api/v1/users')
-                        const {success, message: errMsg} = await api.makeRequest({
+                        const {success, data, message: errMsg} = await api.makeRequest({
                             method: 'POST',
                             data: allValues,
                             url: '/create-profile',
@@ -92,6 +88,10 @@ class SignUpForm extends Component {
                         if (!success) {
                             message.error(errMsg)
                         }
+                        const {index} = data
+                        const {user} = await auth.createUserWithEmailAndPassword(email, password)
+                        console.log(user)
+                        await createUserProfileDocument(user, {...allValues, index})
                         this.props.history.push('/')
                     } catch (error) {
                         message.error(error.message)
