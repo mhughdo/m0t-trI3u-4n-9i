@@ -38,7 +38,7 @@ exports.createProfile = async args => {
     console.log(res)
     await user.save()
     await userBio.save()
-    return Object.assign({}, user, userBio)
+    return {...JSON.parse(JSON.stringify(user)), imageURL}
 }
 
 exports.getUser = async id => {

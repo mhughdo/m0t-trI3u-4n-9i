@@ -89,8 +89,10 @@ class SignUpForm extends Component {
                             message.error(errMsg)
                         }
                         const {index} = data
+                        console.log(data)
+                        console.log(index)
                         const {user} = await auth.createUserWithEmailAndPassword(email, password)
-                        console.log(user)
+                        // console.log(user)
                         await createUserProfileDocument(user, {...allValues, index})
                         this.props.history.push('/')
                     } catch (error) {
