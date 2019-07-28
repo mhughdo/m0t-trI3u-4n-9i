@@ -1,9 +1,22 @@
 import React, {Component} from 'react'
-import {Form, Icon, Input, Button, Checkbox, Row, Col, Select, message} from 'antd'
+import {Form, Icon, Input, Button, Checkbox, Row, Col, Select, message, Upload} from 'antd'
+import axios from 'axios'
 import {auth, createUserProfileDocument} from '../../firebase/firebaseUtils'
 import createAPI from '../../utils/createAPI'
+import UploadFile from '../file-upload/FileUpload'
 
 const {Option} = Select
+
+const normFile = e => {
+    if (Array.isArray(e)) {
+        return e
+    }
+
+    if (e.fileList.length > 1) {
+        e.fileList.shift()
+    }
+    return e && e.fileList
+}
 const _fieldDecorator = {
     displayName: {
         rules: [{required: true, message: 'Please input your name!'}],
@@ -38,6 +51,12 @@ const _fieldDecorator = {
     sports: {
         rules: [{required: true, message: 'Please choose your favourite sport!'}],
     },
+    image: {
+        initialValue: [],
+        valuePropName: 'fileList',
+        getValueFromEvent: normFile,
+        rules: [{required: false, message: 'Please choose your favourite sport!'}],
+    },
 }
 
 const formItemLayout = {
@@ -68,7 +87,8 @@ class SignUpForm extends Component {
                 this.setState({
                     signUpLoading: true,
                 })
-                console.log('Received values of form: ', values)
+                // console.log('Received values of form: ', values)
+                // console.log('image', values.image)
 
                 // console.log(la, lo)
                 if (la && lo) {
@@ -91,9 +111,16 @@ class SignUpForm extends Component {
                         const {index} = data
                         // console.log(data)
                         // console.log(index)
+                        let imageURL = ''
+                        if (values.image.length) {
+                            imageURL = await this.uploadFile(values.image[0], index)
+                            delete allValues.image
+                            console.log(imageURL)
+                        }
+
                         const {user} = await auth.createUserWithEmailAndPassword(email, password)
                         // console.log(user)
-                        await createUserProfileDocument(user, {...allValues, index})
+                        await createUserProfileDocument(user, {...allValues, index, imageURL})
                         this.props.history.push('/')
                     } catch (error) {
                         message.error(error.message)
@@ -106,6 +133,25 @@ class SignUpForm extends Component {
                 })
             }
         })
+    }
+
+    dummyRequest = ({file, onSuccess}) => {
+        setTimeout(() => {
+            onSuccess('ok')
+        }, 0)
+    }
+
+    uploadFile = async (image, index) => {
+        const {data: uploadConfig} = await axios.get(`https://hughdo.dev/api/v1/files/upload/${index}`)
+        console.log(image)
+        console.log(uploadConfig)
+        const upload = await axios.put(uploadConfig.data.url, image, {
+            headers: {
+                'Content-Type': image.type,
+            },
+        })
+        const prefix = 'https://mottrieuangi.s3-ap-southeast-1.amazonaws.com'
+        return `${prefix}/${uploadConfig.data.key}`
     }
 
     handleGetLocation = () => {
@@ -213,6 +259,15 @@ class SignUpForm extends Component {
                             <Option value='table_tenis'>Bóng bàn</Option>
                             <Option value='tenis'>Tennis</Option>
                         </Select>
+                    )}
+                </Form.Item>
+                <Form.Item label='Ảnh đại diện'>
+                    {getFieldDecorator('image', _fieldDecorator.image)(
+                        <Upload customRequest={this.dummyRequest} name='file'>
+                            <Button>
+                                <Icon type='upload' accept='image/*' /> Upload
+                            </Button>
+                        </Upload>
                     )}
                 </Form.Item>
 

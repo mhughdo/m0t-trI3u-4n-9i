@@ -19,22 +19,34 @@ const createAPI = require('./utils/createAPI')
 const app = express()
 
 async function runnn() {
-    const datas = await User.find({})
+    // const datas = await User.find({})
 
-    for (let i = 0; i < datas.length; i++) {
-        const api = createAPI()
-        const res = await api.makeRequest({
-            method: 'GET',
-            url: 'https://randomuser.me/api/',
-        })
-        const {results} = res
-        const {
-            picture: {large},
-        } = results[0]
-        const userbio = new UserBio({index: i, name: datas[i].name, sex: datas[i].sex, imageURL: large})
-        console.log(i)
-        await userbio.save()
-    }
+    // for (let i = 0; i < datas.length; i++) {
+    //     const api = createAPI()
+    //     const res = await api.makeRequest({
+    //         method: 'GET',
+    //         url: 'https://randomuser.me/api/',
+    //     })
+    //     const {results} = res
+    //     const {
+    //         picture: {large},
+    //     } = results[0]
+    //     const userbio = new UserBio({index: i, name: datas[i].name, sex: datas[i].sex, imageURL: large})
+    //     console.log(i)
+    //     await userbio.save()
+    // }
+    const user = new User({
+        index: '1',
+        age: '<20',
+        height: 190.0,
+        job: 'developer',
+        longtitude: 863228.9999999944,
+        latitude: 1103793.000000001,
+        sports: 'tennis',
+        sex: 'Male',
+        name: 'Nguyennnnn2',
+    })
+    await user.save()
 }
 
 // runnn()

@@ -24,8 +24,17 @@ exports.createProfile = async args => {
         name,
     }
     const imageURL = await fakeImageURL()
+    const userEx = await User.findOne({})
+    if (userEx) {
+        await User.deleteOne({index: `${userCount}`})
+    }
     const user = new User(data)
+    const ex = await UserBio.findOne({index: `${userCount}`})
+    if (ex) {
+        await UserBio.deleteOne({index: `${userCount}`})
+    }
     const userBio = new UserBio({name, sex, imageURL, index: `${userCount}`})
+    await userBio.save()
     const api = createAPI('https://hughdo.dev/api/v2')
     const res = await api.makeRequest({
         method: 'POST',
@@ -35,9 +44,8 @@ exports.createProfile = async args => {
             'Content-Type': 'application/json',
         },
     })
-    console.log(res)
     await user.save()
-    await userBio.save()
+    console.log('res')
     return {...JSON.parse(JSON.stringify(user)), imageURL}
 }
 
