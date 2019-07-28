@@ -47,8 +47,9 @@ class Home extends Component {
 
     componentDidUpdate() {
         console.log("props", this.props)
+        const index = this.props.currentUser &&this.props.currentUser.currentUser && this.props.currentUser.currentUser.index
         if (this.props.currentUser) {
-            getMatchedUser(900).then(res => {
+            getMatchedUser(index).then(res => {
                 if (res.success) {
                     const { data } = res;
                     this.setState({
