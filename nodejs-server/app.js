@@ -11,6 +11,7 @@ const cors = require('cors')
 
 const indexRouter = require('./routes/index')
 const userRouter = require('./routes/userRoutes')
+const fileRouter = require('./routes/uploadRoutes')
 const User = require('./models/userProfile')
 const UserBio = require('./models/userBio')
 const createAPI = require('./utils/createAPI')
@@ -80,5 +81,6 @@ app.use(express.json({limit: '1000kb'}))
 
 app.use('/', indexRouter)
 app.use('/users/', userRouter)
+app.use('/files/', fileRouter)
 
 module.exports = app
