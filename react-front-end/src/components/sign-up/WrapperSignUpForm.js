@@ -179,8 +179,8 @@ class SignUpForm extends Component {
                         <Select
                             prefix={<Icon type='lock' style={{color: 'rgba(0,0,0,.25)'}} />}
                             placeholder='Giới tính'>
-                            <Option value='male'>Nam</Option>
-                            <Option value='female'>Nữ</Option>
+                            <Option value='Male'>Nam</Option>
+                            <Option value='Female'>Nữ</Option>
                         </Select>
                     )}
                 </Form.Item>
