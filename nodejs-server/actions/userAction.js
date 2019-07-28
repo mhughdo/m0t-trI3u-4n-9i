@@ -1,5 +1,7 @@
 const createAPI = require('../utils/createAPI')
 const User = require('../models/userProfile')
+const UserBio = require('../models/userBio')
+const fakeImageURL = require('../utils/fakeImageURL')
 
 const _fields = ['age', 'height', 'job', 'longtitude', 'latitude', 'sports', 'sex', 'name']
 
@@ -21,7 +23,9 @@ exports.createProfile = async args => {
         sex,
         name,
     }
+    const imageURL = await fakeImageURL()
     const user = new User(data)
+    const userBio = new UserBio({name, sex, imageURL, index: `${userCount}`})
     const api = createAPI('https://hughdo.dev/api/v2')
     const res = await api.makeRequest({
         method: 'POST',
@@ -33,16 +37,17 @@ exports.createProfile = async args => {
     })
     console.log(res)
     await user.save()
-
-    return user
+    await userBio.save()
+    return {user_profile: user, user_bio: userBio}
 }
 
 exports.getUser = async id => {
     if (!id) throw new Error('id is required')
     const user = await User.findOne({index: id})
+    const userBio = await UserBio.findOne({index: id})
     console.log(user)
     if (!user) throw new Error(`User with id ${id} not found`)
-    return user
+    return {user_profile: user, user_bio: userBio}
 }
 
 exports.getMatches = async id => {
@@ -83,7 +88,16 @@ exports.getMatches = async id => {
         },
     })
     console.log(res)
-
-    if (res && res.length) return res
+    const userBios = []
+    if (res && res.length) {
+        for (let i = 0; i < res.length; i++) {
+            const {
+                profile: {index},
+            } = res[i]
+            const userBio = await UserBio.findOne({index})
+            userBios.push(userBio)
+        }
+        return {matches: res, user_bio: userBios}
+    }
     throw new Error('No matches found')
 }

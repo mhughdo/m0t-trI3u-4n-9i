@@ -12,24 +12,31 @@ const cors = require('cors')
 const indexRouter = require('./routes/index')
 const userRouter = require('./routes/userRoutes')
 const User = require('./models/userProfile')
+const UserBio = require('./models/userBio')
 const createAPI = require('./utils/createAPI')
 
 const app = express()
 
 async function runnn() {
-    const user = new User({
-        index: 1,
-        age: '25-30',
-        height: 170.0,
-        job: 'seller',
-        longtitude: 983228.9999999944,
-        latitude: 1293793.000000001,
-        sports: 'tennis',
-        sex: 'Male',
-        name: 'Do Manh Hung',
-    })
-    await user.save()
+    const datas = await User.find({})
+
+    for (let i = 0; i < datas.length; i++) {
+        const api = createAPI()
+        const res = await api.makeRequest({
+            method: 'GET',
+            url: 'https://randomuser.me/api/',
+        })
+        const {results} = res
+        const {
+            picture: {large},
+        } = results[0]
+        const userbio = new UserBio({index: i, name: datas[i].name, sex: datas[i].sex, imageURL: large})
+        console.log(i)
+        await userbio.save()
+    }
 }
+
+// runnn()
 
 async function runn() {
     const {GEO_KEY} = process.env
