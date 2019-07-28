@@ -8,13 +8,9 @@ exports.createProfile = async args => {
         throw new Error(`${missingFields.join(', ')} are required`)
     }
     const {age, height, job, longtitude, latitude, sports, sex, name} = args
-    const lastUser = await User.findOne({})
-        .sort({index: -1})
-        .limit(1)
-        .lean()
-    const {index: lastIndex} = lastUser
+    const userCount = await User.findOne({}).countDocuments()
     const user = new User({
-        index: `${parseInt(lastIndex) + 1}`,
+        index: `${userCount}`,
         age,
         height,
         job,
