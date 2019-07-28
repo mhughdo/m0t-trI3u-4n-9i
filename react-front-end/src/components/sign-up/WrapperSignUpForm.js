@@ -90,11 +90,11 @@ class SignUpForm extends Component {
                             },
                         })
                         if (!success) {
-                            alert(errMsg)
+                            message.error(errMsg)
                         }
                         this.props.history.push('/')
                     } catch (error) {
-                        alert(error.message)
+                        message.error(error.message)
                     }
                 } else {
                     message.error('Ban chưa cấp phép cho thông tin vị trí, Hãy thử lại')

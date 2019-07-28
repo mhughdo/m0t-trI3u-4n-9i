@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
-import {Form, Icon, Input, Button, Checkbox, Row, Col, Select} from 'antd'
+import {Form, Icon, Input, Button, Checkbox, Row, Col, Select, message} from 'antd'
 import {auth} from '../../firebase/firebaseUtils'
 
 const _fieldDecorator = {
@@ -27,6 +27,7 @@ class NormalLoginForm extends Component {
                     await auth.signInWithEmailAndPassword(email, password)
                 } catch (error) {
                     console.log(error)
+                    message.error(error.message)
                 }
             }
         })
