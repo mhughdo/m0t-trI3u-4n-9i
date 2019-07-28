@@ -13,7 +13,8 @@ const userReducer = (state = INITIAL_STATE, action) => {
             return {
                 ...state,
                 loading: false,
-                currentUser: action && action.payload && action.payload.currentUser || action.payload,
+                currentUser:
+                    action.payload && action.payload.hasOwnProperty('currentUser') ? action.payload.currentUser : null,
             }
         default:
             return state

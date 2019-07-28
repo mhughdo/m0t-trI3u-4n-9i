@@ -78,6 +78,7 @@ exports.getMatches = async id => {
         Sex,
         Name,
     }
+    console.log(data)
     const api = createAPI('https://hughdo.dev/api/v2')
     const res = await api.makeRequest({
         method: 'POST',
