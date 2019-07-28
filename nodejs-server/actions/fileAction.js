@@ -16,8 +16,8 @@ exports.uploadFile = async (index = '1000') =>
                 ContentType: 'image/jpeg',
                 Key: key,
             },
-            (err, url) => {
-                resolve(url)
+            (error, url) => {
+                resolve({url, key})
             }
         )
     })
