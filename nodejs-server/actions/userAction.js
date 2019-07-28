@@ -38,7 +38,7 @@ exports.createProfile = async args => {
     console.log(res)
     await user.save()
     await userBio.save()
-    return {user_profile: user, user_bio: userBio}
+    return Object.assign({}, user, userBio)
 }
 
 exports.getUser = async id => {
@@ -47,7 +47,7 @@ exports.getUser = async id => {
     const userBio = await UserBio.findOne({index: id})
     console.log(user)
     if (!user) throw new Error(`User with id ${id} not found`)
-    return {user_profile: user, user_bio: userBio}
+    return Object.assign({}, user, userBio)
 }
 
 exports.getMatches = async id => {
@@ -88,16 +88,17 @@ exports.getMatches = async id => {
         },
     })
     console.log(res)
-    const userBios = []
+
     if (res && res.length) {
         for (let i = 0; i < res.length; i++) {
             const {
                 profile: {index},
             } = res[i]
             const userBio = await UserBio.findOne({index})
-            userBios.push(userBio)
+            const {imageURL} = userBio
+            res[i] = {...res[i], imageURL}
         }
-        return {matches: res, user_bio: userBios}
+        return res
     }
     throw new Error('No matches found')
 }
