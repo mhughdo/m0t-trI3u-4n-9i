@@ -3,6 +3,7 @@ import { Card, Button } from 'antd'
 import Swipeable from "react-swipy"
 import { connect } from 'react-redux'
 
+
 import UserCard from '../components/user-card/UserCard'
 import { getRandomImg } from '../utils/getRandomImage'
 import { getMatchedUser } from '../utils/getMatchedUser';
@@ -18,39 +19,30 @@ class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            matchData: [
-                {
-                    name: '',
-                    image: '',
-                    job: ''
-                }
-            ]
+            matchData: []
         }
     }
 
-    componentDidMount() {
-        // console.log('Home', this.props)
-        // getRandomImg().then(res => {
-        //     console.log('More', res)
-        //     const results = res.results[0]
-        //     this.setState({
-        //         matchData: [
-        //             {
-        //                 name: results.name.first + ' ' + results.name.last,
-        //                 image: results.picture.large,
-        //                 job: 'student'
-        //             }
-        //         ]
-        //     })
-        // })
-    }
+    // shouldComponentUpdate(nextProps, nextState) {
+    //     if (!this.props.currentUser){
+    //         return true
+    //     }
+    //     if (_.isEqual(this.props, nextProps)) {
+    //         return false
+    //     }
+    //     return true
+    // }
 
-    componentDidUpdate() {
-        console.log("props", this.props)
+
+
+
+    componentDidMount() {
+        console.log('Did mount')
         const index = this.props.currentUser && this.props.currentUser.index || 900
-        if (this.props.currentUser) {
+        if (this.props.currentUser && this.state.matchData.length < 5) {
             getMatchedUser(index).then(res => {
                 if (res.success) {
+                    console.log("Set data")
                     const { data } = res;
                     this.setState({
                         matchData: data
@@ -61,10 +53,61 @@ class Home extends Component {
         }
     }
 
-    remove = () =>
+    componentDidUpdate() {
+        const index = this.props.currentUser && this.props.currentUser.index || 900
+        if (this.props.currentUser && this.state.matchData.length < 5) {
+            getMatchedUser(index).then(res => {
+                if (res.success) {
+                    console.log("Set data")
+                    const { data } = res;
+                    this.setState({
+                        matchData: data
+                    })
+                }
+
+            })
+        }
+    }
+
+    remove = () => {
         this.setState(({ matchData }) => ({
             matchData: matchData.slice(1, matchData.length),
         }));
+    }
+
+
+    handleReject(left) {
+        return () => {
+            left()
+            this.reject
+        }
+
+    }
+
+    handleAccept(right) {
+        return () => {
+            right()
+            this.accept()
+        }
+    }
+
+    handleSwipe(direction) {
+        console.log(direction)
+        if (direction === 'right') {
+            this.accept()
+        } else {
+            this.reject()
+        }
+    }
+
+    accept() {
+        // Todo logic to accept, the current user is this.state.matchData[0]
+    }
+
+    reject() {
+        // Todo logic to reject, the current user is this.state.matchData[0]
+    }
+
 
     render() {
         const { matchData } = this.state;
@@ -76,17 +119,18 @@ class Home extends Component {
                             <Swipeable
                                 buttons={({ left, right }) => (
                                     <div style={actionsStyles}>
-                                        <Button onClick={left}>Reject</Button>
-                                        <Button onClick={right}>Accept</Button>
+                                        <Button onClick={this.handleReject(left)}>Reject</Button>
+                                        <Button onClick={this.handleAccept(right)}>Accept</Button>
                                     </div>
                                 )}
+                                onSwipe={this.handleSwipe}
                                 onAfterSwipe={this.remove}
                             >
-                                <UserCard {...matchData[0]}></UserCard>
+                                <UserCard userData={matchData[0]}></UserCard>
                             </Swipeable>
                         </div>
                     ) : (
-                            <Card zIndex={-2}>No more cards</Card>
+                            <Card >Loading...</Card>
                         )}
                 </div>
             </div>

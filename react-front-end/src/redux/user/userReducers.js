@@ -13,7 +13,7 @@ const userReducer = (state = INITIAL_STATE, action) => {
             return {
                 ...state,
                 loading: false,
-                currentUser: action.payload.currentUser || action.payload,
+                currentUser: action && action.payload && action.payload.currentUser || action.payload,
             }
         default:
             return state

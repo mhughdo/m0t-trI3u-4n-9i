@@ -19,5 +19,8 @@
     "bugs": {
         "url": "https://github.com/ILivS/m0t-trI3u-4n-9i/issues"
     },
-    "homepage": "https://github.com/ILivS/m0t-trI3u-4n-9i#readme"
+    "homepage": "https://github.com/ILivS/m0t-trI3u-4n-9i#readme",
+    "dependencies": {
+        "lodash": "^4.17.15"
+    }
 }
