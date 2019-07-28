@@ -4,7 +4,7 @@ const validator = require('validator')
 
 const userSchema = new mongoose.Schema({
     index: {
-        type: Number,
+        type: String,
         required: [true, 'Index is required'],
         unique: true,
     },
