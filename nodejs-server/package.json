@@ -27,7 +27,7 @@
         "morgan": "^1.9.1",
         "nodemon": "^1.19.1",
         "uuid": "^3.3.2",
-        "validator": "^11.1.0",
+        "validator": "^13.7.0",
         "xss-clean": "^0.1.1"
     }
 }
